@@ -1,0 +1,24 @@
+{
+  "name": "school-service-payments",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Authenticated school service ledger with Supabase cloud sync",
+  "scripts": {
+    "start": "node build.mjs && node server.mjs",
+    "test": "node build.mjs && node --test",
+    "check": "node --check src/app.js && node --check src/model.js && node --check server.mjs && node --check src/cloud.js && node --check build.mjs",
+    "build": "node build.mjs",
+    "test:ui": "node scripts/browser-check.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.118.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "esbuild": "0.28.2"
+  }
+}

@@ -1,0 +1,106 @@
+{
+    "projectRoot":  "C:\\Users\\222170\\Documents\\James-Workspace\\04-Personal-Projects\\school-service-payments",
+    "batchImportData":  {
+                            "DESIGN.md":  [
+
+                                          ],
+                            "PRODUCT.md":  [
+
+                                           ],
+                            "README.md":  [
+
+                                          ],
+                            "TASKS.md":  [
+
+                                         ],
+                            "UX-CONTRACT.md":  [
+
+                                               ],
+                            "VERIFICATION.md":  [
+
+                                                ],
+                            "index.html":  [
+
+                                           ],
+                            "package.json":  [
+
+                                             ],
+                            "premium-audit.json":  [
+
+                                                   ],
+                            "premium-ui.json":  [
+
+                                                ],
+                            "vercel.json":  [
+
+                                            ]
+                        },
+    "batchFiles":  [
+                       {
+                           "path":  "DESIGN.md",
+                           "language":  "markdown",
+                           "sizeLines":  116,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "PRODUCT.md",
+                           "language":  "markdown",
+                           "sizeLines":  31,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "README.md",
+                           "language":  "markdown",
+                           "sizeLines":  76,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "TASKS.md",
+                           "language":  "markdown",
+                           "sizeLines":  21,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "UX-CONTRACT.md",
+                           "language":  "markdown",
+                           "sizeLines":  57,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "VERIFICATION.md",
+                           "language":  "markdown",
+                           "sizeLines":  34,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "index.html",
+                           "language":  "html",
+                           "sizeLines":  40,
+                           "fileCategory":  "markup"
+                       },
+                       {
+                           "path":  "package.json",
+                           "language":  "json",
+                           "sizeLines":  22,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "premium-audit.json",
+                           "language":  "json",
+                           "sizeLines":  13,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "premium-ui.json",
+                           "language":  "json",
+                           "sizeLines":  11,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "vercel.json",
+                           "language":  "json",
+                           "sizeLines":  15,
+                           "fileCategory":  "config"
+                       }
+                   ]
+}

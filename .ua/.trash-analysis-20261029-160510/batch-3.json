@@ -1,0 +1,99 @@
+{
+  "nodes": [
+    {
+      "id": "schema:supabase/migrations/20261020163028_cloud_ledger.sql",
+      "type": "schema",
+      "name": "20261020163028_cloud_ledger.sql",
+      "filePath": "supabase/migrations/20261020163028_cloud_ledger.sql",
+      "summary": "Defines one JSONB ledger per authenticated owner, payload validation, owner-only non-anonymous RLS policies, limited grants, revision/mutation triggers, and update timestamps.",
+      "tags": [
+        "data",
+        "sql",
+        "project-source"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "table:supabase/migrations/20261020163028_cloud_ledger.sql:public.service_ledgers",
+      "type": "table",
+      "name": "public.service_ledgers",
+      "filePath": "supabase/migrations/20261020163028_cloud_ledger.sql",
+      "lineRange": [
+        59,
+        66
+      ],
+      "summary": "One row per auth owner: owner_id UUID primary key, revision bigint, validated ledger data JSONB, last_mutation UUID, updated_at timestamp. RLS and grants permit authenticated non-anonymous owners to select/insert/update only their row.",
+      "tags": [
+        "database",
+        "owner-isolation",
+        "jsonb-ledger"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:supabase/migrations/20261020163028_cloud_ledger.sql:public.valid_service_ledger",
+      "type": "function",
+      "name": "public.valid_service_ledger",
+      "filePath": "supabase/migrations/20261020163028_cloud_ledger.sql",
+      "lineRange": [
+        2,
+        56
+      ],
+      "summary": "Validates JSONB ledger structure, bounded amounts/arrays/fields, unique IDs/student-month charges, references, dates and absence of overpayment; invalid input returns false.",
+      "tags": [
+        "database",
+        "validation",
+        "plpgsql"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:supabase/migrations/20261020163028_cloud_ledger.sql:public.guard_service_ledger_revision",
+      "type": "function",
+      "name": "public.guard_service_ledger_revision",
+      "filePath": "supabase/migrations/20261020163028_cloud_ledger.sql",
+      "lineRange": [
+        77,
+        90
+      ],
+      "summary": "Enforces insert revision one, immutable owner, revision increment, changed mutation ID, and update timestamp.",
+      "tags": [
+        "database",
+        "validation",
+        "plpgsql"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": [
+    {
+      "source": "schema:supabase/migrations/20261020163028_cloud_ledger.sql",
+      "target": "table:supabase/migrations/20261020163028_cloud_ledger.sql:public.service_ledgers",
+      "type": "defines_schema",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "schema:supabase/migrations/20261020163028_cloud_ledger.sql",
+      "target": "function:supabase/migrations/20261020163028_cloud_ledger.sql:public.valid_service_ledger",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "schema:supabase/migrations/20261020163028_cloud_ledger.sql",
+      "target": "function:supabase/migrations/20261020163028_cloud_ledger.sql:public.guard_service_ledger_revision",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "schema:supabase/migrations/20261020163028_cloud_ledger.sql",
+      "target": "schema:tests/cloud-rls.sql",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Static transactional database regression source; not run here."
+    }
+  ]
+}

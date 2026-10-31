@@ -1,0 +1,12 @@
+{
+  "fixedSectionOk": true,
+  "nodesRecovered": 0,
+  "edgesRestored": 0,
+  "crossBatchEdgesAdded": 0,
+  "typesRemapped": 0,
+  "complexityRemapped": 0,
+  "notes": [
+    "Verified all resolved imports are represented; file and parsed-symbol coverage checked. Semantic interpretation by the same analysis agent, not an independent review.",
+    "Merge removes tested_by from migration to SQL test because the linker does not recognize that SQL filename as a test; source relationship remains explained in guide."
+  ]
+}

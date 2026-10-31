@@ -1,0 +1,9 @@
+[
+  "Static source analysis only; no app/browser/provider/database acceptance tests were run.",
+  "Excluded credentials, saved knowledge, uploaded documents, runtime stores, dependencies, generated outputs, and binary media.",
+  "Bundled scanner used recursive traversal because git ls-files was unavailable.",
+  "Symbol and call coverage is parser-derived, not whole-program dynamic execution or proof of behavior.",
+  "No structural parser for: index.html. File nodes and semantic/manual source review retained.",
+  "No structural parser for: src/styles.css. File nodes and semantic/manual source review retained.",
+  "SQL parser labeled public.service_ledgers as public; semantic table node corrects the qualified name using the migration source."
+]

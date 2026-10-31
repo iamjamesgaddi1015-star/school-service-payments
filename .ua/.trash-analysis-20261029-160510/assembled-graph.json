@@ -1,0 +1,4435 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/app.js",
+      "type": "file",
+      "name": "app.js",
+      "filePath": "src/app.js",
+      "summary": "Browser application coordinating Supabase account state, cloud refreshes, dashboard/roster/charge/payment views, accessible forms, confirmations, receipts, and backup/export flows. Domain arithmetic lives in model.js and persistence in LedgerStore.",
+      "tags": [
+        "code",
+        "javascript",
+        "project-source"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/app.js:$",
+      "type": "function",
+      "name": "$",
+      "filePath": "src/app.js",
+      "lineRange": [
+        3,
+        3
+      ],
+      "summary": "Implements $ within app.js. See its source range and caller/dependency links for the exact behavior.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app.js:esc",
+      "type": "function",
+      "name": "esc",
+      "filePath": "src/app.js",
+      "lineRange": [
+        4,
+        4
+      ],
+      "summary": "Implements esc within app.js. See its source range and caller/dependency links for the exact behavior.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app.js:uid",
+      "type": "function",
+      "name": "uid",
+      "filePath": "src/app.js",
+      "lineRange": [
+        5,
+        5
+      ],
+      "summary": "Implements uid within app.js. See its source range and caller/dependency links for the exact behavior.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app.js:dateLabel",
+      "type": "function",
+      "name": "dateLabel",
+      "filePath": "src/app.js",
+      "lineRange": [
+        6,
+        6
+      ],
+      "summary": "Implements date label within app.js. See its source range and caller/dependency links for the exact behavior.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app.js:monthLabel",
+      "type": "function",
+      "name": "monthLabel",
+      "filePath": "src/app.js",
+      "lineRange": [
+        7,
+        7
+      ],
+      "summary": "Implements month label within app.js. See its source range and caller/dependency links for the exact behavior.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app.js:initials",
+      "type": "function",
+      "name": "initials",
+      "filePath": "src/app.js",
+      "lineRange": [
+        8,
+        8
+      ],
+      "summary": "Implements initials within app.js. See its source range and caller/dependency links for the exact behavior.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app.js:warning",
+      "type": "function",
+      "name": "warning",
+      "filePath": "src/app.js",
+      "lineRange": [
+        22,
+        22
+      ],
+      "summary": "Implements warning within app.js. See its source range and caller/dependency links for the exact behavior.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Parameters: message."
+    },
+    {
+      "id": "function:src/app.js:notify",
+      "type": "function",
+      "name": "notify",
+      "filePath": "src/app.js",
+      "lineRange": [
+        23,
+        27
+      ],
+      "summary": "Implements notify within app.js. See its source range and caller/dependency links for the exact behavior.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Parameters: message."
+    },
+    {
+      "id": "function:src/app.js:commit",
+      "type": "function",
+      "name": "commit",
+      "filePath": "src/app.js",
+      "lineRange": [
+        34,
+        48
+      ],
+      "summary": "Serializes cloud writes, requires a loaded online ledger, detects account-generation changes, and adopts state only after a confirmed save.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "Parameters: next."
+    },
+    {
+      "id": "function:src/app.js:syncLabel",
+      "type": "function",
+      "name": "syncLabel",
+      "filePath": "src/app.js",
+      "lineRange": [
+        49,
+        49
+      ],
+      "summary": "Implements sync label within app.js. See its source range and caller/dependency links for the exact behavior.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Parameters: message."
+    },
+    {
+      "id": "function:src/app.js:refreshLedger",
+      "type": "function",
+      "name": "refreshLedger",
+      "filePath": "src/app.js",
+      "lineRange": [
+        50,
+        69
+      ],
+      "summary": "Loads the owner ledger without overwriting an open modal, adopts revision only when safe, updates status, and preserves state on failure.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/app.js:authScreen",
+      "type": "function",
+      "name": "authScreen",
+      "filePath": "src/app.js",
+      "lineRange": [
+        70,
+        89
+      ],
+      "summary": "Renders sign-in/signup UI, validates credentials locally, and delegates account operations to Supabase Auth.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/app.js:setAccount",
+      "type": "function",
+      "name": "setAccount",
+      "filePath": "src/app.js",
+      "lineRange": [
+        90,
+        104
+      ],
+      "summary": "Resets account-scoped state and dialogs, creates an owner-bound store, and refreshes the selected account ledger.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "Parameters: user."
+    },
+    {
+      "id": "function:src/app.js:student",
+      "type": "function",
+      "name": "student",
+      "filePath": "src/app.js",
+      "lineRange": [
+        109,
+        109
+      ],
+      "summary": "Implements student within app.js. See its source range and caller/dependency links for the exact behavior.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app.js:invoice",
+      "type": "function",
+      "name": "invoice",
+      "filePath": "src/app.js",
+      "lineRange": [
+        110,
+        110
+      ],
+      "summary": "Implements invoice within app.js. See its source range and caller/dependency links for the exact behavior.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app.js:badge",
+      "type": "function",
+      "name": "badge",
+      "filePath": "src/app.js",
+      "lineRange": [
+        111,
+        111
+      ],
+      "summary": "Implements badge within app.js. See its source range and caller/dependency links for the exact behavior.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app.js:button",
+      "type": "function",
+      "name": "button",
+      "filePath": "src/app.js",
+      "lineRange": [
+        112,
+        112
+      ],
+      "summary": "Implements button within app.js. See its source range and caller/dependency links for the exact behavior.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Parameters: label, action."
+    },
+    {
+      "id": "function:src/app.js:studentCell",
+      "type": "function",
+      "name": "studentCell",
+      "filePath": "src/app.js",
+      "lineRange": [
+        113,
+        113
+      ],
+      "summary": "Implements student cell within app.js. See its source range and caller/dependency links for the exact behavior.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app.js:empty",
+      "type": "function",
+      "name": "empty",
+      "filePath": "src/app.js",
+      "lineRange": [
+        114,
+        114
+      ],
+      "summary": "Implements empty within app.js. See its source range and caller/dependency links for the exact behavior.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Parameters: title, description."
+    },
+    {
+      "id": "function:src/app.js:heading",
+      "type": "function",
+      "name": "heading",
+      "filePath": "src/app.js",
+      "lineRange": [
+        115,
+        115
+      ],
+      "summary": "Implements heading within app.js. See its source range and caller/dependency links for the exact behavior.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Parameters: title, subtitle."
+    },
+    {
+      "id": "function:src/app.js:periodBar",
+      "type": "function",
+      "name": "periodBar",
+      "filePath": "src/app.js",
+      "lineRange": [
+        116,
+        116
+      ],
+      "summary": "Implements period bar within app.js. See its source range and caller/dependency links for the exact behavior.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app.js:kpi",
+      "type": "function",
+      "name": "kpi",
+      "filePath": "src/app.js",
+      "lineRange": [
+        117,
+        117
+      ],
+      "summary": "Implements kpi within app.js. See its source range and caller/dependency links for the exact behavior.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Parameters: label, value, foot, icon."
+    },
+    {
+      "id": "function:src/app.js:pagination",
+      "type": "function",
+      "name": "pagination",
+      "filePath": "src/app.js",
+      "lineRange": [
+        118,
+        121
+      ],
+      "summary": "Implements pagination within app.js. See its source range and caller/dependency links for the exact behavior.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Parameters: total."
+    },
+    {
+      "id": "function:src/app.js:searchBar",
+      "type": "function",
+      "name": "searchBar",
+      "filePath": "src/app.js",
+      "lineRange": [
+        122,
+        124
+      ],
+      "summary": "Implements search bar within app.js. See its source range and caller/dependency links for the exact behavior.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Parameters: options, placeholder."
+    },
+    {
+      "id": "function:src/app.js:paginate",
+      "type": "function",
+      "name": "paginate",
+      "filePath": "src/app.js",
+      "lineRange": [
+        125,
+        125
+      ],
+      "summary": "Implements paginate within app.js. See its source range and caller/dependency links for the exact behavior.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Parameters: list."
+    },
+    {
+      "id": "function:src/app.js:trend",
+      "type": "function",
+      "name": "trend",
+      "filePath": "src/app.js",
+      "lineRange": [
+        126,
+        135
+      ],
+      "summary": "Builds six months of cash-received activity using payment dates rather than service months.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app.js:dashboard",
+      "type": "function",
+      "name": "dashboard",
+      "filePath": "src/app.js",
+      "lineRange": [
+        136,
+        149
+      ],
+      "summary": "Renders service-month accounting totals, cash activity, outstanding balances, and navigation actions.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/app.js:chargeRow",
+      "type": "function",
+      "name": "chargeRow",
+      "filePath": "src/app.js",
+      "lineRange": [
+        150,
+        153
+      ],
+      "summary": "Implements charge row within app.js. See its source range and caller/dependency links for the exact behavior.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Parameters: i."
+    },
+    {
+      "id": "function:src/app.js:chargesView",
+      "type": "function",
+      "name": "chargesView",
+      "filePath": "src/app.js",
+      "lineRange": [
+        154,
+        159
+      ],
+      "summary": "Implements charges view within app.js. See its source range and caller/dependency links for the exact behavior.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app.js:studentsView",
+      "type": "function",
+      "name": "studentsView",
+      "filePath": "src/app.js",
+      "lineRange": [
+        160,
+        164
+      ],
+      "summary": "Implements students view within app.js. See its source range and caller/dependency links for the exact behavior.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app.js:paymentsView",
+      "type": "function",
+      "name": "paymentsView",
+      "filePath": "src/app.js",
+      "lineRange": [
+        165,
+        172
+      ],
+      "summary": "Implements payments view within app.js. See its source range and caller/dependency links for the exact behavior.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app.js:backupView",
+      "type": "function",
+      "name": "backupView",
+      "filePath": "src/app.js",
+      "lineRange": [
+        173,
+        175
+      ],
+      "summary": "Implements backup view within app.js. See its source range and caller/dependency links for the exact behavior.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app.js:render",
+      "type": "function",
+      "name": "render",
+      "filePath": "src/app.js",
+      "lineRange": [
+        176,
+        185
+      ],
+      "summary": "Selects the current account/loading/page state, renders the matching view, and updates display metrics.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app.js:navigate",
+      "type": "function",
+      "name": "navigate",
+      "filePath": "src/app.js",
+      "lineRange": [
+        186,
+        191
+      ],
+      "summary": "Resolves known hash routes and resets pagination/search/filter state for the next view.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app.js:field",
+      "type": "function",
+      "name": "field",
+      "filePath": "src/app.js",
+      "lineRange": [
+        194,
+        194
+      ],
+      "summary": "Implements field within app.js. See its source range and caller/dependency links for the exact behavior.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Parameters: name, label."
+    },
+    {
+      "id": "function:src/app.js:form",
+      "type": "function",
+      "name": "form",
+      "filePath": "src/app.js",
+      "lineRange": [
+        195,
+        195
+      ],
+      "summary": "URL-encodes request form values for the authentication transport.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Parameters: content."
+    },
+    {
+      "id": "function:src/app.js:modal",
+      "type": "function",
+      "name": "modal",
+      "filePath": "src/app.js",
+      "lineRange": [
+        196,
+        225
+      ],
+      "summary": "Opens an accessible dialog, captures the original form draft, serializes submission, checks fields, and keeps failed edits available.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "Parameters: title, html, handler."
+    },
+    {
+      "id": "function:src/app.js:close",
+      "type": "function",
+      "name": "close",
+      "filePath": "src/app.js",
+      "lineRange": [
+        226,
+        235
+      ],
+      "summary": "Closes a non-saving dialog, clears its draft, and restores focus to its opener or the main region.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app.js:dirty",
+      "type": "function",
+      "name": "dirty",
+      "filePath": "src/app.js",
+      "lineRange": [
+        236,
+        239
+      ],
+      "summary": "Compares current form entries against the captured draft to detect unsaved changes.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app.js:requestClose",
+      "type": "function",
+      "name": "requestClose",
+      "filePath": "src/app.js",
+      "lineRange": [
+        240,
+        250
+      ],
+      "summary": "Blocks closing while saving and presents an explicit discard choice when the form is dirty.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app.js:required",
+      "type": "function",
+      "name": "required",
+      "filePath": "src/app.js",
+      "lineRange": [
+        254,
+        261
+      ],
+      "summary": "Requires a present bounded string field or returns a generic validation failure.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Parameters: data, key, label."
+    },
+    {
+      "id": "function:src/app.js:amountValue",
+      "type": "function",
+      "name": "amountValue",
+      "filePath": "src/app.js",
+      "lineRange": [
+        262,
+        265
+      ],
+      "summary": "Implements amount value within app.js. See its source range and caller/dependency links for the exact behavior.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Parameters: data, key."
+    },
+    {
+      "id": "function:src/app.js:studentForm",
+      "type": "function",
+      "name": "studentForm",
+      "filePath": "src/app.js",
+      "lineRange": [
+        266,
+        275
+      ],
+      "summary": "Creates or edits a student and agreed monthly fee while preserving historical charges.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Parameters: id."
+    },
+    {
+      "id": "function:src/app.js:chargesForm",
+      "type": "function",
+      "name": "chargesForm",
+      "filePath": "src/app.js",
+      "lineRange": [
+        276,
+        292
+      ],
+      "summary": "Previews duplicate-safe monthly charge creation for active students, then commits the selected month.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/app.js:paymentForm",
+      "type": "function",
+      "name": "paymentForm",
+      "filePath": "src/app.js",
+      "lineRange": [
+        293,
+        302
+      ],
+      "summary": "Selects an unpaid charge, collects actual receipt details, applies model validation, and commits a partial or full payment.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Parameters: id."
+    },
+    {
+      "id": "function:src/app.js:editCharge",
+      "type": "function",
+      "name": "editCharge",
+      "filePath": "src/app.js",
+      "lineRange": [
+        303,
+        313
+      ],
+      "summary": "Updates charge amount/due/note while preventing reductions below payments already received.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Parameters: id."
+    },
+    {
+      "id": "function:src/app.js:archiveStudent",
+      "type": "function",
+      "name": "archiveStudent",
+      "filePath": "src/app.js",
+      "lineRange": [
+        314,
+        322
+      ],
+      "summary": "Confirms archive/restore and toggles future-charge eligibility while retaining financial history.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Parameters: id."
+    },
+    {
+      "id": "function:src/app.js:voidPayment",
+      "type": "function",
+      "name": "voidPayment",
+      "filePath": "src/app.js",
+      "lineRange": [
+        323,
+        332
+      ],
+      "summary": "Requires a correction reason, marks the payment voided, and retains the original record in history.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Parameters: id."
+    },
+    {
+      "id": "function:src/app.js:receipt",
+      "type": "function",
+      "name": "receipt",
+      "filePath": "src/app.js",
+      "lineRange": [
+        333,
+        338
+      ],
+      "summary": "Builds an escaped printable payment acknowledgment with dates, method, reference, and void status.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Parameters: id."
+    },
+    {
+      "id": "function:src/app.js:download",
+      "type": "function",
+      "name": "download",
+      "filePath": "src/app.js",
+      "lineRange": [
+        339,
+        343
+      ],
+      "summary": "Creates a temporary Blob URL for a browser download and revokes it after use.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Parameters: name, data, type."
+    },
+    {
+      "id": "function:src/app.js:exportCharges",
+      "type": "function",
+      "name": "exportCharges",
+      "filePath": "src/app.js",
+      "lineRange": [
+        344,
+        348
+      ],
+      "summary": "Exports selected-month charges with student details, amounts, balances, and derived status.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app.js:exportPayments",
+      "type": "function",
+      "name": "exportPayments",
+      "filePath": "src/app.js",
+      "lineRange": [
+        349,
+        353
+      ],
+      "summary": "Exports the full payment history, including voided entries and correction reasons.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/cloud.js",
+      "type": "file",
+      "name": "cloud.js",
+      "filePath": "src/cloud.js",
+      "summary": "Creates the Supabase client with persisted PKCE authentication sessions and implements owner-filtered JSON ledger loading and revision-checked writes with mutation-ID reconciliation.",
+      "tags": [
+        "code",
+        "javascript",
+        "project-source",
+        "tested"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/cloud.js:LedgerStore",
+      "type": "class",
+      "name": "LedgerStore",
+      "filePath": "src/cloud.js",
+      "lineRange": [
+        7,
+        33
+      ],
+      "summary": "Creates the Supabase client with persisted PKCE authentication sessions and implements owner-filtered JSON ledger loading and revision-checked writes with mutation-ID reconciliation.",
+      "tags": [
+        "class",
+        "javascript",
+        "domain-logic"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/cloud.js:LedgerStore.constructor",
+      "type": "function",
+      "name": "LedgerStore.constructor",
+      "filePath": "src/cloud.js",
+      "lineRange": [
+        8,
+        8
+      ],
+      "summary": "Stores the Supabase client and owner ID with initial expected revision zero.",
+      "tags": [
+        "method",
+        "persistence",
+        "cloud-sync"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/cloud.js:LedgerStore.load",
+      "type": "function",
+      "name": "LedgerStore.load",
+      "filePath": "src/cloud.js",
+      "lineRange": [
+        9,
+        14
+      ],
+      "summary": "Reads only the selected owner row and validates its ledger; intentionally leaves expected revision adoption to the UI.",
+      "tags": [
+        "method",
+        "persistence",
+        "cloud-sync"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/cloud.js:LedgerStore.save",
+      "type": "function",
+      "name": "LedgerStore.save",
+      "filePath": "src/cloud.js",
+      "lineRange": [
+        15,
+        32
+      ],
+      "summary": "Increments the expected revision, validates the snapshot, inserts/compares revision atomically, and reconciles uncertain completion by a unique mutation ID.",
+      "tags": [
+        "method",
+        "persistence",
+        "cloud-sync"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/config.js",
+      "type": "file",
+      "name": "config.js",
+      "filePath": "src/config.js",
+      "summary": "Browser-visible Supabase endpoint and publishable-key configuration. These public settings are not a substitute for RLS; no value is reproduced in this graph.",
+      "tags": [
+        "code",
+        "javascript",
+        "project-source"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/model.js",
+      "type": "file",
+      "name": "model.js",
+      "filePath": "src/model.js",
+      "summary": "Pure ledger rules using integer centavos, date-only validation, student/invoice/payment integrity checks, immutable charge/payment updates, service-month metrics, and spreadsheet-safe CSV output.",
+      "tags": [
+        "code",
+        "javascript",
+        "project-source",
+        "tested"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/model.js:emptyState",
+      "type": "function",
+      "name": "emptyState",
+      "filePath": "src/model.js",
+      "lineRange": [
+        2,
+        2
+      ],
+      "summary": "Creates the version-1, revision-zero ledger with empty student, invoice, and payment arrays.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/model.js:today",
+      "type": "function",
+      "name": "today",
+      "filePath": "src/model.js",
+      "lineRange": [
+        3,
+        3
+      ],
+      "summary": "Formats the current calendar date in Asia/Manila; ledger due-date decisions use this timezone.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/model.js:validDate",
+      "type": "function",
+      "name": "validDate",
+      "filePath": "src/model.js",
+      "lineRange": [
+        4,
+        6
+      ],
+      "summary": "Checks ISO date shape, allowed year range, parsing, and exact calendar round-trip.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Parameters: value."
+    },
+    {
+      "id": "function:src/model.js:cents",
+      "type": "function",
+      "name": "cents",
+      "filePath": "src/model.js",
+      "lineRange": [
+        7,
+        13
+      ],
+      "summary": "Parses a positive decimal PHP amount into safe integer centavos and rejects exponent notation, excess precision, zero, and excessive amounts.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Parameters: value."
+    },
+    {
+      "id": "function:src/model.js:money",
+      "type": "function",
+      "name": "money",
+      "filePath": "src/model.js",
+      "lineRange": [
+        14,
+        14
+      ],
+      "summary": "Formats integer centavos as PHP currency for display.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/model.js:paid",
+      "type": "function",
+      "name": "paid",
+      "filePath": "src/model.js",
+      "lineRange": [
+        15,
+        15
+      ],
+      "summary": "Sums non-voided payments linked to an invoice.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Parameters: state, invoiceId."
+    },
+    {
+      "id": "function:src/model.js:balance",
+      "type": "function",
+      "name": "balance",
+      "filePath": "src/model.js",
+      "lineRange": [
+        16,
+        16
+      ],
+      "summary": "Subtracts active payments from the charge amount.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Parameters: state, invoice."
+    },
+    {
+      "id": "function:src/model.js:status",
+      "type": "function",
+      "name": "status",
+      "filePath": "src/model.js",
+      "lineRange": [
+        17,
+        22
+      ],
+      "summary": "Returns non-secret current status for model.js, without exposing account credentials or source text.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Parameters: state, invoice."
+    },
+    {
+      "id": "function:src/model.js:fail",
+      "type": "function",
+      "name": "fail",
+      "filePath": "src/model.js",
+      "lineRange": [
+        23,
+        23
+      ],
+      "summary": "Implements fail within model.js. See its source range and caller/dependency links for the exact behavior.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/model.js:text",
+      "type": "function",
+      "name": "text",
+      "filePath": "src/model.js",
+      "lineRange": [
+        24,
+        24
+      ],
+      "summary": "Implements text within model.js. See its source range and caller/dependency links for the exact behavior.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Parameters: value, max."
+    },
+    {
+      "id": "function:src/model.js:amount",
+      "type": "function",
+      "name": "amount",
+      "filePath": "src/model.js",
+      "lineRange": [
+        25,
+        25
+      ],
+      "summary": "Implements amount within model.js. See its source range and caller/dependency links for the exact behavior.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/model.js:validateState",
+      "type": "function",
+      "name": "validateState",
+      "filePath": "src/model.js",
+      "lineRange": [
+        26,
+        49
+      ],
+      "summary": "Checks ledger version/revision, collection limits, global ID uniqueness, valid records/references, unique student-month charges, and absence of overpayments.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "moderate",
+      "languageNotes": "Parameters: state."
+    },
+    {
+      "id": "function:src/model.js:addPayment",
+      "type": "function",
+      "name": "addPayment",
+      "filePath": "src/model.js",
+      "lineRange": [
+        50,
+        58
+      ],
+      "summary": "Rejects unknown invoices, future/invalid dates, and overpayments; clones the ledger, adds a non-voided payment, and validates the result.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Parameters: state, payment."
+    },
+    {
+      "id": "function:src/model.js:createCharges",
+      "type": "function",
+      "name": "createCharges",
+      "filePath": "src/model.js",
+      "lineRange": [
+        59,
+        66
+      ],
+      "summary": "Clones the ledger and adds one fee-snapshot charge for each active student missing the selected month, then validates the result.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Parameters: state."
+    },
+    {
+      "id": "function:src/model.js:metrics",
+      "type": "function",
+      "name": "metrics",
+      "filePath": "src/model.js",
+      "lineRange": [
+        67,
+        72
+      ],
+      "summary": "Computes billed, collected, outstanding, overdue, paid-count, and total metrics for invoice service month.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Parameters: state, period."
+    },
+    {
+      "id": "function:src/model.js:csv",
+      "type": "function",
+      "name": "csv",
+      "filePath": "src/model.js",
+      "lineRange": [
+        73,
+        79
+      ],
+      "summary": "Builds BOM-prefixed quoted CSV with escaped quotes and a protective apostrophe before spreadsheet formula prefixes.",
+      "tags": [
+        "function",
+        "javascript",
+        "implementation"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Parameters: rows."
+    },
+    {
+      "id": "file:tests/cloud.test.js",
+      "type": "file",
+      "name": "cloud.test.js",
+      "filePath": "tests/cloud.test.js",
+      "summary": "Fluent-client mocks verify owner-scoped loads, first inserts, expected-revision updates, stale-device rejection, uncertain responses, and invalid-save prevention without contacting Supabase.",
+      "tags": [
+        "code",
+        "javascript",
+        "test"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/cloud.test.js:client",
+      "type": "function",
+      "name": "client",
+      "filePath": "tests/cloud.test.js",
+      "lineRange": [
+        5,
+        9
+      ],
+      "summary": "Synthetic test/helper for client. Read the test body for exact fixture and assertions; its existence is not evidence it passed in this analysis.",
+      "tags": [
+        "function",
+        "javascript",
+        "test"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Parameters: responses."
+    },
+    {
+      "id": "function:tests/cloud.test.js:row",
+      "type": "function",
+      "name": "row",
+      "filePath": "tests/cloud.test.js",
+      "lineRange": [
+        10,
+        10
+      ],
+      "summary": "Synthetic test/helper for row. Read the test body for exact fixture and assertions; its existence is not evidence it passed in this analysis.",
+      "tags": [
+        "function",
+        "javascript",
+        "test"
+      ],
+      "complexity": "simple",
+      "languageNotes": "Parameters: revision."
+    },
+    {
+      "id": "file:tests/model.test.js",
+      "type": "file",
+      "name": "model.test.js",
+      "filePath": "tests/model.test.js",
+      "summary": "Synthetic unit cases for exact money/date handling, duplicate-safe charges, partial/full/void payments, metrics, backup validation, and CSV formula neutralization.",
+      "tags": [
+        "code",
+        "javascript",
+        "test"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:tests/model.test.js:fixture",
+      "type": "function",
+      "name": "fixture",
+      "filePath": "tests/model.test.js",
+      "lineRange": [
+        4,
+        9
+      ],
+      "summary": "Synthetic test/helper for fixture. Read the test body for exact fixture and assertions; its existence is not evidence it passed in this analysis.",
+      "tags": [
+        "function",
+        "javascript",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:tests/model.test.js:payment",
+      "type": "function",
+      "name": "payment",
+      "filePath": "tests/model.test.js",
+      "lineRange": [
+        10,
+        10
+      ],
+      "summary": "Synthetic test/helper for payment. Read the test body for exact fixture and assertions; its existence is not evidence it passed in this analysis.",
+      "tags": [
+        "function",
+        "javascript",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:supabase/migrations/20261020163028_cloud_ledger.sql",
+      "type": "schema",
+      "name": "20261020163028_cloud_ledger.sql",
+      "filePath": "supabase/migrations/20261020163028_cloud_ledger.sql",
+      "summary": "Defines one JSONB ledger per authenticated owner, payload validation, owner-only non-anonymous RLS policies, limited grants, revision/mutation triggers, and update timestamps.",
+      "tags": [
+        "data",
+        "sql",
+        "project-source"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "table:supabase/migrations/20261020163028_cloud_ledger.sql:public.service_ledgers",
+      "type": "table",
+      "name": "public.service_ledgers",
+      "filePath": "supabase/migrations/20261020163028_cloud_ledger.sql",
+      "lineRange": [
+        59,
+        66
+      ],
+      "summary": "One row per auth owner: owner_id UUID primary key, revision bigint, validated ledger data JSONB, last_mutation UUID, updated_at timestamp. RLS and grants permit authenticated non-anonymous owners to select/insert/update only their row.",
+      "tags": [
+        "database",
+        "owner-isolation",
+        "jsonb-ledger"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:supabase/migrations/20261020163028_cloud_ledger.sql:public.valid_service_ledger",
+      "type": "function",
+      "name": "public.valid_service_ledger",
+      "filePath": "supabase/migrations/20261020163028_cloud_ledger.sql",
+      "lineRange": [
+        2,
+        56
+      ],
+      "summary": "Validates JSONB ledger structure, bounded amounts/arrays/fields, unique IDs/student-month charges, references, dates and absence of overpayment; invalid input returns false.",
+      "tags": [
+        "database",
+        "validation",
+        "plpgsql"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:supabase/migrations/20261020163028_cloud_ledger.sql:public.guard_service_ledger_revision",
+      "type": "function",
+      "name": "public.guard_service_ledger_revision",
+      "filePath": "supabase/migrations/20261020163028_cloud_ledger.sql",
+      "lineRange": [
+        77,
+        90
+      ],
+      "summary": "Enforces insert revision one, immutable owner, revision increment, changed mutation ID, and update timestamp.",
+      "tags": [
+        "database",
+        "validation",
+        "plpgsql"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:DESIGN.md",
+      "type": "document",
+      "name": "DESIGN.md",
+      "filePath": "DESIGN.md",
+      "summary": "Persisted ledger visual direction and interaction rationale; design intent is distinct from runtime acceptance evidence.",
+      "tags": [
+        "docs",
+        "markdown",
+        "documentation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:PRODUCT.md",
+      "type": "document",
+      "name": "PRODUCT.md",
+      "filePath": "PRODUCT.md",
+      "summary": "Product goals, scope boundaries, records, payment rules, and exclusions for the personal school-service ledger.",
+      "tags": [
+        "docs",
+        "markdown",
+        "documentation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "User/developer guide for hosted and local usage, cloud privacy/concurrency, backup migration, verification, deployment, and recovery.",
+      "tags": [
+        "docs",
+        "markdown",
+        "documentation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:TASKS.md",
+      "type": "document",
+      "name": "TASKS.md",
+      "filePath": "TASKS.md",
+      "summary": "Development task history and recorded delivery outcomes; historical status is not a fresh test result.",
+      "tags": [
+        "docs",
+        "markdown",
+        "documentation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:UX-CONTRACT.md",
+      "type": "document",
+      "name": "UX-CONTRACT.md",
+      "filePath": "UX-CONTRACT.md",
+      "summary": "Written UI behavior contract covering navigation, forms, loading/errors, confirmation/recovery, and accessibility expectations.",
+      "tags": [
+        "docs",
+        "markdown",
+        "documentation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:VERIFICATION.md",
+      "type": "document",
+      "name": "VERIFICATION.md",
+      "filePath": "VERIFICATION.md",
+      "summary": "Recorded prior verification scope and unresolved manual checks; this analysis does not re-run or independently certify those results.",
+      "tags": [
+        "docs",
+        "markdown",
+        "documentation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "index.html",
+      "summary": "Static application shell containing navigation, content region, account/sync status, dialog, toast, and printable receipt targets populated by app.js.",
+      "tags": [
+        "markup",
+        "html",
+        "project-source"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "package.json",
+      "summary": "Pinned Supabase/esbuild dependencies, Node 22 requirement, and start/check/test/build command definitions.",
+      "tags": [
+        "config",
+        "json",
+        "project-source"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:premium-audit.json",
+      "type": "config",
+      "name": "premium-audit.json",
+      "filePath": "premium-audit.json",
+      "summary": "Machine-readable historical UI audit findings and verification status.",
+      "tags": [
+        "config",
+        "json",
+        "project-source"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:premium-ui.json",
+      "type": "config",
+      "name": "premium-ui.json",
+      "filePath": "premium-ui.json",
+      "summary": "Machine-readable UI context and product design settings.",
+      "tags": [
+        "config",
+        "json",
+        "project-source"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:vercel.json",
+      "type": "config",
+      "name": "vercel.json",
+      "filePath": "vercel.json",
+      "summary": "Static deployment build/output settings and browser security headers, including a fixed Supabase connection destination.",
+      "tags": [
+        "config",
+        "json",
+        "project-source"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:build.mjs",
+      "type": "file",
+      "name": "build.mjs",
+      "filePath": "build.mjs",
+      "summary": "Recreates dist, bundles app.js and Supabase dependencies into a minified ES module, and copies the HTML/CSS for static hosting.",
+      "tags": [
+        "code",
+        "javascript",
+        "project-source"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:server.mjs",
+      "type": "file",
+      "name": "server.mjs",
+      "filePath": "server.mjs",
+      "summary": "Loopback development server allowing only the built HTML, JavaScript, and stylesheet through GET/HEAD; sends security and no-store headers and rejects other paths/methods.",
+      "tags": [
+        "code",
+        "javascript",
+        "project-source",
+        "tested"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/styles.css",
+      "type": "file",
+      "name": "styles.css",
+      "filePath": "src/styles.css",
+      "summary": "Complete responsive ledger presentation, including navigation, tables, status badges, modal states, reduced-motion behavior, and print receipt styling.",
+      "tags": [
+        "markup",
+        "css",
+        "project-source"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:tests/MANUAL.md",
+      "type": "document",
+      "name": "MANUAL.md",
+      "filePath": "tests/MANUAL.md",
+      "summary": "Human browser acceptance checklist for ledger flows, cloud sign-in, multi-device conflicts, backups, accessibility, and mobile behavior.",
+      "tags": [
+        "docs",
+        "markdown",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:tests/cloud-rls.sql",
+      "type": "schema",
+      "name": "cloud-rls.sql",
+      "filePath": "tests/cloud-rls.sql",
+      "summary": "Transactional database regression script for owner isolation, anonymous denial, stale updates, and invalid payloads. It is source evidence only; not executed by this analysis.",
+      "tags": [
+        "data",
+        "sql",
+        "test"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/server.test.js",
+      "type": "file",
+      "name": "server.test.js",
+      "filePath": "tests/server.test.js",
+      "summary": "Starts a synthetic loopback child server to check static allowlisting, security headers, unsupported paths, and write rejection; requires built files and a free port.",
+      "tags": [
+        "code",
+        "javascript",
+        "test"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:$",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:esc",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:uid",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:dateLabel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:monthLabel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:initials",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:warning",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:notify",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:commit",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:syncLabel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:refreshLedger",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:authScreen",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:setAccount",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:student",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:invoice",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:badge",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:button",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:studentCell",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:empty",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:heading",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:periodBar",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:kpi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:pagination",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:searchBar",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:paginate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:trend",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:dashboard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:chargeRow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:chargesView",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:studentsView",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:paymentsView",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:backupView",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:render",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:navigate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:field",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:form",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:modal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:close",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:dirty",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:requestClose",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:required",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:amountValue",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:studentForm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:chargesForm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:paymentForm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:editCharge",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:archiveStudent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:voidPayment",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:receipt",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:download",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:exportCharges",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "function:src/app.js:exportPayments",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "file:src/cloud.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/app.js",
+      "target": "file:src/model.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "function:src/app.js:warning",
+      "target": "function:src/app.js:$",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:notify",
+      "target": "function:src/app.js:$",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:commit",
+      "target": "function:src/app.js:syncLabel",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:commit",
+      "target": "function:src/app.js:$",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:syncLabel",
+      "target": "function:src/app.js:$",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:refreshLedger",
+      "target": "function:src/app.js:$",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:refreshLedger",
+      "target": "function:src/app.js:syncLabel",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:refreshLedger",
+      "target": "function:src/app.js:render",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:refreshLedger",
+      "target": "function:src/app.js:notify",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:refreshLedger",
+      "target": "function:src/app.js:warning",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:authScreen",
+      "target": "function:src/app.js:$",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:authScreen",
+      "target": "function:src/app.js:esc",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:authScreen",
+      "target": "function:src/app.js:field",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:setAccount",
+      "target": "function:src/app.js:$",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:setAccount",
+      "target": "function:src/app.js:close",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:setAccount",
+      "target": "function:src/app.js:render",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:setAccount",
+      "target": "function:src/app.js:refreshLedger",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:setAccount",
+      "target": "function:src/app.js:syncLabel",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:badge",
+      "target": "function:src/app.js:esc",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:button",
+      "target": "function:src/app.js:esc",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:studentCell",
+      "target": "function:src/app.js:esc",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:studentCell",
+      "target": "function:src/app.js:initials",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:searchBar",
+      "target": "function:src/app.js:esc",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:trend",
+      "target": "function:src/app.js:monthLabel",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:dashboard",
+      "target": "function:src/app.js:heading",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:dashboard",
+      "target": "function:src/app.js:button",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:dashboard",
+      "target": "function:src/app.js:periodBar",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:dashboard",
+      "target": "function:src/app.js:kpi",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:dashboard",
+      "target": "function:src/app.js:trend",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:dashboard",
+      "target": "function:src/app.js:monthLabel",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:dashboard",
+      "target": "function:src/app.js:chargeRow",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:dashboard",
+      "target": "function:src/app.js:empty",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:chargeRow",
+      "target": "function:src/app.js:studentCell",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:chargeRow",
+      "target": "function:src/app.js:student",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:chargeRow",
+      "target": "function:src/app.js:esc",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:chargeRow",
+      "target": "function:src/app.js:dateLabel",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:chargeRow",
+      "target": "function:src/app.js:badge",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:chargeRow",
+      "target": "function:src/app.js:button",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:chargesView",
+      "target": "function:src/app.js:student",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:chargesView",
+      "target": "function:src/app.js:paginate",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:chargesView",
+      "target": "function:src/app.js:heading",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:chargesView",
+      "target": "function:src/app.js:button",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:chargesView",
+      "target": "function:src/app.js:periodBar",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:chargesView",
+      "target": "function:src/app.js:monthLabel",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:chargesView",
+      "target": "function:src/app.js:searchBar",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:chargesView",
+      "target": "function:src/app.js:chargeRow",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:chargesView",
+      "target": "function:src/app.js:empty",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:chargesView",
+      "target": "function:src/app.js:pagination",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:studentsView",
+      "target": "function:src/app.js:paginate",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:studentsView",
+      "target": "function:src/app.js:heading",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:studentsView",
+      "target": "function:src/app.js:button",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:studentsView",
+      "target": "function:src/app.js:searchBar",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:studentsView",
+      "target": "function:src/app.js:studentCell",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:studentsView",
+      "target": "function:src/app.js:esc",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:studentsView",
+      "target": "function:src/app.js:badge",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:studentsView",
+      "target": "function:src/app.js:empty",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:studentsView",
+      "target": "function:src/app.js:pagination",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:paymentsView",
+      "target": "function:src/app.js:invoice",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:paymentsView",
+      "target": "function:src/app.js:student",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:paymentsView",
+      "target": "function:src/app.js:paginate",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:paymentsView",
+      "target": "function:src/app.js:heading",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:paymentsView",
+      "target": "function:src/app.js:button",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:paymentsView",
+      "target": "function:src/app.js:searchBar",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:paymentsView",
+      "target": "function:src/app.js:studentCell",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:paymentsView",
+      "target": "function:src/app.js:monthLabel",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:paymentsView",
+      "target": "function:src/app.js:dateLabel",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:paymentsView",
+      "target": "function:src/app.js:esc",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:paymentsView",
+      "target": "function:src/app.js:badge",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:paymentsView",
+      "target": "function:src/app.js:empty",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:paymentsView",
+      "target": "function:src/app.js:pagination",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:backupView",
+      "target": "function:src/app.js:heading",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:backupView",
+      "target": "function:src/app.js:button",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:render",
+      "target": "function:src/app.js:$",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:render",
+      "target": "function:src/app.js:authScreen",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:render",
+      "target": "function:src/app.js:empty",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:render",
+      "target": "function:src/app.js:button",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:navigate",
+      "target": "function:src/app.js:render",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:field",
+      "target": "function:src/app.js:esc",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:modal",
+      "target": "function:src/app.js:$",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:close",
+      "target": "function:src/app.js:$",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:dirty",
+      "target": "function:src/app.js:$",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:requestClose",
+      "target": "function:src/app.js:dirty",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:requestClose",
+      "target": "function:src/app.js:close",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:requestClose",
+      "target": "function:src/app.js:$",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:requestClose",
+      "target": "function:src/app.js:button",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:required",
+      "target": "function:src/app.js:$",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:amountValue",
+      "target": "function:src/app.js:$",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:studentForm",
+      "target": "function:src/app.js:student",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:studentForm",
+      "target": "function:src/app.js:modal",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:studentForm",
+      "target": "function:src/app.js:form",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:studentForm",
+      "target": "function:src/app.js:field",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:studentForm",
+      "target": "function:src/app.js:uid",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:studentForm",
+      "target": "function:src/app.js:required",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:studentForm",
+      "target": "function:src/app.js:amountValue",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:studentForm",
+      "target": "function:src/app.js:commit",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:studentForm",
+      "target": "function:src/app.js:close",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:studentForm",
+      "target": "function:src/app.js:render",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:studentForm",
+      "target": "function:src/app.js:notify",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:chargesForm",
+      "target": "function:src/app.js:modal",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:chargesForm",
+      "target": "function:src/app.js:empty",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:chargesForm",
+      "target": "function:src/app.js:button",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:chargesForm",
+      "target": "function:src/app.js:form",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:chargesForm",
+      "target": "function:src/app.js:field",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:chargesForm",
+      "target": "function:src/app.js:commit",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:chargesForm",
+      "target": "function:src/app.js:close",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:chargesForm",
+      "target": "function:src/app.js:render",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:chargesForm",
+      "target": "function:src/app.js:notify",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:chargesForm",
+      "target": "function:src/app.js:$",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:paymentForm",
+      "target": "function:src/app.js:modal",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:paymentForm",
+      "target": "function:src/app.js:empty",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:paymentForm",
+      "target": "function:src/app.js:button",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:paymentForm",
+      "target": "function:src/app.js:form",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:paymentForm",
+      "target": "function:src/app.js:esc",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:paymentForm",
+      "target": "function:src/app.js:student",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:paymentForm",
+      "target": "function:src/app.js:monthLabel",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:paymentForm",
+      "target": "function:src/app.js:field",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:paymentForm",
+      "target": "function:src/app.js:uid",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:paymentForm",
+      "target": "function:src/app.js:amountValue",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:paymentForm",
+      "target": "function:src/app.js:commit",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:paymentForm",
+      "target": "function:src/app.js:close",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:paymentForm",
+      "target": "function:src/app.js:render",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:paymentForm",
+      "target": "function:src/app.js:notify",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:paymentForm",
+      "target": "function:src/app.js:$",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:paymentForm",
+      "target": "function:src/app.js:invoice",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:editCharge",
+      "target": "function:src/app.js:invoice",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:editCharge",
+      "target": "function:src/app.js:modal",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:editCharge",
+      "target": "function:src/app.js:form",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:editCharge",
+      "target": "function:src/app.js:field",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:editCharge",
+      "target": "function:src/app.js:esc",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:editCharge",
+      "target": "function:src/app.js:student",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:editCharge",
+      "target": "function:src/app.js:monthLabel",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:editCharge",
+      "target": "function:src/app.js:amountValue",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:editCharge",
+      "target": "function:src/app.js:commit",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:editCharge",
+      "target": "function:src/app.js:close",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:editCharge",
+      "target": "function:src/app.js:render",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:editCharge",
+      "target": "function:src/app.js:notify",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:archiveStudent",
+      "target": "function:src/app.js:student",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:archiveStudent",
+      "target": "function:src/app.js:modal",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:archiveStudent",
+      "target": "function:src/app.js:form",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:archiveStudent",
+      "target": "function:src/app.js:commit",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:archiveStudent",
+      "target": "function:src/app.js:close",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:archiveStudent",
+      "target": "function:src/app.js:render",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:archiveStudent",
+      "target": "function:src/app.js:notify",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:archiveStudent",
+      "target": "function:src/app.js:$",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:voidPayment",
+      "target": "function:src/app.js:modal",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:voidPayment",
+      "target": "function:src/app.js:form",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:voidPayment",
+      "target": "function:src/app.js:field",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:voidPayment",
+      "target": "function:src/app.js:esc",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:voidPayment",
+      "target": "function:src/app.js:student",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:voidPayment",
+      "target": "function:src/app.js:invoice",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:voidPayment",
+      "target": "function:src/app.js:required",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:voidPayment",
+      "target": "function:src/app.js:commit",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:voidPayment",
+      "target": "function:src/app.js:close",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:voidPayment",
+      "target": "function:src/app.js:render",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:voidPayment",
+      "target": "function:src/app.js:notify",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:voidPayment",
+      "target": "function:src/app.js:$",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:receipt",
+      "target": "function:src/app.js:invoice",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:receipt",
+      "target": "function:src/app.js:student",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:receipt",
+      "target": "function:src/app.js:esc",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:receipt",
+      "target": "function:src/app.js:badge",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:receipt",
+      "target": "function:src/app.js:dateLabel",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:receipt",
+      "target": "function:src/app.js:monthLabel",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:receipt",
+      "target": "function:src/app.js:$",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:receipt",
+      "target": "function:src/app.js:modal",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:receipt",
+      "target": "function:src/app.js:button",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:exportCharges",
+      "target": "function:src/app.js:student",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:exportCharges",
+      "target": "function:src/app.js:download",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:exportCharges",
+      "target": "function:src/app.js:notify",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:exportPayments",
+      "target": "function:src/app.js:invoice",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:exportPayments",
+      "target": "function:src/app.js:student",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:exportPayments",
+      "target": "function:src/app.js:download",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/app.js:exportPayments",
+      "target": "function:src/app.js:notify",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "file:src/cloud.js",
+      "target": "class:src/cloud.js:LedgerStore",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/cloud.js",
+      "target": "class:src/cloud.js:LedgerStore",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/cloud.js",
+      "target": "file:src/config.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/cloud.js",
+      "target": "file:src/model.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/cloud.js",
+      "target": "function:src/cloud.js:LedgerStore.constructor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "class:src/cloud.js:LedgerStore",
+      "target": "function:src/cloud.js:LedgerStore.constructor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/cloud.js",
+      "target": "function:src/cloud.js:LedgerStore.load",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "class:src/cloud.js:LedgerStore",
+      "target": "function:src/cloud.js:LedgerStore.load",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/cloud.js",
+      "target": "function:src/cloud.js:LedgerStore.save",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "class:src/cloud.js:LedgerStore",
+      "target": "function:src/cloud.js:LedgerStore.save",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/cloud.js",
+      "target": "schema:supabase/migrations/20261020163028_cloud_ledger.sql",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "LedgerStore requires the owner ledger table, validation, grants, RLS, and revision trigger."
+    },
+    {
+      "source": "file:src/cloud.js",
+      "target": "file:tests/cloud.test.js",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:src/model.js",
+      "target": "function:src/model.js:emptyState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/model.js",
+      "target": "function:src/model.js:emptyState",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/model.js",
+      "target": "function:src/model.js:today",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/model.js",
+      "target": "function:src/model.js:today",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/model.js",
+      "target": "function:src/model.js:validDate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/model.js",
+      "target": "function:src/model.js:validDate",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/model.js",
+      "target": "function:src/model.js:cents",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/model.js",
+      "target": "function:src/model.js:cents",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/model.js",
+      "target": "function:src/model.js:money",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/model.js",
+      "target": "function:src/model.js:money",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/model.js",
+      "target": "function:src/model.js:paid",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/model.js",
+      "target": "function:src/model.js:paid",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/model.js",
+      "target": "function:src/model.js:balance",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/model.js",
+      "target": "function:src/model.js:balance",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/model.js",
+      "target": "function:src/model.js:status",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/model.js",
+      "target": "function:src/model.js:status",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/model.js",
+      "target": "function:src/model.js:fail",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/model.js",
+      "target": "function:src/model.js:text",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/model.js",
+      "target": "function:src/model.js:amount",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/model.js",
+      "target": "function:src/model.js:validateState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/model.js",
+      "target": "function:src/model.js:validateState",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/model.js",
+      "target": "function:src/model.js:addPayment",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/model.js",
+      "target": "function:src/model.js:addPayment",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/model.js",
+      "target": "function:src/model.js:createCharges",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/model.js",
+      "target": "function:src/model.js:createCharges",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/model.js",
+      "target": "function:src/model.js:metrics",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/model.js",
+      "target": "function:src/model.js:metrics",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/model.js",
+      "target": "function:src/model.js:csv",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/model.js",
+      "target": "function:src/model.js:csv",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "function:src/model.js:balance",
+      "target": "function:src/model.js:paid",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/model.js:status",
+      "target": "function:src/model.js:today",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/model.js:status",
+      "target": "function:src/model.js:balance",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/model.js:status",
+      "target": "function:src/model.js:paid",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/model.js:validateState",
+      "target": "function:src/model.js:fail",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/model.js:validateState",
+      "target": "function:src/model.js:text",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/model.js:validateState",
+      "target": "function:src/model.js:amount",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/model.js:validateState",
+      "target": "function:src/model.js:validDate",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/model.js:validateState",
+      "target": "function:src/model.js:paid",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/model.js:addPayment",
+      "target": "function:src/model.js:today",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/model.js:addPayment",
+      "target": "function:src/model.js:fail",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/model.js:addPayment",
+      "target": "function:src/model.js:validDate",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/model.js:addPayment",
+      "target": "function:src/model.js:amount",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/model.js:addPayment",
+      "target": "function:src/model.js:balance",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/model.js:addPayment",
+      "target": "function:src/model.js:validateState",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/model.js:createCharges",
+      "target": "function:src/model.js:validDate",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/model.js:createCharges",
+      "target": "function:src/model.js:fail",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/model.js:createCharges",
+      "target": "function:src/model.js:validateState",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/model.js:metrics",
+      "target": "function:src/model.js:paid",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/model.js:metrics",
+      "target": "function:src/model.js:balance",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "function:src/model.js:metrics",
+      "target": "function:src/model.js:status",
+      "type": "calls",
+      "direction": "forward",
+      "weight": 0.8,
+      "description": "Parser call expression; dynamic execution is not established."
+    },
+    {
+      "source": "file:tests/cloud.test.js",
+      "target": "function:tests/cloud.test.js:client",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/cloud.test.js",
+      "target": "function:tests/cloud.test.js:row",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/cloud.test.js",
+      "target": "file:src/cloud.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/cloud.test.js",
+      "target": "file:src/model.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:tests/model.test.js",
+      "target": "function:tests/model.test.js:fixture",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/model.test.js",
+      "target": "function:tests/model.test.js:payment",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:tests/model.test.js",
+      "target": "file:src/model.js",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/model.js",
+      "target": "file:tests/model.test.js",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "schema:supabase/migrations/20261020163028_cloud_ledger.sql",
+      "target": "table:supabase/migrations/20261020163028_cloud_ledger.sql:public.service_ledgers",
+      "type": "defines_schema",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "schema:supabase/migrations/20261020163028_cloud_ledger.sql",
+      "target": "function:supabase/migrations/20261020163028_cloud_ledger.sql:public.valid_service_ledger",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "schema:supabase/migrations/20261020163028_cloud_ledger.sql",
+      "target": "function:supabase/migrations/20261020163028_cloud_ledger.sql:public.guard_service_ledger_revision",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "document:DESIGN.md",
+      "target": "file:src/styles.css",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Explicit file reference in documentation."
+    },
+    {
+      "source": "document:README.md",
+      "target": "document:VERIFICATION.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Explicit file reference in documentation."
+    },
+    {
+      "source": "document:README.md",
+      "target": "schema:supabase/migrations/20261020163028_cloud_ledger.sql",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Explicit file reference in documentation."
+    },
+    {
+      "source": "document:README.md",
+      "target": "document:tests/MANUAL.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Explicit file reference in documentation."
+    },
+    {
+      "source": "document:README.md",
+      "target": "schema:tests/cloud-rls.sql",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Explicit file reference in documentation."
+    },
+    {
+      "source": "document:TASKS.md",
+      "target": "document:PRODUCT.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Explicit file reference in documentation."
+    },
+    {
+      "source": "document:TASKS.md",
+      "target": "document:README.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Explicit file reference in documentation."
+    },
+    {
+      "source": "document:TASKS.md",
+      "target": "document:VERIFICATION.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Explicit file reference in documentation."
+    },
+    {
+      "source": "document:TASKS.md",
+      "target": "config:premium-audit.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Explicit file reference in documentation."
+    },
+    {
+      "source": "document:UX-CONTRACT.md",
+      "target": "document:DESIGN.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Explicit file reference in documentation."
+    },
+    {
+      "source": "document:UX-CONTRACT.md",
+      "target": "document:PRODUCT.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Explicit file reference in documentation."
+    },
+    {
+      "source": "document:UX-CONTRACT.md",
+      "target": "file:src/app.js",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Explicit file reference in documentation."
+    },
+    {
+      "source": "document:UX-CONTRACT.md",
+      "target": "file:src/cloud.js",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Explicit file reference in documentation."
+    },
+    {
+      "source": "document:UX-CONTRACT.md",
+      "target": "file:src/styles.css",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Explicit file reference in documentation."
+    },
+    {
+      "source": "document:UX-CONTRACT.md",
+      "target": "document:tests/MANUAL.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Explicit file reference in documentation."
+    },
+    {
+      "source": "document:VERIFICATION.md",
+      "target": "document:tests/MANUAL.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Explicit file reference in documentation."
+    },
+    {
+      "source": "document:VERIFICATION.md",
+      "target": "schema:tests/cloud-rls.sql",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Explicit file reference in documentation."
+    },
+    {
+      "source": "config:package.json",
+      "target": "file:build.mjs",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:package.json",
+      "target": "file:server.mjs",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:package.json",
+      "target": "file:src/app.js",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:index.html",
+      "target": "file:src/app.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:index.html",
+      "target": "file:src/styles.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:vercel.json",
+      "target": "file:build.mjs",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:server.mjs",
+      "target": "file:tests/server.test.js",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:build.mjs",
+      "target": "file:src/app.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ],
+  "version": "1.0.0",
+  "kind": "codebase",
+  "project": {
+    "name": "school-service-payments",
+    "languages": [
+      "markdown",
+      "javascript",
+      "html",
+      "json",
+      "css",
+      "sql"
+    ],
+    "frameworks": [
+      "Supabase",
+      "esbuild",
+      "Node.js"
+    ],
+    "description": "Authenticated school service payment ledger with revision-based Supabase synchronization",
+    "analyzedAt": "2026-10-29T08:03:17.235Z",
+    "gitCommitHash": "58edcbf1f68433b51d5a8e3e3a7a31b288e39470"
+  },
+  "layers": [
+    {
+      "id": "layer:product",
+      "name": "Product and operating guidance",
+      "description": "Purpose, UX contract, prior evidence, and manual acceptance instructions.",
+      "nodeIds": [
+        "document:DESIGN.md",
+        "document:PRODUCT.md",
+        "document:README.md",
+        "document:TASKS.md",
+        "document:UX-CONTRACT.md",
+        "document:VERIFICATION.md",
+        "document:tests/MANUAL.md"
+      ]
+    },
+    {
+      "id": "layer:ui",
+      "name": "Browser workflow and presentation",
+      "description": "Account/loading/navigation state, ledger forms, tables, receipts, and responsive styling.",
+      "nodeIds": [
+        "file:src/app.js",
+        "function:src/app.js:$",
+        "function:src/app.js:esc",
+        "function:src/app.js:uid",
+        "function:src/app.js:dateLabel",
+        "function:src/app.js:monthLabel",
+        "function:src/app.js:initials",
+        "function:src/app.js:warning",
+        "function:src/app.js:notify",
+        "function:src/app.js:commit",
+        "function:src/app.js:syncLabel",
+        "function:src/app.js:refreshLedger",
+        "function:src/app.js:authScreen",
+        "function:src/app.js:setAccount",
+        "function:src/app.js:student",
+        "function:src/app.js:invoice",
+        "function:src/app.js:badge",
+        "function:src/app.js:button",
+        "function:src/app.js:studentCell",
+        "function:src/app.js:empty",
+        "function:src/app.js:heading",
+        "function:src/app.js:periodBar",
+        "function:src/app.js:kpi",
+        "function:src/app.js:pagination",
+        "function:src/app.js:searchBar",
+        "function:src/app.js:paginate",
+        "function:src/app.js:trend",
+        "function:src/app.js:dashboard",
+        "function:src/app.js:chargeRow",
+        "function:src/app.js:chargesView",
+        "function:src/app.js:studentsView",
+        "function:src/app.js:paymentsView",
+        "function:src/app.js:backupView",
+        "function:src/app.js:render",
+        "function:src/app.js:navigate",
+        "function:src/app.js:field",
+        "function:src/app.js:form",
+        "function:src/app.js:modal",
+        "function:src/app.js:close",
+        "function:src/app.js:dirty",
+        "function:src/app.js:requestClose",
+        "function:src/app.js:required",
+        "function:src/app.js:amountValue",
+        "function:src/app.js:studentForm",
+        "function:src/app.js:chargesForm",
+        "function:src/app.js:paymentForm",
+        "function:src/app.js:editCharge",
+        "function:src/app.js:archiveStudent",
+        "function:src/app.js:voidPayment",
+        "function:src/app.js:receipt",
+        "function:src/app.js:download",
+        "function:src/app.js:exportCharges",
+        "function:src/app.js:exportPayments",
+        "file:index.html",
+        "file:src/styles.css"
+      ]
+    },
+    {
+      "id": "layer:domain",
+      "name": "Ledger domain rules",
+      "description": "Pure integer-money, validation, invoice/payment operations, metrics, and export formatting.",
+      "nodeIds": [
+        "file:src/model.js",
+        "function:src/model.js:emptyState",
+        "function:src/model.js:today",
+        "function:src/model.js:validDate",
+        "function:src/model.js:cents",
+        "function:src/model.js:money",
+        "function:src/model.js:paid",
+        "function:src/model.js:balance",
+        "function:src/model.js:status",
+        "function:src/model.js:fail",
+        "function:src/model.js:text",
+        "function:src/model.js:amount",
+        "function:src/model.js:validateState",
+        "function:src/model.js:addPayment",
+        "function:src/model.js:createCharges",
+        "function:src/model.js:metrics",
+        "function:src/model.js:csv"
+      ]
+    },
+    {
+      "id": "layer:cloud",
+      "name": "Owner ledger persistence",
+      "description": "Supabase client configuration, concurrency control, database schema, validation, grants and RLS.",
+      "nodeIds": [
+        "file:src/cloud.js",
+        "class:src/cloud.js:LedgerStore",
+        "function:src/cloud.js:LedgerStore.constructor",
+        "function:src/cloud.js:LedgerStore.load",
+        "function:src/cloud.js:LedgerStore.save",
+        "file:src/config.js",
+        "schema:supabase/migrations/20261020163028_cloud_ledger.sql",
+        "table:supabase/migrations/20261020163028_cloud_ledger.sql:public.service_ledgers",
+        "function:supabase/migrations/20261020163028_cloud_ledger.sql:public.valid_service_ledger",
+        "function:supabase/migrations/20261020163028_cloud_ledger.sql:public.guard_service_ledger_revision"
+      ]
+    },
+    {
+      "id": "layer:delivery",
+      "name": "Build and static delivery",
+      "description": "Manifest, static build, loopback file server and hosting headers.",
+      "nodeIds": [
+        "config:package.json",
+        "config:premium-audit.json",
+        "config:premium-ui.json",
+        "config:vercel.json",
+        "file:build.mjs",
+        "file:server.mjs"
+      ]
+    },
+    {
+      "id": "layer:tests",
+      "name": "Synthetic regression sources",
+      "description": "Node-based model/cloud/server tests and transactional database test script.",
+      "nodeIds": [
+        "file:tests/cloud.test.js",
+        "function:tests/cloud.test.js:client",
+        "function:tests/cloud.test.js:row",
+        "file:tests/model.test.js",
+        "function:tests/model.test.js:fixture",
+        "function:tests/model.test.js:payment",
+        "schema:tests/cloud-rls.sql",
+        "file:tests/server.test.js"
+      ]
+    }
+  ],
+  "tour": [
+    {
+      "order": 1,
+      "title": "Purpose and operating scope",
+      "description": "Read the user guide and product boundaries first. This application records received school-service payments and monthly charges; it does not move money or calculate profit.",
+      "nodeIds": [
+        "document:README.md",
+        "document:PRODUCT.md"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Boot and screen state",
+      "description": "Follow the static shell into the browser entry. Account changes reset local in-memory ledger state before the owner-scoped refresh.",
+      "nodeIds": [
+        "file:index.html",
+        "file:src/app.js"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Money and record invariants",
+      "description": "Read the pure domain model before editing forms. Integer centavos, globally unique IDs, reference integrity, and one charge per student/month underpin all totals.",
+      "nodeIds": [
+        "file:src/model.js"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "Safe writes across devices",
+      "description": "Study LedgerStore and the UI refresh/commit gates together. Expected revisions reject stale saves, while unique mutation IDs help reconcile lost responses.",
+      "nodeIds": [
+        "file:src/cloud.js",
+        "file:src/app.js"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "Owner database boundary",
+      "description": "Inspect the migration source without executing it. Owner RLS, non-anonymous checks, JSONB validation, and revision triggers complement browser checks.",
+      "nodeIds": [
+        "schema:supabase/migrations/20261020163028_cloud_ledger.sql"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "Forms and corrections",
+      "description": "Return to app.js for student, charge, partial payment, archive, and void flows. Historical records are retained; confirmations and failed-draft retention matter.",
+      "nodeIds": [
+        "file:src/app.js",
+        "document:UX-CONTRACT.md"
+      ]
+    },
+    {
+      "order": 7,
+      "title": "Exports and recovery",
+      "description": "Inspect CSV/JSON backup generation and explicit ledger replacement. A JSON restore overwrites the account snapshot; it is not a merge between devices.",
+      "nodeIds": [
+        "file:src/model.js",
+        "file:src/app.js",
+        "document:README.md"
+      ]
+    },
+    {
+      "order": 8,
+      "title": "Static delivery",
+      "description": "Read the bundler, allowlisted loopback server, and hosting headers. The local server exposes built frontend files, not a custom ledger API.",
+      "nodeIds": [
+        "file:build.mjs",
+        "file:server.mjs",
+        "config:vercel.json"
+      ]
+    },
+    {
+      "order": 9,
+      "title": "Tests and remaining evidence",
+      "description": "Compare model/cloud mock tests with server and database checks. Test source coverage is not a live Supabase or current browser verification result.",
+      "nodeIds": [
+        "file:tests/model.test.js",
+        "file:tests/cloud.test.js",
+        "file:tests/server.test.js",
+        "schema:tests/cloud-rls.sql",
+        "document:VERIFICATION.md"
+      ]
+    }
+  ]
+}

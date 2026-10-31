@@ -1,0 +1,33 @@
+# UI release · 2026-10-29
+
+Predeployment decision: GO for the user's explicitly requested UI-only production redeploy, subject to exact project/artifact match and successful provider acceptance. This does not certify the entire application or approve data/configuration changes. Current post-deployment status: scoped static-release acceptance CLOSED. Production asset hashes and signed-out rendering passed; an independent public vantage now confirms all five configured response headers exactly on all seven published files. The initial local mismatch remains retained diagnostic evidence below.
+
+Target: existing Vercel project `prj_KtMN7EL6MWSDgv7d10PtdEpgwuJK`, account scope `james-projects-647b0fe5`, alias `https://school-service-payments.vercel.app`.
+
+User authorization: “ship it so it will be applied to the vercel-hosted app.” Secure device login completed by the user; no credential file or token was read. Vercel CLI 65.7.0 is the deployment client.
+
+Candidate: SHA-256 `97cfa95aff87f1212d8b99557c0d97cd884b1bef4cf428c50899327285a73ad1`. Seven reviewed static files, 2,835,297 bytes, plus 615-byte Build Output API configuration. Manifest: `artifacts/release/candidate.json`. `scripts/prepare-release.mjs` rejects an unexpected file, symlink or changed reviewed digest. The CLI dry run independently listed only those eight files. No checkout, report, mock adapter, environment file or private ledger is uploaded. Existing headers/CSP are retained by the build-output routes; only `/` is rewritten to `/index.html` before normal static-file handling.
+
+Evidence: production build and 21 regression tests passed; syntax checks passed; six screens at three widths and focused synthetic interactions passed. Independent QA and security reviews are in QA-RELEASE-REVIEW.md and SECURITY-RELEASE-REVIEW.md, including packaging re-review. Runtime source was not changed after their bound hashes.
+
+Scope/cost: one static deployment to the existing project under its current plan; no premium machine, new service, subscription, recurring job, paid fallback or plan upgrade. Stop on quota/upgrade prompt, permission expansion, project mismatch, unexpected files, provider error or failed smoke check. No Supabase, schema, RLS, Auth URL, protection or billing mutation is part of this release.
+
+Previous production: `dpl_GQx1fk8vDGr5B169Gkr7MrRLwtha`, immutable URL `https://school-service-payments-g886wjn91-james-projects-647b0fe5.vercel.app`, inspected READY on the production alias before release. UI data contracts are unchanged. Recovery is reassigning the production alias to this known prior deployment, retaining ledger data and provider settings; no database restore or destructive operation is needed. Recovery would require provider acceptance and subsequent smoke verification; no recovery rehearsal was performed.
+
+Release action: submit only `.release-candidate/97cfa95aff87f121` using `deploy --prebuilt --project prj_KtMN7EL6MWSDgv7d10PtdEpgwuJK --scope james-projects-647b0fe5 --prod --yes`. No `--temporary`, `--create-if-missing`, `--verify` (which can create a protection bypass secret), `--force` or protection bypass is used.
+
+Post-deploy acceptance: provider reports READY; production alias resolves to the new deployment; signed-out page renders; every static byte hash and retained security header matches; no report/source/mock files are publicly available; Chrome desktop/phone sign-in rendering has no app errors. Do not sign into a ledger or create a production test account. Protected responses must be reported, not bypassed. Stop/report if any required check fails.
+
+Known limits: live Supabase sign-in/email delivery, signed-in cross-device journeys, physical devices, full WCAG and restore drills were not rerun for this visual change. Previous RLS/cloud evidence remains historical, not a fresh pass. The Python design auditor remains unavailable. See the independent reports and REDESIGN.md for detailed evidence boundaries.
+
+Deployment result: Vercel reported READY for `dpl_5Uo3La3QPk222jXAsys2CE4cA7pr`, immutable URL `https://school-service-payments-7yxhn0j51-james-projects-647b0fe5.vercel.app`. A separate inspect confirmed the production alias resolves to this deployment. Seven production assets match the reviewed SHA-256 values exactly; six source/report routes return 404; signed-out Chrome at 1440/390px renders the illustration/fonts without page errors or document overflow. Screenshots were visually inspected.
+
+Delivered-header finding: the CSP on all seven responses includes extra Cisco/OpenDNS domains not present in the reviewed uploaded config. Other configured headers matched. The verification script retains all seven comparisons as failures and exits 1; it does not normalize away the additions. A gateway rewrite is plausible but unproven. Full header acceptance remains OPEN pending an approved independent delivery vantage/provider-origin confirmation. No protection bypass, settings change or rollback was performed. The independent security reviewer agrees this observation is a delivery-verification issue, not proof of a new source defect, and does not alone establish a necessary rollback. See `artifacts/release/production-checks.json` and SECURITY-RELEASE-REVIEW.md.
+
+### Closure after independent delivery checks
+
+The preceding finding records the initial local-path observation, not the current release status. After the user asked to close remaining items, SecurityHeaders fetched each of the seven public deployment paths from its own scanner vantage. Only public URLs were submitted; no app login, private records, cookies, source upload, subscription or paid API was used.
+
+`node scripts/verify-independent-headers.mjs --fetch` exited 0. The verifier checks the exact target, successful target response, recent report timestamp and Raw Headers table; all five configured values must match exactly and uniquely. All seven paths passed, including CSP with none of the added Cisco/OpenDNS domains. It does not rely on the scanner's grade or normalize source lists. `artifacts/release/independent-header-checks.json` records the results and saved report hashes. The independent security review confirms the evidence scope separately.
+
+The deployed-header concern is CLOSED with this independent evidence. The local-path mismatch is retained as a known diagnostic difference; network-gateway attribution remains an inference, not a claim about gateway ownership/configuration. No app/header/protection change or redeployment was required. `artifacts/release/release-acceptance.json` summarizes static-release acceptance. Existing live-auth, real-device, full-accessibility and recovery-rehearsal limits remain separate from this UI-release closure and are not marked tested.

@@ -1,0 +1,46 @@
+{
+  "scriptCompleted": true,
+  "stats": {
+    "filesScanned": 24,
+    "filesWithImports": 4,
+    "totalEdges": 7
+  },
+  "failures": [],
+  "importMap": {
+    "DESIGN.md": [],
+    "PRODUCT.md": [],
+    "README.md": [],
+    "TASKS.md": [],
+    "UX-CONTRACT.md": [],
+    "VERIFICATION.md": [],
+    "build.mjs": [],
+    "index.html": [],
+    "package.json": [],
+    "premium-audit.json": [],
+    "premium-ui.json": [],
+    "server.mjs": [],
+    "src/app.js": [
+      "src/cloud.js",
+      "src/model.js"
+    ],
+    "src/cloud.js": [
+      "src/config.js",
+      "src/model.js"
+    ],
+    "src/config.js": [],
+    "src/model.js": [],
+    "src/styles.css": [],
+    "supabase/migrations/20261020163028_cloud_ledger.sql": [],
+    "tests/MANUAL.md": [],
+    "tests/cloud-rls.sql": [],
+    "tests/cloud.test.js": [
+      "src/cloud.js",
+      "src/model.js"
+    ],
+    "tests/model.test.js": [
+      "src/model.js"
+    ],
+    "tests/server.test.js": [],
+    "vercel.json": []
+  }
+}

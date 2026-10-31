@@ -1,0 +1,86 @@
+[
+  {
+    "order": 1,
+    "title": "Purpose and operating scope",
+    "description": "Read the user guide and product boundaries first. This application records received school-service payments and monthly charges; it does not move money or calculate profit.",
+    "nodeIds": [
+      "document:README.md",
+      "document:PRODUCT.md"
+    ]
+  },
+  {
+    "order": 2,
+    "title": "Boot and screen state",
+    "description": "Follow the static shell into the browser entry. Account changes reset local in-memory ledger state before the owner-scoped refresh.",
+    "nodeIds": [
+      "file:index.html",
+      "file:src/app.js"
+    ]
+  },
+  {
+    "order": 3,
+    "title": "Money and record invariants",
+    "description": "Read the pure domain model before editing forms. Integer centavos, globally unique IDs, reference integrity, and one charge per student/month underpin all totals.",
+    "nodeIds": [
+      "file:src/model.js"
+    ]
+  },
+  {
+    "order": 4,
+    "title": "Safe writes across devices",
+    "description": "Study LedgerStore and the UI refresh/commit gates together. Expected revisions reject stale saves, while unique mutation IDs help reconcile lost responses.",
+    "nodeIds": [
+      "file:src/cloud.js",
+      "file:src/app.js"
+    ]
+  },
+  {
+    "order": 5,
+    "title": "Owner database boundary",
+    "description": "Inspect the migration source without executing it. Owner RLS, non-anonymous checks, JSONB validation, and revision triggers complement browser checks.",
+    "nodeIds": [
+      "schema:supabase/migrations/20261020163028_cloud_ledger.sql"
+    ]
+  },
+  {
+    "order": 6,
+    "title": "Forms and corrections",
+    "description": "Return to app.js for student, charge, partial payment, archive, and void flows. Historical records are retained; confirmations and failed-draft retention matter.",
+    "nodeIds": [
+      "file:src/app.js",
+      "document:UX-CONTRACT.md"
+    ]
+  },
+  {
+    "order": 7,
+    "title": "Exports and recovery",
+    "description": "Inspect CSV/JSON backup generation and explicit ledger replacement. A JSON restore overwrites the account snapshot; it is not a merge between devices.",
+    "nodeIds": [
+      "file:src/model.js",
+      "file:src/app.js",
+      "document:README.md"
+    ]
+  },
+  {
+    "order": 8,
+    "title": "Static delivery",
+    "description": "Read the bundler, allowlisted loopback server, and hosting headers. The local server exposes built frontend files, not a custom ledger API.",
+    "nodeIds": [
+      "file:build.mjs",
+      "file:server.mjs",
+      "config:vercel.json"
+    ]
+  },
+  {
+    "order": 9,
+    "title": "Tests and remaining evidence",
+    "description": "Compare model/cloud mock tests with server and database checks. Test source coverage is not a live Supabase or current browser verification result.",
+    "nodeIds": [
+      "file:tests/model.test.js",
+      "file:tests/cloud.test.js",
+      "file:tests/server.test.js",
+      "schema:tests/cloud-rls.sql",
+      "document:VERIFICATION.md"
+    ]
+  }
+]

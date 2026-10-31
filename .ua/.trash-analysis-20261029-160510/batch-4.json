@@ -1,0 +1,327 @@
+{
+  "nodes": [
+    {
+      "id": "document:DESIGN.md",
+      "type": "document",
+      "name": "DESIGN.md",
+      "filePath": "DESIGN.md",
+      "summary": "Persisted ledger visual direction and interaction rationale; design intent is distinct from runtime acceptance evidence.",
+      "tags": [
+        "docs",
+        "markdown",
+        "documentation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:PRODUCT.md",
+      "type": "document",
+      "name": "PRODUCT.md",
+      "filePath": "PRODUCT.md",
+      "summary": "Product goals, scope boundaries, records, payment rules, and exclusions for the personal school-service ledger.",
+      "tags": [
+        "docs",
+        "markdown",
+        "documentation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "User/developer guide for hosted and local usage, cloud privacy/concurrency, backup migration, verification, deployment, and recovery.",
+      "tags": [
+        "docs",
+        "markdown",
+        "documentation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:TASKS.md",
+      "type": "document",
+      "name": "TASKS.md",
+      "filePath": "TASKS.md",
+      "summary": "Development task history and recorded delivery outcomes; historical status is not a fresh test result.",
+      "tags": [
+        "docs",
+        "markdown",
+        "documentation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:UX-CONTRACT.md",
+      "type": "document",
+      "name": "UX-CONTRACT.md",
+      "filePath": "UX-CONTRACT.md",
+      "summary": "Written UI behavior contract covering navigation, forms, loading/errors, confirmation/recovery, and accessibility expectations.",
+      "tags": [
+        "docs",
+        "markdown",
+        "documentation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:VERIFICATION.md",
+      "type": "document",
+      "name": "VERIFICATION.md",
+      "filePath": "VERIFICATION.md",
+      "summary": "Recorded prior verification scope and unresolved manual checks; this analysis does not re-run or independently certify those results.",
+      "tags": [
+        "docs",
+        "markdown",
+        "documentation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:index.html",
+      "type": "file",
+      "name": "index.html",
+      "filePath": "index.html",
+      "summary": "Static application shell containing navigation, content region, account/sync status, dialog, toast, and printable receipt targets populated by app.js.",
+      "tags": [
+        "markup",
+        "html",
+        "project-source"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "package.json",
+      "summary": "Pinned Supabase/esbuild dependencies, Node 22 requirement, and start/check/test/build command definitions.",
+      "tags": [
+        "config",
+        "json",
+        "project-source"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:premium-audit.json",
+      "type": "config",
+      "name": "premium-audit.json",
+      "filePath": "premium-audit.json",
+      "summary": "Machine-readable historical UI audit findings and verification status.",
+      "tags": [
+        "config",
+        "json",
+        "project-source"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:premium-ui.json",
+      "type": "config",
+      "name": "premium-ui.json",
+      "filePath": "premium-ui.json",
+      "summary": "Machine-readable UI context and product design settings.",
+      "tags": [
+        "config",
+        "json",
+        "project-source"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:vercel.json",
+      "type": "config",
+      "name": "vercel.json",
+      "filePath": "vercel.json",
+      "summary": "Static deployment build/output settings and browser security headers, including a fixed Supabase connection destination.",
+      "tags": [
+        "config",
+        "json",
+        "project-source"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "document:DESIGN.md",
+      "target": "file:src/styles.css",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Explicit file reference in documentation."
+    },
+    {
+      "source": "document:README.md",
+      "target": "document:VERIFICATION.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Explicit file reference in documentation."
+    },
+    {
+      "source": "document:README.md",
+      "target": "schema:supabase/migrations/20261020163028_cloud_ledger.sql",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Explicit file reference in documentation."
+    },
+    {
+      "source": "document:README.md",
+      "target": "document:tests/MANUAL.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Explicit file reference in documentation."
+    },
+    {
+      "source": "document:README.md",
+      "target": "schema:tests/cloud-rls.sql",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Explicit file reference in documentation."
+    },
+    {
+      "source": "document:TASKS.md",
+      "target": "document:PRODUCT.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Explicit file reference in documentation."
+    },
+    {
+      "source": "document:TASKS.md",
+      "target": "document:README.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Explicit file reference in documentation."
+    },
+    {
+      "source": "document:TASKS.md",
+      "target": "document:VERIFICATION.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Explicit file reference in documentation."
+    },
+    {
+      "source": "document:TASKS.md",
+      "target": "config:premium-audit.json",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Explicit file reference in documentation."
+    },
+    {
+      "source": "document:UX-CONTRACT.md",
+      "target": "document:DESIGN.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Explicit file reference in documentation."
+    },
+    {
+      "source": "document:UX-CONTRACT.md",
+      "target": "document:PRODUCT.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Explicit file reference in documentation."
+    },
+    {
+      "source": "document:UX-CONTRACT.md",
+      "target": "file:src/app.js",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Explicit file reference in documentation."
+    },
+    {
+      "source": "document:UX-CONTRACT.md",
+      "target": "file:src/cloud.js",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Explicit file reference in documentation."
+    },
+    {
+      "source": "document:UX-CONTRACT.md",
+      "target": "file:src/styles.css",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Explicit file reference in documentation."
+    },
+    {
+      "source": "document:UX-CONTRACT.md",
+      "target": "document:tests/MANUAL.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Explicit file reference in documentation."
+    },
+    {
+      "source": "document:VERIFICATION.md",
+      "target": "document:tests/MANUAL.md",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Explicit file reference in documentation."
+    },
+    {
+      "source": "document:VERIFICATION.md",
+      "target": "schema:tests/cloud-rls.sql",
+      "type": "documents",
+      "direction": "forward",
+      "weight": 0.6,
+      "description": "Explicit file reference in documentation."
+    },
+    {
+      "source": "config:package.json",
+      "target": "file:build.mjs",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:package.json",
+      "target": "file:server.mjs",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:package.json",
+      "target": "file:src/app.js",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:index.html",
+      "target": "file:src/app.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:index.html",
+      "target": "file:src/styles.css",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "config:vercel.json",
+      "target": "file:build.mjs",
+      "type": "configures",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

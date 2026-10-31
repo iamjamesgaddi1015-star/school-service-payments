@@ -1,0 +1,15 @@
+{
+  "deploymentId": "dpl_5Uo3La3QPk222jXAsys2CE4cA7pr",
+  "projectId": "prj_KtMN7EL6MWSDgv7d10PtdEpgwuJK",
+  "scope": "james-projects-647b0fe5",
+  "readyState": "READY",
+  "productionUrl": "https://school-service-payments.vercel.app",
+  "immutableUrl": "https://school-service-payments-7yxhn0j51-james-projects-647b0fe5.vercel.app",
+  "candidateDigest": "97cfa95aff87f1212d8b99557c0d97cd884b1bef4cf428c50899327285a73ad1",
+  "previousDeploymentId": "dpl_GQx1fk8vDGr5B169Gkr7MrRLwtha",
+  "protection": "vercel_authentication retained",
+  "approval": "User explicitly requested shipping this redesign to the Vercel-hosted app and completed secure device sign-in",
+  "assetVerification": "all seven production static SHA-256 values match",
+  "headerVerification": "CLOSED: independent public scanner raw headers match all five configured values across all seven paths; original local-path mismatch retained separately",
+  "dataMutations": "none"
+}

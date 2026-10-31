@@ -1,0 +1,614 @@
+{
+  "scriptCompleted": true,
+  "directoryGroups": {
+    "src": [
+      "file:src/app.js",
+      "file:src/cloud.js",
+      "file:src/config.js",
+      "file:src/model.js",
+      "file:src/styles.css"
+    ],
+    "tests": [
+      "file:tests/cloud.test.js",
+      "file:tests/model.test.js",
+      "document:tests/MANUAL.md",
+      "schema:tests/cloud-rls.sql",
+      "file:tests/server.test.js"
+    ],
+    "supabase": [
+      "schema:supabase/migrations/20261020163028_cloud_ledger.sql"
+    ],
+    "root": [
+      "document:DESIGN.md",
+      "document:PRODUCT.md",
+      "document:README.md",
+      "document:TASKS.md",
+      "document:UX-CONTRACT.md",
+      "document:VERIFICATION.md",
+      "file:index.html",
+      "config:package.json",
+      "config:premium-audit.json",
+      "config:premium-ui.json",
+      "config:vercel.json",
+      "file:build.mjs",
+      "file:server.mjs"
+    ]
+  },
+  "nodeTypeGroups": {
+    "file": [
+      "file:src/app.js",
+      "file:src/cloud.js",
+      "file:src/config.js",
+      "file:src/model.js",
+      "file:tests/cloud.test.js",
+      "file:tests/model.test.js",
+      "file:index.html",
+      "file:build.mjs",
+      "file:server.mjs",
+      "file:src/styles.css",
+      "file:tests/server.test.js"
+    ],
+    "schema": [
+      "schema:supabase/migrations/20261020163028_cloud_ledger.sql",
+      "schema:tests/cloud-rls.sql"
+    ],
+    "document": [
+      "document:DESIGN.md",
+      "document:PRODUCT.md",
+      "document:README.md",
+      "document:TASKS.md",
+      "document:UX-CONTRACT.md",
+      "document:VERIFICATION.md",
+      "document:tests/MANUAL.md"
+    ],
+    "config": [
+      "config:package.json",
+      "config:premium-audit.json",
+      "config:premium-ui.json",
+      "config:vercel.json"
+    ]
+  },
+  "interGroupImports": {
+    "src -> src": 4,
+    "tests -> src": 3
+  },
+  "importDensity": {
+    "src": {
+      "internal": 4,
+      "touching": 7,
+      "density": 0.5714285714285714
+    },
+    "tests": {
+      "internal": 0,
+      "touching": 3,
+      "density": 0
+    },
+    "supabase": {
+      "internal": 0,
+      "touching": 0,
+      "density": 0
+    },
+    "root": {
+      "internal": 0,
+      "touching": 0,
+      "density": 0
+    }
+  },
+  "crossCategory": {
+    "file -> function (contains)": 75,
+    "file -> class (contains)": 1,
+    "file -> class (exports)": 1,
+    "class -> function (contains)": 3,
+    "file -> schema (depends_on)": 1,
+    "file -> function (exports)": 13,
+    "schema -> table (defines_schema)": 1,
+    "schema -> function (contains)": 2,
+    "document -> file (documents)": 4,
+    "document -> schema (documents)": 3,
+    "document -> config (documents)": 1,
+    "config -> file (configures)": 4
+  },
+  "fanInRanking": [
+    {
+      "id": "function:src/app.js:$",
+      "count": 20
+    },
+    {
+      "id": "function:src/app.js:esc",
+      "count": 14
+    },
+    {
+      "id": "function:src/app.js:student",
+      "count": 12
+    },
+    {
+      "id": "function:src/app.js:button",
+      "count": 12
+    },
+    {
+      "id": "function:src/app.js:notify",
+      "count": 10
+    },
+    {
+      "id": "function:src/app.js:render",
+      "count": 10
+    },
+    {
+      "id": "function:src/app.js:close",
+      "count": 9
+    },
+    {
+      "id": "function:src/app.js:monthLabel",
+      "count": 8
+    },
+    {
+      "id": "function:src/app.js:empty",
+      "count": 8
+    },
+    {
+      "id": "function:src/app.js:modal",
+      "count": 8
+    },
+    {
+      "id": "function:src/app.js:commit",
+      "count": 7
+    },
+    {
+      "id": "function:src/app.js:invoice",
+      "count": 7
+    },
+    {
+      "id": "function:src/app.js:field",
+      "count": 7
+    },
+    {
+      "id": "function:src/app.js:form",
+      "count": 7
+    },
+    {
+      "id": "function:src/app.js:heading",
+      "count": 6
+    },
+    {
+      "id": "function:src/model.js:paid",
+      "count": 6
+    },
+    {
+      "id": "function:src/app.js:badge",
+      "count": 5
+    },
+    {
+      "id": "function:src/model.js:validDate",
+      "count": 5
+    },
+    {
+      "id": "function:src/model.js:balance",
+      "count": 5
+    },
+    {
+      "id": "file:src/app.js",
+      "count": 4
+    }
+  ],
+  "fanOutRanking": [
+    {
+      "id": "file:src/app.js",
+      "count": 54
+    },
+    {
+      "id": "file:src/model.js",
+      "count": 30
+    },
+    {
+      "id": "function:src/app.js:paymentForm",
+      "count": 16
+    },
+    {
+      "id": "function:src/app.js:paymentsView",
+      "count": 13
+    },
+    {
+      "id": "function:src/app.js:editCharge",
+      "count": 12
+    },
+    {
+      "id": "function:src/app.js:voidPayment",
+      "count": 12
+    },
+    {
+      "id": "function:src/app.js:studentForm",
+      "count": 11
+    },
+    {
+      "id": "function:src/app.js:chargesView",
+      "count": 10
+    },
+    {
+      "id": "function:src/app.js:chargesForm",
+      "count": 10
+    },
+    {
+      "id": "function:src/app.js:studentsView",
+      "count": 9
+    },
+    {
+      "id": "function:src/app.js:receipt",
+      "count": 9
+    },
+    {
+      "id": "file:src/cloud.js",
+      "count": 9
+    },
+    {
+      "id": "function:src/app.js:dashboard",
+      "count": 8
+    },
+    {
+      "id": "function:src/app.js:archiveStudent",
+      "count": 8
+    },
+    {
+      "id": "function:src/app.js:chargeRow",
+      "count": 6
+    },
+    {
+      "id": "function:src/model.js:addPayment",
+      "count": 6
+    },
+    {
+      "id": "document:UX-CONTRACT.md",
+      "count": 6
+    },
+    {
+      "id": "function:src/app.js:refreshLedger",
+      "count": 5
+    },
+    {
+      "id": "function:src/app.js:setAccount",
+      "count": 5
+    },
+    {
+      "id": "function:src/model.js:validateState",
+      "count": 5
+    }
+  ],
+  "entryPointCandidates": [
+    {
+      "id": "document:README.md",
+      "score": 5
+    },
+    {
+      "id": "file:src/app.js",
+      "score": 6
+    }
+  ],
+  "bfsTraversal": {
+    "startNode": "file:src/app.js",
+    "order": [
+      "file:src/app.js",
+      "file:src/cloud.js",
+      "file:src/model.js",
+      "file:src/config.js"
+    ],
+    "depthMap": {
+      "file:src/app.js": 0,
+      "file:src/cloud.js": 1,
+      "file:src/model.js": 1,
+      "file:src/config.js": 2
+    },
+    "byDepth": {
+      "0": [
+        "file:src/app.js"
+      ],
+      "1": [
+        "file:src/cloud.js",
+        "file:src/model.js"
+      ],
+      "2": [
+        "file:src/config.js"
+      ]
+    }
+  },
+  "clusters": [],
+  "nonCodeFiles": [
+    {
+      "id": "schema:supabase/migrations/20261020163028_cloud_ledger.sql",
+      "type": "schema",
+      "name": "20261020163028_cloud_ledger.sql",
+      "filePath": "supabase/migrations/20261020163028_cloud_ledger.sql",
+      "summary": "Defines one JSONB ledger per authenticated owner, payload validation, owner-only non-anonymous RLS policies, limited grants, revision/mutation triggers, and update timestamps.",
+      "tags": [
+        "data",
+        "sql",
+        "project-source"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:DESIGN.md",
+      "type": "document",
+      "name": "DESIGN.md",
+      "filePath": "DESIGN.md",
+      "summary": "Persisted ledger visual direction and interaction rationale; design intent is distinct from runtime acceptance evidence.",
+      "tags": [
+        "docs",
+        "markdown",
+        "documentation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:PRODUCT.md",
+      "type": "document",
+      "name": "PRODUCT.md",
+      "filePath": "PRODUCT.md",
+      "summary": "Product goals, scope boundaries, records, payment rules, and exclusions for the personal school-service ledger.",
+      "tags": [
+        "docs",
+        "markdown",
+        "documentation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "User/developer guide for hosted and local usage, cloud privacy/concurrency, backup migration, verification, deployment, and recovery.",
+      "tags": [
+        "docs",
+        "markdown",
+        "documentation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:TASKS.md",
+      "type": "document",
+      "name": "TASKS.md",
+      "filePath": "TASKS.md",
+      "summary": "Development task history and recorded delivery outcomes; historical status is not a fresh test result.",
+      "tags": [
+        "docs",
+        "markdown",
+        "documentation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:UX-CONTRACT.md",
+      "type": "document",
+      "name": "UX-CONTRACT.md",
+      "filePath": "UX-CONTRACT.md",
+      "summary": "Written UI behavior contract covering navigation, forms, loading/errors, confirmation/recovery, and accessibility expectations.",
+      "tags": [
+        "docs",
+        "markdown",
+        "documentation"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:VERIFICATION.md",
+      "type": "document",
+      "name": "VERIFICATION.md",
+      "filePath": "VERIFICATION.md",
+      "summary": "Recorded prior verification scope and unresolved manual checks; this analysis does not re-run or independently certify those results.",
+      "tags": [
+        "docs",
+        "markdown",
+        "documentation"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "package.json",
+      "summary": "Pinned Supabase/esbuild dependencies, Node 22 requirement, and start/check/test/build command definitions.",
+      "tags": [
+        "config",
+        "json",
+        "project-source"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:premium-audit.json",
+      "type": "config",
+      "name": "premium-audit.json",
+      "filePath": "premium-audit.json",
+      "summary": "Machine-readable historical UI audit findings and verification status.",
+      "tags": [
+        "config",
+        "json",
+        "project-source"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:premium-ui.json",
+      "type": "config",
+      "name": "premium-ui.json",
+      "filePath": "premium-ui.json",
+      "summary": "Machine-readable UI context and product design settings.",
+      "tags": [
+        "config",
+        "json",
+        "project-source"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:vercel.json",
+      "type": "config",
+      "name": "vercel.json",
+      "filePath": "vercel.json",
+      "summary": "Static deployment build/output settings and browser security headers, including a fixed Supabase connection destination.",
+      "tags": [
+        "config",
+        "json",
+        "project-source"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:tests/MANUAL.md",
+      "type": "document",
+      "name": "MANUAL.md",
+      "filePath": "tests/MANUAL.md",
+      "summary": "Human browser acceptance checklist for ledger flows, cloud sign-in, multi-device conflicts, backups, accessibility, and mobile behavior.",
+      "tags": [
+        "docs",
+        "markdown",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:tests/cloud-rls.sql",
+      "type": "schema",
+      "name": "cloud-rls.sql",
+      "filePath": "tests/cloud-rls.sql",
+      "summary": "Transactional database regression script for owner isolation, anonymous denial, stale updates, and invalid payloads. It is source evidence only; not executed by this analysis.",
+      "tags": [
+        "data",
+        "sql",
+        "test"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "nodeSummaryIndex": {
+    "file:src/app.js": {
+      "summary": "Browser application coordinating Supabase account state, cloud refreshes, dashboard/roster/charge/payment views, accessible forms, confirmations, receipts, and backup/export flows. Domain arithmetic lives in model.js and persistence in LedgerStore.",
+      "type": "file",
+      "name": "app.js"
+    },
+    "file:src/cloud.js": {
+      "summary": "Creates the Supabase client with persisted PKCE authentication sessions and implements owner-filtered JSON ledger loading and revision-checked writes with mutation-ID reconciliation.",
+      "type": "file",
+      "name": "cloud.js"
+    },
+    "file:src/config.js": {
+      "summary": "Browser-visible Supabase endpoint and publishable-key configuration. These public settings are not a substitute for RLS; no value is reproduced in this graph.",
+      "type": "file",
+      "name": "config.js"
+    },
+    "file:src/model.js": {
+      "summary": "Pure ledger rules using integer centavos, date-only validation, student/invoice/payment integrity checks, immutable charge/payment updates, service-month metrics, and spreadsheet-safe CSV output.",
+      "type": "file",
+      "name": "model.js"
+    },
+    "file:tests/cloud.test.js": {
+      "summary": "Fluent-client mocks verify owner-scoped loads, first inserts, expected-revision updates, stale-device rejection, uncertain responses, and invalid-save prevention without contacting Supabase.",
+      "type": "file",
+      "name": "cloud.test.js"
+    },
+    "file:tests/model.test.js": {
+      "summary": "Synthetic unit cases for exact money/date handling, duplicate-safe charges, partial/full/void payments, metrics, backup validation, and CSV formula neutralization.",
+      "type": "file",
+      "name": "model.test.js"
+    },
+    "schema:supabase/migrations/20261020163028_cloud_ledger.sql": {
+      "summary": "Defines one JSONB ledger per authenticated owner, payload validation, owner-only non-anonymous RLS policies, limited grants, revision/mutation triggers, and update timestamps.",
+      "type": "schema",
+      "name": "20261020163028_cloud_ledger.sql"
+    },
+    "document:DESIGN.md": {
+      "summary": "Persisted ledger visual direction and interaction rationale; design intent is distinct from runtime acceptance evidence.",
+      "type": "document",
+      "name": "DESIGN.md"
+    },
+    "document:PRODUCT.md": {
+      "summary": "Product goals, scope boundaries, records, payment rules, and exclusions for the personal school-service ledger.",
+      "type": "document",
+      "name": "PRODUCT.md"
+    },
+    "document:README.md": {
+      "summary": "User/developer guide for hosted and local usage, cloud privacy/concurrency, backup migration, verification, deployment, and recovery.",
+      "type": "document",
+      "name": "README.md"
+    },
+    "document:TASKS.md": {
+      "summary": "Development task history and recorded delivery outcomes; historical status is not a fresh test result.",
+      "type": "document",
+      "name": "TASKS.md"
+    },
+    "document:UX-CONTRACT.md": {
+      "summary": "Written UI behavior contract covering navigation, forms, loading/errors, confirmation/recovery, and accessibility expectations.",
+      "type": "document",
+      "name": "UX-CONTRACT.md"
+    },
+    "document:VERIFICATION.md": {
+      "summary": "Recorded prior verification scope and unresolved manual checks; this analysis does not re-run or independently certify those results.",
+      "type": "document",
+      "name": "VERIFICATION.md"
+    },
+    "file:index.html": {
+      "summary": "Static application shell containing navigation, content region, account/sync status, dialog, toast, and printable receipt targets populated by app.js.",
+      "type": "file",
+      "name": "index.html"
+    },
+    "config:package.json": {
+      "summary": "Pinned Supabase/esbuild dependencies, Node 22 requirement, and start/check/test/build command definitions.",
+      "type": "config",
+      "name": "package.json"
+    },
+    "config:premium-audit.json": {
+      "summary": "Machine-readable historical UI audit findings and verification status.",
+      "type": "config",
+      "name": "premium-audit.json"
+    },
+    "config:premium-ui.json": {
+      "summary": "Machine-readable UI context and product design settings.",
+      "type": "config",
+      "name": "premium-ui.json"
+    },
+    "config:vercel.json": {
+      "summary": "Static deployment build/output settings and browser security headers, including a fixed Supabase connection destination.",
+      "type": "config",
+      "name": "vercel.json"
+    },
+    "file:build.mjs": {
+      "summary": "Recreates dist, bundles app.js and Supabase dependencies into a minified ES module, and copies the HTML/CSS for static hosting.",
+      "type": "file",
+      "name": "build.mjs"
+    },
+    "file:server.mjs": {
+      "summary": "Loopback development server allowing only the built HTML, JavaScript, and stylesheet through GET/HEAD; sends security and no-store headers and rejects other paths/methods.",
+      "type": "file",
+      "name": "server.mjs"
+    },
+    "file:src/styles.css": {
+      "summary": "Complete responsive ledger presentation, including navigation, tables, status badges, modal states, reduced-motion behavior, and print receipt styling.",
+      "type": "file",
+      "name": "styles.css"
+    },
+    "document:tests/MANUAL.md": {
+      "summary": "Human browser acceptance checklist for ledger flows, cloud sign-in, multi-device conflicts, backups, accessibility, and mobile behavior.",
+      "type": "document",
+      "name": "MANUAL.md"
+    },
+    "schema:tests/cloud-rls.sql": {
+      "summary": "Transactional database regression script for owner isolation, anonymous denial, stale updates, and invalid payloads. It is source evidence only; not executed by this analysis.",
+      "type": "schema",
+      "name": "cloud-rls.sql"
+    },
+    "file:tests/server.test.js": {
+      "summary": "Starts a synthetic loopback child server to check static allowlisting, security headers, unsupported paths, and write rejection; requires built files and a free port.",
+      "type": "file",
+      "name": "server.test.js"
+    }
+  },
+  "deploymentTopology": {
+    "hasDockerfile": false,
+    "hasCompose": false,
+    "hasK8s": false,
+    "hasTerraform": false,
+    "hasCI": false,
+    "infraFiles": []
+  }
+}

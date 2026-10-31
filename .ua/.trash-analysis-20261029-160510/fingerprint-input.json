@@ -1,0 +1,30 @@
+{
+  "projectRoot": "C:\\Users\\222170\\Documents\\James-Workspace\\04-Personal-Projects\\school-service-payments",
+  "filePaths": [
+    "DESIGN.md",
+    "PRODUCT.md",
+    "README.md",
+    "TASKS.md",
+    "UX-CONTRACT.md",
+    "VERIFICATION.md",
+    "build.mjs",
+    "index.html",
+    "package.json",
+    "premium-audit.json",
+    "premium-ui.json",
+    "server.mjs",
+    "src/app.js",
+    "src/cloud.js",
+    "src/config.js",
+    "src/model.js",
+    "src/styles.css",
+    "supabase/migrations/20261020163028_cloud_ledger.sql",
+    "tests/MANUAL.md",
+    "tests/cloud-rls.sql",
+    "tests/cloud.test.js",
+    "tests/model.test.js",
+    "tests/server.test.js",
+    "vercel.json"
+  ],
+  "gitCommitHash": "58edcbf1f68433b51d5a8e3e3a7a31b288e39470"
+}

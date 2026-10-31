@@ -1,0 +1,66 @@
+{
+  "issues": [],
+  "warnings": [
+    "Static source analysis only; no app/browser/provider/database acceptance tests were run.",
+    "Excluded credentials, saved knowledge, uploaded documents, runtime stores, dependencies, generated outputs, and binary media.",
+    "Bundled scanner used recursive traversal because git ls-files was unavailable.",
+    "Symbol and call coverage is parser-derived, not whole-program dynamic execution or proof of behavior.",
+    "No structural parser for: index.html. File nodes and semantic/manual source review retained.",
+    "No structural parser for: src/styles.css. File nodes and semantic/manual source review retained.",
+    "SQL parser labeled public.service_ledgers as public; semantic table node corrects the qualified name using the migration source."
+  ],
+  "stats": {
+    "scope": "Static source inventory, graph integrity and coverage; not application runtime/security certification",
+    "schemaValid": true,
+    "issues": [],
+    "warnings": [
+      "Static source analysis only; no app/browser/provider/database acceptance tests were run.",
+      "Excluded credentials, saved knowledge, uploaded documents, runtime stores, dependencies, generated outputs, and binary media.",
+      "Bundled scanner used recursive traversal because git ls-files was unavailable.",
+      "Symbol and call coverage is parser-derived, not whole-program dynamic execution or proof of behavior.",
+      "No structural parser for: index.html. File nodes and semantic/manual source review retained.",
+      "No structural parser for: src/styles.css. File nodes and semantic/manual source review retained.",
+      "SQL parser labeled public.service_ledgers as public; semantic table node corrects the qualified name using the migration source."
+    ],
+    "filesScanned": 24,
+    "fileNodes": 24,
+    "fileCoveragePercent": 100,
+    "missingFiles": [],
+    "extraFiles": [],
+    "missingParsedSymbols": [],
+    "nodes": 103,
+    "edges": 324,
+    "layers": 6,
+    "tourSteps": 9,
+    "nodeTypes": {
+      "file": 11,
+      "function": 77,
+      "class": 1,
+      "schema": 2,
+      "table": 1,
+      "document": 7,
+      "config": 4
+    },
+    "edgeTypes": {
+      "contains": 81,
+      "imports": 7,
+      "calls": 193,
+      "exports": 14,
+      "depends_on": 4,
+      "tested_by": 3,
+      "defines_schema": 1,
+      "documents": 17,
+      "configures": 4
+    },
+    "fileCategories": {
+      "docs": 7,
+      "code": 9,
+      "markup": 2,
+      "config": 4,
+      "data": 2
+    },
+    "sourceDigest": "b3c5ba16e045230096988c8eb1b623584764043249e424f1dcf49f9d5ff09586",
+    "gitCommitHash": "58edcbf1f68433b51d5a8e3e3a7a31b288e39470",
+    "dirtyWorktreeNotExcluded": true
+  }
+}

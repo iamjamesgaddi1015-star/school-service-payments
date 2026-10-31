@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en-PH">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#164b43">
+  <meta name="description" content="Track school service students, monthly charges, due dates and payments on your device.">
+  <title>Service ledger · School service payments</title>
+  <link rel="stylesheet" href="src/styles.css">
+  <script type="module" src="src/app.js"></script>
+</head>
+<body class="signed-out">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#dashboard"><span class="brand-mark" aria-hidden="true">S<span>•</span></span><span>Service ledger<small>School transport collections</small></span></a>
+      <div class="workspace">Workspace <span>My school service</span></div>
+      <nav aria-label="Main navigation">
+        <a href="#dashboard" data-view="dashboard"><span aria-hidden="true">▦</span> Overview</a>
+        <a href="#students" data-view="students"><span aria-hidden="true">♧</span> Students</a>
+        <a href="#charges" data-view="charges"><span aria-hidden="true">▤</span> Monthly charges</a>
+        <a href="#payments" data-view="payments"><span aria-hidden="true">↗</span> Payment history</a>
+        <a href="#backup" data-view="backup"><span aria-hidden="true">⇩</span> Backups & exports</a>
+      </nav>
+      <div class="sidebar-note"><span class="live-dot"></span> Private cloud sync<p>Your daily collection book,<br>with a little less paperwork.</p><small>Private cloud ledger · Back up regularly</small></div>
+      <div class="profile"><span class="avatar" aria-hidden="true">SL</span><div>My school service<small><span id="account-email">Sign in to your ledger</span></small></div></div>
+    </aside>
+    <div class="content-shell">
+      <header class="topbar"><span>School service <span class="muted">/</span> <strong id="breadcrumb">Overview</strong></span><div class="topbar-right"><span id="today-label"></span><div id="account-actions" class="account-actions" hidden><span id="sync-label" role="status">Connecting…</span><button class="button small" data-action="refresh">↻ Refresh</button><button class="button small" data-action="logout">Sign out</button></div></div></header>
+      <div id="storage-warning" class="persistent-warning" role="alert" hidden></div>
+      <main id="main" tabindex="-1"></main>
+      <footer>Made for the everyday school run.<span>Amounts in PHP · Dates in Philippine time</span></footer>
+    </div>
+  </div>
+  <dialog id="modal" aria-labelledby="dialog-title"><div class="dialog-heading"><div><p class="eyebrow">SERVICE LEDGER</p><h2 id="dialog-title"></h2></div><button type="button" class="icon-button" id="close-modal" aria-label="Close dialog">×</button></div><div id="dialog-body"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <div id="print-receipt"></div>
+</body>
+</html>

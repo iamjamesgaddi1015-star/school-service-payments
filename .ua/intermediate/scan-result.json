@@ -1,0 +1,267 @@
+{
+    "scriptCompleted":  true,
+    "contentDigest":  "b3c5ba16e045230096988c8eb1b623584764043249e424f1dcf49f9d5ff09586",
+    "files":  [
+                  {
+                      "path":  "DESIGN.md",
+                      "language":  "markdown",
+                      "sizeLines":  116,
+                      "fileCategory":  "docs"
+                  },
+                  {
+                      "path":  "PRODUCT.md",
+                      "language":  "markdown",
+                      "sizeLines":  31,
+                      "fileCategory":  "docs"
+                  },
+                  {
+                      "path":  "README.md",
+                      "language":  "markdown",
+                      "sizeLines":  76,
+                      "fileCategory":  "docs"
+                  },
+                  {
+                      "path":  "TASKS.md",
+                      "language":  "markdown",
+                      "sizeLines":  21,
+                      "fileCategory":  "docs"
+                  },
+                  {
+                      "path":  "UX-CONTRACT.md",
+                      "language":  "markdown",
+                      "sizeLines":  57,
+                      "fileCategory":  "docs"
+                  },
+                  {
+                      "path":  "VERIFICATION.md",
+                      "language":  "markdown",
+                      "sizeLines":  34,
+                      "fileCategory":  "docs"
+                  },
+                  {
+                      "path":  "build.mjs",
+                      "language":  "javascript",
+                      "sizeLines":  8,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "index.html",
+                      "language":  "html",
+                      "sizeLines":  40,
+                      "fileCategory":  "markup"
+                  },
+                  {
+                      "path":  "package.json",
+                      "language":  "json",
+                      "sizeLines":  22,
+                      "fileCategory":  "config"
+                  },
+                  {
+                      "path":  "premium-audit.json",
+                      "language":  "json",
+                      "sizeLines":  13,
+                      "fileCategory":  "config"
+                  },
+                  {
+                      "path":  "premium-ui.json",
+                      "language":  "json",
+                      "sizeLines":  11,
+                      "fileCategory":  "config"
+                  },
+                  {
+                      "path":  "server.mjs",
+                      "language":  "javascript",
+                      "sizeLines":  17,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/app.js",
+                      "language":  "javascript",
+                      "sizeLines":  405,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/cloud.js",
+                      "language":  "javascript",
+                      "sizeLines":  33,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/config.js",
+                      "language":  "javascript",
+                      "sizeLines":  3,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/model.js",
+                      "language":  "javascript",
+                      "sizeLines":  79,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/styles.css",
+                      "language":  "css",
+                      "sizeLines":  15,
+                      "fileCategory":  "markup"
+                  },
+                  {
+                      "path":  "supabase/migrations/20261020163028_cloud_ledger.sql",
+                      "language":  "sql",
+                      "sizeLines":  93,
+                      "fileCategory":  "data"
+                  },
+                  {
+                      "path":  "tests/MANUAL.md",
+                      "language":  "markdown",
+                      "sizeLines":  27,
+                      "fileCategory":  "docs"
+                  },
+                  {
+                      "path":  "tests/cloud-rls.sql",
+                      "language":  "sql",
+                      "sizeLines":  57,
+                      "fileCategory":  "data"
+                  },
+                  {
+                      "path":  "tests/cloud.test.js",
+                      "language":  "javascript",
+                      "sizeLines":  55,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "tests/model.test.js",
+                      "language":  "javascript",
+                      "sizeLines":  77,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "tests/server.test.js",
+                      "language":  "javascript",
+                      "sizeLines":  22,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "vercel.json",
+                      "language":  "json",
+                      "sizeLines":  15,
+                      "fileCategory":  "config"
+                  }
+              ],
+    "totalFiles":  24,
+    "filteredByIgnore":  0,
+    "estimatedComplexity":  "small",
+    "failures":  [
+
+                 ],
+    "stats":  {
+                  "filesScanned":  24,
+                  "byCategory":  {
+                                     "docs":  7,
+                                     "code":  9,
+                                     "markup":  2,
+                                     "config":  4,
+                                     "data":  2
+                                 },
+                  "byLanguage":  {
+                                     "markdown":  7,
+                                     "javascript":  9,
+                                     "html":  1,
+                                     "json":  4,
+                                     "css":  1,
+                                     "sql":  2
+                                 }
+              },
+    "importMap":  {
+                      "DESIGN.md":  [
+
+                                    ],
+                      "PRODUCT.md":  [
+
+                                     ],
+                      "README.md":  [
+
+                                    ],
+                      "TASKS.md":  [
+
+                                   ],
+                      "UX-CONTRACT.md":  [
+
+                                         ],
+                      "VERIFICATION.md":  [
+
+                                          ],
+                      "build.mjs":  [
+
+                                    ],
+                      "index.html":  [
+
+                                     ],
+                      "package.json":  [
+
+                                       ],
+                      "premium-audit.json":  [
+
+                                             ],
+                      "premium-ui.json":  [
+
+                                          ],
+                      "server.mjs":  [
+
+                                     ],
+                      "src/app.js":  [
+                                         "src/cloud.js",
+                                         "src/model.js"
+                                     ],
+                      "src/cloud.js":  [
+                                           "src/config.js",
+                                           "src/model.js"
+                                       ],
+                      "src/config.js":  [
+
+                                        ],
+                      "src/model.js":  [
+
+                                       ],
+                      "src/styles.css":  [
+
+                                         ],
+                      "supabase/migrations/20261020163028_cloud_ledger.sql":  [
+
+                                                                              ],
+                      "tests/MANUAL.md":  [
+
+                                          ],
+                      "tests/cloud-rls.sql":  [
+
+                                              ],
+                      "tests/cloud.test.js":  [
+                                                  "src/cloud.js",
+                                                  "src/model.js"
+                                              ],
+                      "tests/model.test.js":  [
+                                                  "src/model.js"
+                                              ],
+                      "tests/server.test.js":  [
+
+                                               ],
+                      "vercel.json":  [
+
+                                      ]
+                  },
+    "projectName":  "school-service-payments",
+    "name":  "school-service-payments",
+    "description":  "Authenticated school service payment ledger with revision-based Supabase synchronization",
+    "languages":  [
+                      "markdown",
+                      "javascript",
+                      "html",
+                      "json",
+                      "css",
+                      "sql"
+                  ],
+    "frameworks":  [
+                       "Supabase",
+                       "esbuild",
+                       "Node.js"
+                   ]
+}

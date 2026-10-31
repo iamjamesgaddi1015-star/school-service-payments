@@ -1,0 +1,16 @@
+{
+    "projectRoot":  "C:\\Users\\222170\\Documents\\James-Workspace\\04-Personal-Projects\\school-service-payments",
+    "batchImportData":  {
+                            "supabase/migrations/20261020163028_cloud_ledger.sql":  [
+
+                                                                                    ]
+                        },
+    "batchFiles":  [
+                       {
+                           "path":  "supabase/migrations/20261020163028_cloud_ledger.sql",
+                           "language":  "sql",
+                           "sizeLines":  93,
+                           "fileCategory":  "data"
+                       }
+                   ]
+}

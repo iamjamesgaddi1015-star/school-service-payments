@@ -1,0 +1,17 @@
+{
+  "deploymentId": "dpl_5Uo3La3QPk222jXAsys2CE4cA7pr",
+  "productionUrl": "https://school-service-payments.vercel.app",
+  "candidateDigest": "97cfa95aff87f1212d8b99557c0d97cd884b1bef4cf428c50899327285a73ad1",
+  "scope": "static UI release, signed-out production delivery",
+  "status": "closed",
+  "artifactHashes": "seven of seven match reviewed production static files",
+  "sourceExposureProbes": "six of six return 404",
+  "signedOutBrowser": "Chrome 1440px and 390px passed without page errors or document overflow",
+  "independentHeaderChecks": "35 of 35 configured header comparisons passed across seven public paths",
+  "independentEvidence": "independent-header-checks.json",
+  "originalLocalHeaderFailure": "preserved in production-checks.json; not normalized or claimed passed",
+  "closureActions": "read-only public verification and local evidence/documentation updates",
+  "redeploymentRequired": false,
+  "cloudOrLedgerChanges": false,
+  "excludedAssurance": ["live account and email delivery acceptance", "signed-in cross-device tests", "physical-device and comprehensive accessibility certification", "cloud recovery rehearsal"]
+}

@@ -1,0 +1,12 @@
+node_modules/
+coverage/
+*.log
+school-service-backup-*.json
+school-service-saved-data-*.txt
+school-service-charges-*.csv
+school-service-payments-*.csv
+.vercel/
+.env*
+dist/
+supabase/.temp/
+.release-candidate/

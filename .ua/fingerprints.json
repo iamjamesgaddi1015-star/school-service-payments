@@ -1,0 +1,981 @@
+{
+  "version": "1.0.0",
+  "gitCommitHash": "58edcbf1f68433b51d5a8e3e3a7a31b288e39470",
+  "generatedAt": "2026-10-29T08:03:18.744Z",
+  "files": {
+    "DESIGN.md": {
+      "filePath": "DESIGN.md",
+      "contentHash": "90ced6eaeead2a6ea9939a0c1f0b7f890ffec18c6df06d3cdc64f4a249cf7394",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 117,
+      "hasStructuralAnalysis": false
+    },
+    "PRODUCT.md": {
+      "filePath": "PRODUCT.md",
+      "contentHash": "af120b9d4b232e0f33751a82cd102352cb1812f0624d158a4663a305be50b60f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 32,
+      "hasStructuralAnalysis": false
+    },
+    "README.md": {
+      "filePath": "README.md",
+      "contentHash": "bf45ea7bc1f8a2679c4cf640607515d6e68dca7287b823609b9ed133d54354df",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 77,
+      "hasStructuralAnalysis": false
+    },
+    "TASKS.md": {
+      "filePath": "TASKS.md",
+      "contentHash": "34b01fa93474084e876f70c0a81ec6b31bdf89ba0cd1d44edef1d7ded174d53a",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 22,
+      "hasStructuralAnalysis": false
+    },
+    "UX-CONTRACT.md": {
+      "filePath": "UX-CONTRACT.md",
+      "contentHash": "2800f6d6b713ebeb02c9cb0c1a9d3d6b648238a4bce7a16db7112b23135e3452",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 58,
+      "hasStructuralAnalysis": false
+    },
+    "VERIFICATION.md": {
+      "filePath": "VERIFICATION.md",
+      "contentHash": "038c2f4e6fae4eda50fb847ab0f2aa1cd726cac5850fad2b8415c9c1e3f0ac9f",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 35,
+      "hasStructuralAnalysis": false
+    },
+    "build.mjs": {
+      "filePath": "build.mjs",
+      "contentHash": "4e71764b3eb31297e13a636082162458a6daac35a0478c8002e215c762d54940",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "esbuild",
+          "specifiers": [
+            "build"
+          ]
+        },
+        {
+          "source": "node:fs/promises",
+          "specifiers": [
+            "mkdir",
+            "rm",
+            "copyFile",
+            "readFile",
+            "writeFile"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "index.html": {
+      "filePath": "index.html",
+      "contentHash": "a8e561388faf194d03f5d6707baa869c4d0bf4b2287b776512ea0b0698526460",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 41,
+      "hasStructuralAnalysis": false
+    },
+    "package.json": {
+      "filePath": "package.json",
+      "contentHash": "1134711bc31baeb5e0b89189fc0ddc37f37be2d8cb8e7b2d38b7e690efc5b86d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 23,
+      "hasStructuralAnalysis": false
+    },
+    "premium-audit.json": {
+      "filePath": "premium-audit.json",
+      "contentHash": "a05f6baea43d53a74a99505798f3b1233244135f1a45c69b0200090184005031",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 14,
+      "hasStructuralAnalysis": false
+    },
+    "premium-ui.json": {
+      "filePath": "premium-ui.json",
+      "contentHash": "a4f3a3dec2f7420e50ad1b32af1432390119b6a453c1b9850fbcfa8acea72607",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 12,
+      "hasStructuralAnalysis": false
+    },
+    "server.mjs": {
+      "filePath": "server.mjs",
+      "contentHash": "8630beb7ffe898acd16422e0c2cccd22a77f1788123200d44e35ed4cc2fa2672",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "node:http",
+          "specifiers": [
+            "http"
+          ]
+        },
+        {
+          "source": "node:fs/promises",
+          "specifiers": [
+            "readFile"
+          ]
+        },
+        {
+          "source": "node:url",
+          "specifiers": [
+            "fileURLToPath"
+          ]
+        },
+        {
+          "source": "node:path",
+          "specifiers": [
+            "path"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 18,
+      "hasStructuralAnalysis": true
+    },
+    "src/app.js": {
+      "filePath": "src/app.js",
+      "contentHash": "7230b740ce85868a3105221fffdb35af5671406cf0a653f63d0898cc480bf660",
+      "functions": [
+        {
+          "name": "$",
+          "params": [],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "esc",
+          "params": [],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "uid",
+          "params": [],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "dateLabel",
+          "params": [],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "monthLabel",
+          "params": [],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "initials",
+          "params": [],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "warning",
+          "params": [
+            "message"
+          ],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "notify",
+          "params": [
+            "message"
+          ],
+          "exported": false,
+          "lineCount": 5
+        },
+        {
+          "name": "commit",
+          "params": [
+            "next"
+          ],
+          "exported": false,
+          "lineCount": 15
+        },
+        {
+          "name": "syncLabel",
+          "params": [
+            "message"
+          ],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "refreshLedger",
+          "params": [],
+          "exported": false,
+          "lineCount": 20
+        },
+        {
+          "name": "authScreen",
+          "params": [],
+          "exported": false,
+          "lineCount": 20
+        },
+        {
+          "name": "setAccount",
+          "params": [
+            "user"
+          ],
+          "exported": false,
+          "lineCount": 15
+        },
+        {
+          "name": "student",
+          "params": [],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "invoice",
+          "params": [],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "badge",
+          "params": [],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "button",
+          "params": [
+            "label",
+            "action"
+          ],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "studentCell",
+          "params": [],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "empty",
+          "params": [
+            "title",
+            "description"
+          ],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "heading",
+          "params": [
+            "title",
+            "subtitle"
+          ],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "periodBar",
+          "params": [],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "kpi",
+          "params": [
+            "label",
+            "value",
+            "foot",
+            "icon"
+          ],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "pagination",
+          "params": [
+            "total"
+          ],
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "searchBar",
+          "params": [
+            "options",
+            "placeholder"
+          ],
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "paginate",
+          "params": [
+            "list"
+          ],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "trend",
+          "params": [],
+          "exported": false,
+          "lineCount": 10
+        },
+        {
+          "name": "dashboard",
+          "params": [],
+          "exported": false,
+          "lineCount": 14
+        },
+        {
+          "name": "chargeRow",
+          "params": [
+            "i"
+          ],
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "chargesView",
+          "params": [],
+          "exported": false,
+          "lineCount": 6
+        },
+        {
+          "name": "studentsView",
+          "params": [],
+          "exported": false,
+          "lineCount": 5
+        },
+        {
+          "name": "paymentsView",
+          "params": [],
+          "exported": false,
+          "lineCount": 8
+        },
+        {
+          "name": "backupView",
+          "params": [],
+          "exported": false,
+          "lineCount": 3
+        },
+        {
+          "name": "render",
+          "params": [],
+          "exported": false,
+          "lineCount": 10
+        },
+        {
+          "name": "navigate",
+          "params": [],
+          "exported": false,
+          "lineCount": 6
+        },
+        {
+          "name": "field",
+          "params": [
+            "name",
+            "label"
+          ],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "form",
+          "params": [
+            "content"
+          ],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "modal",
+          "params": [
+            "title",
+            "html",
+            "handler"
+          ],
+          "exported": false,
+          "lineCount": 30
+        },
+        {
+          "name": "close",
+          "params": [],
+          "exported": false,
+          "lineCount": 10
+        },
+        {
+          "name": "dirty",
+          "params": [],
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "requestClose",
+          "params": [],
+          "exported": false,
+          "lineCount": 11
+        },
+        {
+          "name": "required",
+          "params": [
+            "data",
+            "key",
+            "label"
+          ],
+          "exported": false,
+          "lineCount": 8
+        },
+        {
+          "name": "amountValue",
+          "params": [
+            "data",
+            "key"
+          ],
+          "exported": false,
+          "lineCount": 4
+        },
+        {
+          "name": "studentForm",
+          "params": [
+            "id"
+          ],
+          "exported": false,
+          "lineCount": 10
+        },
+        {
+          "name": "chargesForm",
+          "params": [],
+          "exported": false,
+          "lineCount": 17
+        },
+        {
+          "name": "paymentForm",
+          "params": [
+            "id"
+          ],
+          "exported": false,
+          "lineCount": 10
+        },
+        {
+          "name": "editCharge",
+          "params": [
+            "id"
+          ],
+          "exported": false,
+          "lineCount": 11
+        },
+        {
+          "name": "archiveStudent",
+          "params": [
+            "id"
+          ],
+          "exported": false,
+          "lineCount": 9
+        },
+        {
+          "name": "voidPayment",
+          "params": [
+            "id"
+          ],
+          "exported": false,
+          "lineCount": 10
+        },
+        {
+          "name": "receipt",
+          "params": [
+            "id"
+          ],
+          "exported": false,
+          "lineCount": 6
+        },
+        {
+          "name": "download",
+          "params": [
+            "name",
+            "data",
+            "type"
+          ],
+          "exported": false,
+          "lineCount": 5
+        },
+        {
+          "name": "exportCharges",
+          "params": [],
+          "exported": false,
+          "lineCount": 5
+        },
+        {
+          "name": "exportPayments",
+          "params": [],
+          "exported": false,
+          "lineCount": 5
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "./cloud.js",
+          "specifiers": [
+            "supabase",
+            "LedgerStore"
+          ]
+        },
+        {
+          "source": "./model.js",
+          "specifiers": [
+            "emptyState",
+            "today",
+            "validDate",
+            "cents",
+            "money",
+            "paid",
+            "balance",
+            "status",
+            "validateState",
+            "addPayment",
+            "createCharges",
+            "metrics",
+            "csv"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 406,
+      "hasStructuralAnalysis": true
+    },
+    "src/cloud.js": {
+      "filePath": "src/cloud.js",
+      "contentHash": "6ab578afbb26dcc1e809257dbf244e69badb86828af81c088fc39ea6a1ec320b",
+      "functions": [],
+      "classes": [
+        {
+          "name": "LedgerStore",
+          "methods": [
+            "constructor",
+            "load",
+            "save"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 27
+        }
+      ],
+      "imports": [
+        {
+          "source": "@supabase/supabase-js",
+          "specifiers": [
+            "createClient"
+          ]
+        },
+        {
+          "source": "./config.js",
+          "specifiers": [
+            "SUPABASE_URL",
+            "SUPABASE_PUBLISHABLE_KEY"
+          ]
+        },
+        {
+          "source": "./model.js",
+          "specifiers": [
+            "emptyState",
+            "validateState"
+          ]
+        }
+      ],
+      "exports": [
+        "supabase",
+        "LedgerStore"
+      ],
+      "totalLines": 34,
+      "hasStructuralAnalysis": true
+    },
+    "src/config.js": {
+      "filePath": "src/config.js",
+      "contentHash": "e7e64f19dc8bffd69f61fddfb6df9d6a61269e292fea382eecf028f952d151d1",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [
+        "SUPABASE_URL",
+        "SUPABASE_PUBLISHABLE_KEY"
+      ],
+      "totalLines": 4,
+      "hasStructuralAnalysis": true
+    },
+    "src/model.js": {
+      "filePath": "src/model.js",
+      "contentHash": "b39e2935b1eef7733056443d412d1b4765e842e02fefb08a982673544125ff62",
+      "functions": [
+        {
+          "name": "emptyState",
+          "params": [],
+          "exported": true,
+          "lineCount": 1
+        },
+        {
+          "name": "today",
+          "params": [],
+          "exported": true,
+          "lineCount": 1
+        },
+        {
+          "name": "validDate",
+          "params": [
+            "value"
+          ],
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "cents",
+          "params": [
+            "value"
+          ],
+          "exported": true,
+          "lineCount": 7
+        },
+        {
+          "name": "money",
+          "params": [],
+          "exported": true,
+          "lineCount": 1
+        },
+        {
+          "name": "paid",
+          "params": [
+            "state",
+            "invoiceId"
+          ],
+          "exported": true,
+          "lineCount": 1
+        },
+        {
+          "name": "balance",
+          "params": [
+            "state",
+            "invoice"
+          ],
+          "exported": true,
+          "lineCount": 1
+        },
+        {
+          "name": "status",
+          "params": [
+            "state",
+            "invoice"
+          ],
+          "exported": true,
+          "lineCount": 6
+        },
+        {
+          "name": "fail",
+          "params": [],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "text",
+          "params": [
+            "value",
+            "max"
+          ],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "amount",
+          "params": [],
+          "exported": false,
+          "lineCount": 1
+        },
+        {
+          "name": "validateState",
+          "params": [
+            "state"
+          ],
+          "exported": true,
+          "lineCount": 24
+        },
+        {
+          "name": "addPayment",
+          "params": [
+            "state",
+            "payment"
+          ],
+          "exported": true,
+          "lineCount": 9
+        },
+        {
+          "name": "createCharges",
+          "params": [
+            "state"
+          ],
+          "exported": true,
+          "lineCount": 8
+        },
+        {
+          "name": "metrics",
+          "params": [
+            "state",
+            "period"
+          ],
+          "exported": true,
+          "lineCount": 6
+        },
+        {
+          "name": "csv",
+          "params": [
+            "rows"
+          ],
+          "exported": true,
+          "lineCount": 7
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [
+        "VERSION",
+        "emptyState",
+        "today",
+        "validDate",
+        "cents",
+        "money",
+        "paid",
+        "balance",
+        "status",
+        "validateState",
+        "addPayment",
+        "createCharges",
+        "metrics",
+        "csv"
+      ],
+      "totalLines": 80,
+      "hasStructuralAnalysis": true
+    },
+    "src/styles.css": {
+      "filePath": "src/styles.css",
+      "contentHash": "bdfd554522404e00add8e067be27e89c2811ab18b065ab88f00be181b5189b4b",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 16,
+      "hasStructuralAnalysis": false
+    },
+    "supabase/migrations/20261020163028_cloud_ledger.sql": {
+      "filePath": "supabase/migrations/20261020163028_cloud_ledger.sql",
+      "contentHash": "4fc2a8511fb1cf7e60c083b61f13b470c6f95afce2d9dfc1906dbd698971fd30",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 94,
+      "hasStructuralAnalysis": false
+    },
+    "tests/MANUAL.md": {
+      "filePath": "tests/MANUAL.md",
+      "contentHash": "dcda84a6b296f70ce401285d0d81779d07289e20b1d06400a9a80798a77c35d2",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 28,
+      "hasStructuralAnalysis": false
+    },
+    "tests/cloud-rls.sql": {
+      "filePath": "tests/cloud-rls.sql",
+      "contentHash": "c13d455c881ca2b0ec041c446e8df91a02f3afbb7a4c5056b56c86369845a8bc",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 58,
+      "hasStructuralAnalysis": false
+    },
+    "tests/cloud.test.js": {
+      "filePath": "tests/cloud.test.js",
+      "contentHash": "29b4981dfef00710d2da5f8b9a2c400bbc0d1eba3633ef3ffc93edd257440009",
+      "functions": [
+        {
+          "name": "client",
+          "params": [
+            "responses"
+          ],
+          "exported": false,
+          "lineCount": 5
+        },
+        {
+          "name": "row",
+          "params": [
+            "revision"
+          ],
+          "exported": false,
+          "lineCount": 1
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "node:test",
+          "specifiers": [
+            "test"
+          ]
+        },
+        {
+          "source": "node:assert/strict",
+          "specifiers": [
+            "assert"
+          ]
+        },
+        {
+          "source": "../src/cloud.js",
+          "specifiers": [
+            "LedgerStore"
+          ]
+        },
+        {
+          "source": "../src/model.js",
+          "specifiers": [
+            "emptyState"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 56,
+      "hasStructuralAnalysis": true
+    },
+    "tests/model.test.js": {
+      "filePath": "tests/model.test.js",
+      "contentHash": "215990f88412de0a6e735ca24c4d188f01f4d612d6540172a0b754fb5ec7ffcb",
+      "functions": [
+        {
+          "name": "fixture",
+          "params": [],
+          "exported": false,
+          "lineCount": 6
+        },
+        {
+          "name": "payment",
+          "params": [],
+          "exported": false,
+          "lineCount": 1
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "node:test",
+          "specifiers": [
+            "test"
+          ]
+        },
+        {
+          "source": "node:assert/strict",
+          "specifiers": [
+            "assert"
+          ]
+        },
+        {
+          "source": "../src/model.js",
+          "specifiers": [
+            "emptyState",
+            "cents",
+            "validDate",
+            "validateState",
+            "createCharges",
+            "addPayment",
+            "paid",
+            "balance",
+            "metrics",
+            "status",
+            "csv"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 78,
+      "hasStructuralAnalysis": true
+    },
+    "tests/server.test.js": {
+      "filePath": "tests/server.test.js",
+      "contentHash": "13b4db79e2a622d69df8505b0d5945000707e2596a297a87f6402ca1168604ed",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "node:test",
+          "specifiers": [
+            "test"
+          ]
+        },
+        {
+          "source": "node:assert/strict",
+          "specifiers": [
+            "assert"
+          ]
+        },
+        {
+          "source": "node:child_process",
+          "specifiers": [
+            "spawn"
+          ]
+        },
+        {
+          "source": "node:events",
+          "specifiers": [
+            "once"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 23,
+      "hasStructuralAnalysis": true
+    },
+    "vercel.json": {
+      "filePath": "vercel.json",
+      "contentHash": "5e478b531b398e81917c493097c518ac03bb08a07c9ee76b0deae10f8a5dc875",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 16,
+      "hasStructuralAnalysis": false
+    }
+  }
+}

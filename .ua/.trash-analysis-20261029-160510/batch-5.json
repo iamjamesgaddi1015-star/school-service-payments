@@ -1,0 +1,98 @@
+{
+  "nodes": [
+    {
+      "id": "file:build.mjs",
+      "type": "file",
+      "name": "build.mjs",
+      "filePath": "build.mjs",
+      "summary": "Recreates dist, bundles app.js and Supabase dependencies into a minified ES module, and copies the HTML/CSS for static hosting.",
+      "tags": [
+        "code",
+        "javascript",
+        "project-source"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:server.mjs",
+      "type": "file",
+      "name": "server.mjs",
+      "filePath": "server.mjs",
+      "summary": "Loopback development server allowing only the built HTML, JavaScript, and stylesheet through GET/HEAD; sends security and no-store headers and rejects other paths/methods.",
+      "tags": [
+        "code",
+        "javascript",
+        "project-source"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/styles.css",
+      "type": "file",
+      "name": "styles.css",
+      "filePath": "src/styles.css",
+      "summary": "Complete responsive ledger presentation, including navigation, tables, status badges, modal states, reduced-motion behavior, and print receipt styling.",
+      "tags": [
+        "markup",
+        "css",
+        "project-source"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:tests/MANUAL.md",
+      "type": "document",
+      "name": "MANUAL.md",
+      "filePath": "tests/MANUAL.md",
+      "summary": "Human browser acceptance checklist for ledger flows, cloud sign-in, multi-device conflicts, backups, accessibility, and mobile behavior.",
+      "tags": [
+        "docs",
+        "markdown",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:tests/cloud-rls.sql",
+      "type": "schema",
+      "name": "cloud-rls.sql",
+      "filePath": "tests/cloud-rls.sql",
+      "summary": "Transactional database regression script for owner isolation, anonymous denial, stale updates, and invalid payloads. It is source evidence only; not executed by this analysis.",
+      "tags": [
+        "data",
+        "sql",
+        "test"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:tests/server.test.js",
+      "type": "file",
+      "name": "server.test.js",
+      "filePath": "tests/server.test.js",
+      "summary": "Starts a synthetic loopback child server to check static allowlisting, security headers, unsupported paths, and write rejection; requires built files and a free port.",
+      "tags": [
+        "code",
+        "javascript",
+        "test"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:server.mjs",
+      "target": "file:tests/server.test.js",
+      "type": "tested_by",
+      "direction": "forward",
+      "weight": 0.6
+    },
+    {
+      "source": "file:build.mjs",
+      "target": "file:src/app.js",
+      "type": "depends_on",
+      "direction": "forward",
+      "weight": 0.6
+    }
+  ]
+}

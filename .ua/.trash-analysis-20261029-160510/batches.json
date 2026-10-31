@@ -1,0 +1,335 @@
+{
+  "schemaVersion": 1,
+  "algorithm": "louvain",
+  "totalFiles": 24,
+  "totalBatches": 5,
+  "exportsByPath": {
+    "build.mjs": [],
+    "server.mjs": [],
+    "src/app.js": [],
+    "src/cloud.js": [
+      "supabase",
+      "LedgerStore"
+    ],
+    "src/config.js": [
+      "SUPABASE_URL",
+      "SUPABASE_PUBLISHABLE_KEY"
+    ],
+    "src/model.js": [
+      "VERSION",
+      "emptyState",
+      "today",
+      "validDate",
+      "cents",
+      "money",
+      "paid",
+      "balance",
+      "status",
+      "validateState",
+      "addPayment",
+      "createCharges",
+      "metrics",
+      "csv"
+    ],
+    "tests/cloud.test.js": [],
+    "tests/model.test.js": [],
+    "tests/server.test.js": []
+  },
+  "batches": [
+    {
+      "batchIndex": 1,
+      "files": [
+        {
+          "path": "src/app.js",
+          "language": "javascript",
+          "sizeLines": 405,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/cloud.js",
+          "language": "javascript",
+          "sizeLines": 33,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/config.js",
+          "language": "javascript",
+          "sizeLines": 3,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "src/app.js": [
+          "src/cloud.js",
+          "src/model.js"
+        ],
+        "src/cloud.js": [
+          "src/config.js",
+          "src/model.js"
+        ],
+        "src/config.js": []
+      },
+      "neighborMap": {
+        "src/app.js": [
+          {
+            "path": "src/model.js",
+            "batchIndex": 2,
+            "symbols": [
+              "VERSION",
+              "emptyState",
+              "today",
+              "validDate",
+              "cents",
+              "money",
+              "paid",
+              "balance",
+              "status",
+              "validateState",
+              "addPayment",
+              "createCharges",
+              "metrics",
+              "csv"
+            ]
+          }
+        ],
+        "src/cloud.js": [
+          {
+            "path": "src/model.js",
+            "batchIndex": 2,
+            "symbols": [
+              "VERSION",
+              "emptyState",
+              "today",
+              "validDate",
+              "cents",
+              "money",
+              "paid",
+              "balance",
+              "status",
+              "validateState",
+              "addPayment",
+              "createCharges",
+              "metrics",
+              "csv"
+            ]
+          },
+          {
+            "path": "tests/cloud.test.js",
+            "batchIndex": 2,
+            "symbols": []
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 2,
+      "files": [
+        {
+          "path": "src/model.js",
+          "language": "javascript",
+          "sizeLines": 79,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/cloud.test.js",
+          "language": "javascript",
+          "sizeLines": 55,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tests/model.test.js",
+          "language": "javascript",
+          "sizeLines": 77,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "src/model.js": [],
+        "tests/cloud.test.js": [
+          "src/cloud.js",
+          "src/model.js"
+        ],
+        "tests/model.test.js": [
+          "src/model.js"
+        ]
+      },
+      "neighborMap": {
+        "src/model.js": [
+          {
+            "path": "src/app.js",
+            "batchIndex": 1,
+            "symbols": []
+          },
+          {
+            "path": "src/cloud.js",
+            "batchIndex": 1,
+            "symbols": [
+              "supabase",
+              "LedgerStore"
+            ]
+          }
+        ],
+        "tests/cloud.test.js": [
+          {
+            "path": "src/cloud.js",
+            "batchIndex": 1,
+            "symbols": [
+              "supabase",
+              "LedgerStore"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "batchIndex": 3,
+      "files": [
+        {
+          "path": "supabase/migrations/20261020163028_cloud_ledger.sql",
+          "language": "sql",
+          "sizeLines": 93,
+          "fileCategory": "data"
+        }
+      ],
+      "batchImportData": {
+        "supabase/migrations/20261020163028_cloud_ledger.sql": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 4,
+      "files": [
+        {
+          "path": "DESIGN.md",
+          "language": "markdown",
+          "sizeLines": 116,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "PRODUCT.md",
+          "language": "markdown",
+          "sizeLines": 31,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "README.md",
+          "language": "markdown",
+          "sizeLines": 76,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "TASKS.md",
+          "language": "markdown",
+          "sizeLines": 21,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "UX-CONTRACT.md",
+          "language": "markdown",
+          "sizeLines": 57,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "VERIFICATION.md",
+          "language": "markdown",
+          "sizeLines": 34,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "index.html",
+          "language": "html",
+          "sizeLines": 40,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "package.json",
+          "language": "json",
+          "sizeLines": 22,
+          "fileCategory": "config"
+        },
+        {
+          "path": "premium-audit.json",
+          "language": "json",
+          "sizeLines": 13,
+          "fileCategory": "config"
+        },
+        {
+          "path": "premium-ui.json",
+          "language": "json",
+          "sizeLines": 11,
+          "fileCategory": "config"
+        },
+        {
+          "path": "vercel.json",
+          "language": "json",
+          "sizeLines": 15,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "DESIGN.md": [],
+        "PRODUCT.md": [],
+        "README.md": [],
+        "TASKS.md": [],
+        "UX-CONTRACT.md": [],
+        "VERIFICATION.md": [],
+        "index.html": [],
+        "package.json": [],
+        "premium-audit.json": [],
+        "premium-ui.json": [],
+        "vercel.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 5,
+      "files": [
+        {
+          "path": "build.mjs",
+          "language": "javascript",
+          "sizeLines": 8,
+          "fileCategory": "code"
+        },
+        {
+          "path": "server.mjs",
+          "language": "javascript",
+          "sizeLines": 17,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/styles.css",
+          "language": "css",
+          "sizeLines": 15,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "tests/MANUAL.md",
+          "language": "markdown",
+          "sizeLines": 27,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "tests/cloud-rls.sql",
+          "language": "sql",
+          "sizeLines": 57,
+          "fileCategory": "data"
+        },
+        {
+          "path": "tests/server.test.js",
+          "language": "javascript",
+          "sizeLines": 22,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        "build.mjs": [],
+        "server.mjs": [],
+        "src/styles.css": [],
+        "tests/MANUAL.md": [],
+        "tests/cloud-rls.sql": [],
+        "tests/server.test.js": []
+      },
+      "neighborMap": {}
+    }
+  ]
+}

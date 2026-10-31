@@ -1,0 +1,586 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 10,
+  "filesSkipped": [
+    "index.html"
+  ],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 10,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 0,
+      "failed": 0,
+      "skipped": 10
+    }
+  },
+  "results": [
+    {
+      "path": "DESIGN.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 116,
+      "nonEmptyLines": 81,
+      "sections": [
+        {
+          "heading": "Service ledger Design System",
+          "level": 1,
+          "line": 38
+        },
+        {
+          "heading": "Overview",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "Creative North Star",
+          "level": 3,
+          "line": 42
+        },
+        {
+          "heading": "Product context and register",
+          "level": 3,
+          "line": 46
+        },
+        {
+          "heading": "Colors",
+          "level": 2,
+          "line": 57
+        },
+        {
+          "heading": "Typography",
+          "level": 2,
+          "line": 61
+        },
+        {
+          "heading": "Layout",
+          "level": 2,
+          "line": 65
+        },
+        {
+          "heading": "Elevation & Depth",
+          "level": 2,
+          "line": 69
+        },
+        {
+          "heading": "Shapes",
+          "level": 2,
+          "line": 73
+        },
+        {
+          "heading": "Components",
+          "level": 2,
+          "line": 77
+        },
+        {
+          "heading": "Foundational visual states",
+          "level": 3,
+          "line": 79
+        },
+        {
+          "heading": "Buttons and actions",
+          "level": 3,
+          "line": 83
+        },
+        {
+          "heading": "Navigation and data display",
+          "level": 3,
+          "line": 87
+        },
+        {
+          "heading": "Forms and overlays",
+          "level": 3,
+          "line": 91
+        },
+        {
+          "heading": "Iconography",
+          "level": 3,
+          "line": 95
+        },
+        {
+          "heading": "Motion",
+          "level": 3,
+          "line": 99
+        },
+        {
+          "heading": "Content and data visualization",
+          "level": 3,
+          "line": 103
+        },
+        {
+          "heading": "Do's and Don'ts",
+          "level": 2,
+          "line": 107
+        },
+        {
+          "heading": "Cloud extension · 2026-10-21",
+          "level": 2,
+          "line": 114
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 19
+      }
+    },
+    {
+      "path": "PRODUCT.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 31,
+      "nonEmptyLines": 16,
+      "sections": [
+        {
+          "heading": "Product brief and implementation decisions",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Scope",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Explicit operator input",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Ledger model",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Reversible lifecycle",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "Privacy and portability",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "Limitations",
+          "level": 2,
+          "line": 25
+        },
+        {
+          "heading": "Cloud revision · 2026-10-21",
+          "level": 2,
+          "line": 29
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 76,
+      "nonEmptyLines": 49,
+      "sections": [
+        {
+          "heading": "Service ledger · School service payments",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Use the hosted app",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Authentication configuration",
+          "level": 3,
+          "line": 9
+        },
+        {
+          "heading": "First use",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Migrate the previous local version",
+          "level": 2,
+          "line": 24
+        },
+        {
+          "heading": "Features",
+          "level": 2,
+          "line": 28
+        },
+        {
+          "heading": "Cloud design and privacy",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Run source locally",
+          "level": 2,
+          "line": 43
+        },
+        {
+          "heading": "Build and verify",
+          "level": 2,
+          "line": 56
+        },
+        {
+          "heading": "Vercel deployment",
+          "level": 2,
+          "line": 66
+        },
+        {
+          "heading": "Database migration",
+          "level": 2,
+          "line": 70
+        },
+        {
+          "heading": "Recovery / rollback",
+          "level": 2,
+          "line": 74
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    },
+    {
+      "path": "TASKS.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 21,
+      "nonEmptyLines": 17,
+      "sections": [
+        {
+          "heading": "Task outcomes · 2026-10-20",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Cloud migration · 2026-10-21",
+          "level": 2,
+          "line": 11
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "UX-CONTRACT.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 57,
+      "nonEmptyLines": 43,
+      "sections": [
+        {
+          "heading": "Service ledger UX contract",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Business-context sources",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Canonical UI Map",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Flow ledger",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "Lists, persistence and state",
+          "level": 2,
+          "line": 34
+        },
+        {
+          "heading": "Accessibility and verification",
+          "level": 2,
+          "line": 43
+        },
+        {
+          "heading": "Cloud persistence contract · 2026-10-21 (supersedes local persistence rules)",
+          "level": 2,
+          "line": 47
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": "VERIFICATION.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 34,
+      "nonEmptyLines": 25,
+      "sections": [
+        {
+          "heading": "Verification · cloud version 2 · 2026-10-21",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Completed checks",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Limits / owner setup",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Safety and rollback",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Deployment acceptance",
+          "level": 2,
+          "line": 27
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": "package.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 22,
+      "nonEmptyLines": 22,
+      "sections": [
+        {
+          "heading": "name",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "private",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "type",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "description",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "scripts",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "engines",
+          "level": 1,
+          "line": 13
+        },
+        {
+          "heading": "dependencies",
+          "level": 1,
+          "line": 16
+        },
+        {
+          "heading": "devDependencies",
+          "level": 1,
+          "line": 19
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": "premium-audit.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 13,
+      "nonEmptyLines": 13,
+      "sections": [
+        {
+          "heading": "findings",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "mode",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "projectRoot",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "schemaVersion",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "summary",
+          "level": 1,
+          "line": 6
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": "premium-ui.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 11,
+      "nonEmptyLines": 11,
+      "sections": [
+        {
+          "heading": "profile",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "sourceRoots",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "locale",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "canonicalMap",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "requiredCapabilities",
+          "level": 1,
+          "line": 6
+        },
+        {
+          "heading": "ownership",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "requiredCommands",
+          "level": 1,
+          "line": 8
+        },
+        {
+          "heading": "commands",
+          "level": 1,
+          "line": 9
+        },
+        {
+          "heading": "evidence",
+          "level": 1,
+          "line": 10
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": "vercel.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 15,
+      "nonEmptyLines": 15,
+      "sections": [
+        {
+          "heading": "$schema",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "framework",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "buildCommand",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "outputDirectory",
+          "level": 1,
+          "line": 5
+        },
+        {
+          "heading": "headers",
+          "level": 1,
+          "line": 6
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "widths": [
+    1440,
+    768,
+    390
+  ],
+  "screens": [
+    "auth",
+    "dashboard",
+    "students",
+    "charges",
+    "payments",
+    "backup"
+  ],
+  "checks": [
+    "synthetic sign-in",
+    "validation",
+    "password visibility",
+    "no document overflow",
+    "search and clear",
+    "dialog Escape",
+    "reduced motion",
+    "no page errors"
+  ],
+  "cloudAccess": "blocked; browser-only synthetic adapter"
+}

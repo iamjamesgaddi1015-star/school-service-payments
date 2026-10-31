@@ -1,0 +1,61 @@
+{
+    "projectRoot":  "C:\\Users\\222170\\Documents\\James-Workspace\\04-Personal-Projects\\school-service-payments",
+    "batchImportData":  {
+                            "build.mjs":  [
+
+                                          ],
+                            "server.mjs":  [
+
+                                           ],
+                            "src/styles.css":  [
+
+                                               ],
+                            "tests/MANUAL.md":  [
+
+                                                ],
+                            "tests/cloud-rls.sql":  [
+
+                                                    ],
+                            "tests/server.test.js":  [
+
+                                                     ]
+                        },
+    "batchFiles":  [
+                       {
+                           "path":  "build.mjs",
+                           "language":  "javascript",
+                           "sizeLines":  8,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "server.mjs",
+                           "language":  "javascript",
+                           "sizeLines":  17,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "src/styles.css",
+                           "language":  "css",
+                           "sizeLines":  15,
+                           "fileCategory":  "markup"
+                       },
+                       {
+                           "path":  "tests/MANUAL.md",
+                           "language":  "markdown",
+                           "sizeLines":  27,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "tests/cloud-rls.sql",
+                           "language":  "sql",
+                           "sizeLines":  57,
+                           "fileCategory":  "data"
+                       },
+                       {
+                           "path":  "tests/server.test.js",
+                           "language":  "javascript",
+                           "sizeLines":  22,
+                           "fileCategory":  "code"
+                       }
+                   ]
+}

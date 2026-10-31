@@ -1,0 +1,130 @@
+{
+  "checkedAt": "2026-10-29T15:08:36.607Z",
+  "origin": "https://school-service-payments.vercel.app",
+  "candidateDigest": "97cfa95aff87f1212d8b99557c0d97cd884b1bef4cf428c50899327285a73ad1",
+  "passed": false,
+  "artifactChecksPassed": true,
+  "headerChecksPassed": false,
+  "headerMismatches": [
+    {
+      "pathname": "/",
+      "header": "Content-Security-Policy",
+      "expected": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src https://jjpaxysocfvumjvbbrlb.supabase.co; img-src 'self' data:; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+      "observed": "default-src *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn 'self'; script-src *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn 'self'; style-src *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn 'self'; connect-src *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn https://jjpaxysocfvumjvbbrlb.supabase.co; img-src *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn 'self' data:; frame-ancestors 'none'; base-uri 'none'; form-action *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn 'none';"
+    },
+    {
+      "pathname": "/src/app.js",
+      "header": "Content-Security-Policy",
+      "expected": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src https://jjpaxysocfvumjvbbrlb.supabase.co; img-src 'self' data:; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+      "observed": "default-src *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn 'self'; script-src *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn 'self'; style-src *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn 'self'; connect-src *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn https://jjpaxysocfvumjvbbrlb.supabase.co; img-src *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn 'self' data:; frame-ancestors 'none'; base-uri 'none'; form-action *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn 'none';"
+    },
+    {
+      "pathname": "/src/styles.css",
+      "header": "Content-Security-Policy",
+      "expected": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src https://jjpaxysocfvumjvbbrlb.supabase.co; img-src 'self' data:; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+      "observed": "default-src *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn 'self'; script-src *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn 'self'; style-src *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn 'self'; connect-src *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn https://jjpaxysocfvumjvbbrlb.supabase.co; img-src *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn 'self' data:; frame-ancestors 'none'; base-uri 'none'; form-action *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn 'none';"
+    },
+    {
+      "pathname": "/assets/school-route.png",
+      "header": "Content-Security-Policy",
+      "expected": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src https://jjpaxysocfvumjvbbrlb.supabase.co; img-src 'self' data:; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+      "observed": "default-src *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn 'self'; script-src *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn 'self'; style-src *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn 'self'; connect-src *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn https://jjpaxysocfvumjvbbrlb.supabase.co; img-src *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn 'self' data:; frame-ancestors 'none'; base-uri 'none'; form-action *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn 'none';"
+    },
+    {
+      "pathname": "/assets/instrument-sans-latin-400-normal.woff2",
+      "header": "Content-Security-Policy",
+      "expected": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src https://jjpaxysocfvumjvbbrlb.supabase.co; img-src 'self' data:; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+      "observed": "default-src *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn 'self'; script-src *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn 'self'; style-src *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn 'self'; connect-src *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn https://jjpaxysocfvumjvbbrlb.supabase.co; img-src *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn 'self' data:; frame-ancestors 'none'; base-uri 'none'; form-action *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn 'none';"
+    },
+    {
+      "pathname": "/assets/instrument-sans-latin-600-normal.woff2",
+      "header": "Content-Security-Policy",
+      "expected": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src https://jjpaxysocfvumjvbbrlb.supabase.co; img-src 'self' data:; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+      "observed": "default-src *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn 'self'; script-src *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn 'self'; style-src *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn 'self'; connect-src *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn https://jjpaxysocfvumjvbbrlb.supabase.co; img-src *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn 'self' data:; frame-ancestors 'none'; base-uri 'none'; form-action *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn 'none';"
+    },
+    {
+      "pathname": "/assets/FONT-LICENSE.txt",
+      "header": "Content-Security-Policy",
+      "expected": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src https://jjpaxysocfvumjvbbrlb.supabase.co; img-src 'self' data:; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+      "observed": "default-src *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn 'self'; script-src *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn 'self'; style-src *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn 'self'; connect-src *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn https://jjpaxysocfvumjvbbrlb.supabase.co; img-src *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn 'self' data:; frame-ancestors 'none'; base-uri 'none'; form-action *.opendns.com gateway.id.swg.umbrella.com *.sse.cisco.com *.ciscosecureaccess.cn 'none';"
+    }
+  ],
+  "results": [
+    {
+      "pathname": "/",
+      "status": 200,
+      "bytes": 3024,
+      "sha256": "adcbd78042ee93988e794a30d7fbe6725881dcfccc56a5739e5113aa5e8b30f1"
+    },
+    {
+      "pathname": "/src/app.js",
+      "status": 200,
+      "bytes": 261069,
+      "sha256": "fe877b260f76f7f57f3bea58bd889c1a154300915367cefe8d82a6ead6d30d8f"
+    },
+    {
+      "pathname": "/src/styles.css",
+      "status": 200,
+      "bytes": 26694,
+      "sha256": "73b3e66214f364b64af43706a8cc807bcaaec1997f6bb0690f1f986a937978e8"
+    },
+    {
+      "pathname": "/assets/school-route.png",
+      "status": 200,
+      "bytes": 2505704,
+      "sha256": "1b206b1d21e909e300df061526a647665d6611478356975f59b4484af4766a7c"
+    },
+    {
+      "pathname": "/assets/instrument-sans-latin-400-normal.woff2",
+      "status": 200,
+      "bytes": 16860,
+      "sha256": "9a91efaa3599a6ef01b2f49e9ec670e3a2f39baeef09c73198f1052cf3bb0850"
+    },
+    {
+      "pathname": "/assets/instrument-sans-latin-600-normal.woff2",
+      "status": 200,
+      "bytes": 17408,
+      "sha256": "efb770916eda95a0e31d80cccde9651d4e8617010b21220e9f227c4820d675da"
+    },
+    {
+      "pathname": "/assets/FONT-LICENSE.txt",
+      "status": 200,
+      "bytes": 4538,
+      "sha256": "c27a3c53c3beed7f5c26853afa15991478ff7145d3754a36b0382f84e10c0d03"
+    },
+    {
+      "pathname": "/REDESIGN.md",
+      "status": 404
+    },
+    {
+      "pathname": "/src/model.js",
+      "status": 404
+    },
+    {
+      "pathname": "/src/config.js",
+      "status": 404
+    },
+    {
+      "pathname": "/scripts/browser-check.mjs",
+      "status": 404
+    },
+    {
+      "pathname": "/package.json",
+      "status": 404
+    },
+    {
+      "pathname": "/artifacts/redesign-concept.png",
+      "status": 404
+    }
+  ],
+  "browser": {
+    "widths": [
+      1440,
+      390
+    ],
+    "signedOut": true,
+    "externalRequests": "blocked",
+    "pageErrors": []
+  },
+  "limits": "No live login, private ledger, account mutation, protection bypass or physical-device test. Header mismatches remain failures; no normalization or policy bypass is applied."
+}

@@ -1,0 +1,36 @@
+{
+    "projectRoot":  "C:\\Users\\222170\\Documents\\James-Workspace\\04-Personal-Projects\\school-service-payments",
+    "batchImportData":  {
+                            "src/app.js":  [
+                                               "src/cloud.js",
+                                               "src/model.js"
+                                           ],
+                            "src/cloud.js":  [
+                                                 "src/config.js",
+                                                 "src/model.js"
+                                             ],
+                            "src/config.js":  [
+
+                                              ]
+                        },
+    "batchFiles":  [
+                       {
+                           "path":  "src/app.js",
+                           "language":  "javascript",
+                           "sizeLines":  405,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "src/cloud.js",
+                           "language":  "javascript",
+                           "sizeLines":  33,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "src/config.js",
+                           "language":  "javascript",
+                           "sizeLines":  3,
+                           "fileCategory":  "code"
+                       }
+                   ]
+}

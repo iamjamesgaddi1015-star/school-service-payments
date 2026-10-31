@@ -1,0 +1,3163 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 3,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 3,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "src/app.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 405,
+      "nonEmptyLines": 405,
+      "functions": [
+        {
+          "name": "$",
+          "startLine": 3,
+          "endLine": 3,
+          "params": []
+        },
+        {
+          "name": "esc",
+          "startLine": 4,
+          "endLine": 4,
+          "params": []
+        },
+        {
+          "name": "uid",
+          "startLine": 5,
+          "endLine": 5,
+          "params": []
+        },
+        {
+          "name": "dateLabel",
+          "startLine": 6,
+          "endLine": 6,
+          "params": []
+        },
+        {
+          "name": "monthLabel",
+          "startLine": 7,
+          "endLine": 7,
+          "params": []
+        },
+        {
+          "name": "initials",
+          "startLine": 8,
+          "endLine": 8,
+          "params": []
+        },
+        {
+          "name": "warning",
+          "startLine": 22,
+          "endLine": 22,
+          "params": [
+            "message"
+          ]
+        },
+        {
+          "name": "notify",
+          "startLine": 23,
+          "endLine": 27,
+          "params": [
+            "message"
+          ]
+        },
+        {
+          "name": "commit",
+          "startLine": 34,
+          "endLine": 48,
+          "params": [
+            "next"
+          ]
+        },
+        {
+          "name": "syncLabel",
+          "startLine": 49,
+          "endLine": 49,
+          "params": [
+            "message"
+          ]
+        },
+        {
+          "name": "refreshLedger",
+          "startLine": 50,
+          "endLine": 69,
+          "params": []
+        },
+        {
+          "name": "authScreen",
+          "startLine": 70,
+          "endLine": 89,
+          "params": []
+        },
+        {
+          "name": "setAccount",
+          "startLine": 90,
+          "endLine": 104,
+          "params": [
+            "user"
+          ]
+        },
+        {
+          "name": "student",
+          "startLine": 109,
+          "endLine": 109,
+          "params": []
+        },
+        {
+          "name": "invoice",
+          "startLine": 110,
+          "endLine": 110,
+          "params": []
+        },
+        {
+          "name": "badge",
+          "startLine": 111,
+          "endLine": 111,
+          "params": []
+        },
+        {
+          "name": "button",
+          "startLine": 112,
+          "endLine": 112,
+          "params": [
+            "label",
+            "action"
+          ]
+        },
+        {
+          "name": "studentCell",
+          "startLine": 113,
+          "endLine": 113,
+          "params": []
+        },
+        {
+          "name": "empty",
+          "startLine": 114,
+          "endLine": 114,
+          "params": [
+            "title",
+            "description"
+          ]
+        },
+        {
+          "name": "heading",
+          "startLine": 115,
+          "endLine": 115,
+          "params": [
+            "title",
+            "subtitle"
+          ]
+        },
+        {
+          "name": "periodBar",
+          "startLine": 116,
+          "endLine": 116,
+          "params": []
+        },
+        {
+          "name": "kpi",
+          "startLine": 117,
+          "endLine": 117,
+          "params": [
+            "label",
+            "value",
+            "foot",
+            "icon"
+          ]
+        },
+        {
+          "name": "pagination",
+          "startLine": 118,
+          "endLine": 121,
+          "params": [
+            "total"
+          ]
+        },
+        {
+          "name": "searchBar",
+          "startLine": 122,
+          "endLine": 124,
+          "params": [
+            "options",
+            "placeholder"
+          ]
+        },
+        {
+          "name": "paginate",
+          "startLine": 125,
+          "endLine": 125,
+          "params": [
+            "list"
+          ]
+        },
+        {
+          "name": "trend",
+          "startLine": 126,
+          "endLine": 135,
+          "params": []
+        },
+        {
+          "name": "dashboard",
+          "startLine": 136,
+          "endLine": 149,
+          "params": []
+        },
+        {
+          "name": "chargeRow",
+          "startLine": 150,
+          "endLine": 153,
+          "params": [
+            "i"
+          ]
+        },
+        {
+          "name": "chargesView",
+          "startLine": 154,
+          "endLine": 159,
+          "params": []
+        },
+        {
+          "name": "studentsView",
+          "startLine": 160,
+          "endLine": 164,
+          "params": []
+        },
+        {
+          "name": "paymentsView",
+          "startLine": 165,
+          "endLine": 172,
+          "params": []
+        },
+        {
+          "name": "backupView",
+          "startLine": 173,
+          "endLine": 175,
+          "params": []
+        },
+        {
+          "name": "render",
+          "startLine": 176,
+          "endLine": 185,
+          "params": []
+        },
+        {
+          "name": "navigate",
+          "startLine": 186,
+          "endLine": 191,
+          "params": []
+        },
+        {
+          "name": "field",
+          "startLine": 194,
+          "endLine": 194,
+          "params": [
+            "name",
+            "label"
+          ]
+        },
+        {
+          "name": "form",
+          "startLine": 195,
+          "endLine": 195,
+          "params": [
+            "content"
+          ]
+        },
+        {
+          "name": "modal",
+          "startLine": 196,
+          "endLine": 225,
+          "params": [
+            "title",
+            "html",
+            "handler"
+          ]
+        },
+        {
+          "name": "close",
+          "startLine": 226,
+          "endLine": 235,
+          "params": []
+        },
+        {
+          "name": "dirty",
+          "startLine": 236,
+          "endLine": 239,
+          "params": []
+        },
+        {
+          "name": "requestClose",
+          "startLine": 240,
+          "endLine": 250,
+          "params": []
+        },
+        {
+          "name": "required",
+          "startLine": 254,
+          "endLine": 261,
+          "params": [
+            "data",
+            "key",
+            "label"
+          ]
+        },
+        {
+          "name": "amountValue",
+          "startLine": 262,
+          "endLine": 265,
+          "params": [
+            "data",
+            "key"
+          ]
+        },
+        {
+          "name": "studentForm",
+          "startLine": 266,
+          "endLine": 275,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "chargesForm",
+          "startLine": 276,
+          "endLine": 292,
+          "params": []
+        },
+        {
+          "name": "paymentForm",
+          "startLine": 293,
+          "endLine": 302,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "editCharge",
+          "startLine": 303,
+          "endLine": 313,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "archiveStudent",
+          "startLine": 314,
+          "endLine": 322,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "voidPayment",
+          "startLine": 323,
+          "endLine": 332,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "receipt",
+          "startLine": 333,
+          "endLine": 338,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "download",
+          "startLine": 339,
+          "endLine": 343,
+          "params": [
+            "name",
+            "data",
+            "type"
+          ]
+        },
+        {
+          "name": "exportCharges",
+          "startLine": 344,
+          "endLine": 348,
+          "params": []
+        },
+        {
+          "name": "exportPayments",
+          "startLine": 349,
+          "endLine": 353,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "$",
+          "callee": "document.querySelector",
+          "lineNumber": 3
+        },
+        {
+          "caller": "esc",
+          "callee": "String(value ?? '').replace",
+          "lineNumber": 4
+        },
+        {
+          "caller": "esc",
+          "callee": "String",
+          "lineNumber": 4
+        },
+        {
+          "caller": "uid",
+          "callee": "crypto.randomUUID",
+          "lineNumber": 5
+        },
+        {
+          "caller": "dateLabel",
+          "callee": "new Intl.DateTimeFormat('en-PH', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'Asia/Manila' }).format",
+          "lineNumber": 6
+        },
+        {
+          "caller": "monthLabel",
+          "callee": "new Intl.DateTimeFormat('en-PH', { month: 'long', year: 'numeric' }).format",
+          "lineNumber": 7
+        },
+        {
+          "caller": "initials",
+          "callee": "name.trim().split(/\\s+/).slice(0, 2).map(n => n[0]).join('').toUpperCase",
+          "lineNumber": 8
+        },
+        {
+          "caller": "initials",
+          "callee": "name.trim().split(/\\s+/).slice(0, 2).map(n => n[0]).join",
+          "lineNumber": 8
+        },
+        {
+          "caller": "initials",
+          "callee": "name.trim().split(/\\s+/).slice(0, 2).map",
+          "lineNumber": 8
+        },
+        {
+          "caller": "initials",
+          "callee": "name.trim().split(/\\s+/).slice",
+          "lineNumber": 8
+        },
+        {
+          "caller": "initials",
+          "callee": "name.trim().split",
+          "lineNumber": 8
+        },
+        {
+          "caller": "initials",
+          "callee": "name.trim",
+          "lineNumber": 8
+        },
+        {
+          "caller": "warning",
+          "callee": "$",
+          "lineNumber": 22
+        },
+        {
+          "caller": "notify",
+          "callee": "clearTimeout",
+          "lineNumber": 24
+        },
+        {
+          "caller": "notify",
+          "callee": "$",
+          "lineNumber": 25
+        },
+        {
+          "caller": "notify",
+          "callee": "setTimeout",
+          "lineNumber": 26
+        },
+        {
+          "caller": "notify",
+          "callee": "$",
+          "lineNumber": 26
+        },
+        {
+          "caller": "commit",
+          "callee": "syncLabel",
+          "lineNumber": 38
+        },
+        {
+          "caller": "commit",
+          "callee": "store.save",
+          "lineNumber": 41
+        },
+        {
+          "caller": "commit",
+          "callee": "$",
+          "lineNumber": 44
+        },
+        {
+          "caller": "commit",
+          "callee": "syncLabel",
+          "lineNumber": 45
+        },
+        {
+          "caller": "commit",
+          "callee": "syncLabel",
+          "lineNumber": 46
+        },
+        {
+          "caller": "syncLabel",
+          "callee": "$",
+          "lineNumber": 49
+        },
+        {
+          "caller": "refreshLedger",
+          "callee": "$",
+          "lineNumber": 51
+        },
+        {
+          "caller": "refreshLedger",
+          "callee": "syncLabel",
+          "lineNumber": 54
+        },
+        {
+          "caller": "refreshLedger",
+          "callee": "store.load",
+          "lineNumber": 56
+        },
+        {
+          "caller": "refreshLedger",
+          "callee": "$",
+          "lineNumber": 59
+        },
+        {
+          "caller": "refreshLedger",
+          "callee": "$",
+          "lineNumber": 62
+        },
+        {
+          "caller": "refreshLedger",
+          "callee": "syncLabel",
+          "lineNumber": 63
+        },
+        {
+          "caller": "refreshLedger",
+          "callee": "render",
+          "lineNumber": 64
+        },
+        {
+          "caller": "refreshLedger",
+          "callee": "notify",
+          "lineNumber": 65
+        },
+        {
+          "caller": "refreshLedger",
+          "callee": "warning",
+          "lineNumber": 67
+        },
+        {
+          "caller": "refreshLedger",
+          "callee": "syncLabel",
+          "lineNumber": 67
+        },
+        {
+          "caller": "refreshLedger",
+          "callee": "render",
+          "lineNumber": 67
+        },
+        {
+          "caller": "authScreen",
+          "callee": "$",
+          "lineNumber": 71
+        },
+        {
+          "caller": "authScreen",
+          "callee": "esc",
+          "lineNumber": 71
+        },
+        {
+          "caller": "authScreen",
+          "callee": "field",
+          "lineNumber": 71
+        },
+        {
+          "caller": "authScreen",
+          "callee": "field",
+          "lineNumber": 71
+        },
+        {
+          "caller": "authScreen",
+          "callee": "$('#auth-form').querySelectorAll('input').forEach",
+          "lineNumber": 72
+        },
+        {
+          "caller": "authScreen",
+          "callee": "$('#auth-form').querySelectorAll",
+          "lineNumber": 72
+        },
+        {
+          "caller": "authScreen",
+          "callee": "$",
+          "lineNumber": 72
+        },
+        {
+          "caller": "authScreen",
+          "callee": "el.setAttribute",
+          "lineNumber": 72
+        },
+        {
+          "caller": "authScreen",
+          "callee": "$",
+          "lineNumber": 73
+        },
+        {
+          "caller": "authScreen",
+          "callee": "$",
+          "lineNumber": 73
+        },
+        {
+          "caller": "authScreen",
+          "callee": "$",
+          "lineNumber": 73
+        },
+        {
+          "caller": "authScreen",
+          "callee": "$('#show-password').setAttribute",
+          "lineNumber": 73
+        },
+        {
+          "caller": "authScreen",
+          "callee": "$",
+          "lineNumber": 73
+        },
+        {
+          "caller": "authScreen",
+          "callee": "String",
+          "lineNumber": 73
+        },
+        {
+          "caller": "authScreen",
+          "callee": "$",
+          "lineNumber": 74
+        },
+        {
+          "caller": "authScreen",
+          "callee": "event.preventDefault",
+          "lineNumber": 75
+        },
+        {
+          "caller": "authScreen",
+          "callee": "entry.elements.email.value.trim",
+          "lineNumber": 77
+        },
+        {
+          "caller": "authScreen",
+          "callee": "$",
+          "lineNumber": 79
+        },
+        {
+          "caller": "authScreen",
+          "callee": "/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test",
+          "lineNumber": 80
+        },
+        {
+          "caller": "authScreen",
+          "callee": "errorEl.focus",
+          "lineNumber": 80
+        },
+        {
+          "caller": "authScreen",
+          "callee": "entry.querySelectorAll('button').forEach",
+          "lineNumber": 81
+        },
+        {
+          "caller": "authScreen",
+          "callee": "entry.querySelectorAll",
+          "lineNumber": 81
+        },
+        {
+          "caller": "authScreen",
+          "callee": "supabase.auth.signUp",
+          "lineNumber": 83
+        },
+        {
+          "caller": "authScreen",
+          "callee": "supabase.auth.signInWithPassword",
+          "lineNumber": 83
+        },
+        {
+          "caller": "authScreen",
+          "callee": "errorEl.focus",
+          "lineNumber": 86
+        },
+        {
+          "caller": "authScreen",
+          "callee": "entry.querySelectorAll('button').forEach",
+          "lineNumber": 87
+        },
+        {
+          "caller": "authScreen",
+          "callee": "entry.querySelectorAll",
+          "lineNumber": 87
+        },
+        {
+          "caller": "setAccount",
+          "callee": "emptyState",
+          "lineNumber": 95
+        },
+        {
+          "caller": "setAccount",
+          "callee": "$",
+          "lineNumber": 96
+        },
+        {
+          "caller": "setAccount",
+          "callee": "$",
+          "lineNumber": 97
+        },
+        {
+          "caller": "setAccount",
+          "callee": "$",
+          "lineNumber": 98
+        },
+        {
+          "caller": "setAccount",
+          "callee": "$",
+          "lineNumber": 99
+        },
+        {
+          "caller": "setAccount",
+          "callee": "$",
+          "lineNumber": 100
+        },
+        {
+          "caller": "setAccount",
+          "callee": "close",
+          "lineNumber": 100
+        },
+        {
+          "caller": "setAccount",
+          "callee": "render",
+          "lineNumber": 101
+        },
+        {
+          "caller": "setAccount",
+          "callee": "refreshLedger",
+          "lineNumber": 102
+        },
+        {
+          "caller": "setAccount",
+          "callee": "syncLabel",
+          "lineNumber": 103
+        },
+        {
+          "caller": "student",
+          "callee": "state.students.find",
+          "lineNumber": 109
+        },
+        {
+          "caller": "invoice",
+          "callee": "state.invoices.find",
+          "lineNumber": 110
+        },
+        {
+          "caller": "badge",
+          "callee": "text.toLowerCase",
+          "lineNumber": 111
+        },
+        {
+          "caller": "badge",
+          "callee": "esc",
+          "lineNumber": 111
+        },
+        {
+          "caller": "button",
+          "callee": "esc",
+          "lineNumber": 112
+        },
+        {
+          "caller": "studentCell",
+          "callee": "esc",
+          "lineNumber": 113
+        },
+        {
+          "caller": "studentCell",
+          "callee": "initials",
+          "lineNumber": 113
+        },
+        {
+          "caller": "studentCell",
+          "callee": "esc",
+          "lineNumber": 113
+        },
+        {
+          "caller": "studentCell",
+          "callee": "esc",
+          "lineNumber": 113
+        },
+        {
+          "caller": "pagination",
+          "callee": "Math.max",
+          "lineNumber": 119
+        },
+        {
+          "caller": "pagination",
+          "callee": "Math.ceil",
+          "lineNumber": 119
+        },
+        {
+          "caller": "pagination",
+          "callee": "Math.min",
+          "lineNumber": 120
+        },
+        {
+          "caller": "searchBar",
+          "callee": "esc",
+          "lineNumber": 123
+        },
+        {
+          "caller": "searchBar",
+          "callee": "options.map(o => `<option ${o === filter ? 'selected' : ''}>${o}</option>`).join",
+          "lineNumber": 123
+        },
+        {
+          "caller": "searchBar",
+          "callee": "options.map",
+          "lineNumber": 123
+        },
+        {
+          "caller": "paginate",
+          "callee": "Math.min",
+          "lineNumber": 125
+        },
+        {
+          "caller": "paginate",
+          "callee": "Math.max",
+          "lineNumber": 125
+        },
+        {
+          "caller": "paginate",
+          "callee": "Math.ceil",
+          "lineNumber": 125
+        },
+        {
+          "caller": "paginate",
+          "callee": "list.slice",
+          "lineNumber": 125
+        },
+        {
+          "caller": "trend",
+          "callee": "Array.from",
+          "lineNumber": 127
+        },
+        {
+          "caller": "trend",
+          "callee": "today().slice",
+          "lineNumber": 128
+        },
+        {
+          "caller": "trend",
+          "callee": "today",
+          "lineNumber": 128
+        },
+        {
+          "caller": "trend",
+          "callee": "date.setMonth",
+          "lineNumber": 129
+        },
+        {
+          "caller": "trend",
+          "callee": "date.getMonth",
+          "lineNumber": 129
+        },
+        {
+          "caller": "trend",
+          "callee": "date.getFullYear",
+          "lineNumber": 130
+        },
+        {
+          "caller": "trend",
+          "callee": "String(date.getMonth() + 1).padStart",
+          "lineNumber": 130
+        },
+        {
+          "caller": "trend",
+          "callee": "String",
+          "lineNumber": 130
+        },
+        {
+          "caller": "trend",
+          "callee": "date.getMonth",
+          "lineNumber": 130
+        },
+        {
+          "caller": "trend",
+          "callee": "dates.map",
+          "lineNumber": 132
+        },
+        {
+          "caller": "trend",
+          "callee": "state.payments.filter(p => !p.voided && p.date.startsWith(d)).reduce",
+          "lineNumber": 132
+        },
+        {
+          "caller": "trend",
+          "callee": "state.payments.filter",
+          "lineNumber": 132
+        },
+        {
+          "caller": "trend",
+          "callee": "p.date.startsWith",
+          "lineNumber": 132
+        },
+        {
+          "caller": "trend",
+          "callee": "Math.max",
+          "lineNumber": 133
+        },
+        {
+          "caller": "trend",
+          "callee": "dates.map((d, n) => `${monthLabel(d)} ${money(values[n])}`).join",
+          "lineNumber": 134
+        },
+        {
+          "caller": "trend",
+          "callee": "dates.map",
+          "lineNumber": 134
+        },
+        {
+          "caller": "trend",
+          "callee": "monthLabel",
+          "lineNumber": 134
+        },
+        {
+          "caller": "trend",
+          "callee": "money",
+          "lineNumber": 134
+        },
+        {
+          "caller": "trend",
+          "callee": "dates.map((d, n) => `<div class=\"chart-column\"><div class=\"bar-track\"><div class=\"bar-fill\" data-height=\"${Math.round(values[n] / max * 100)}\"></div></div><small>${new Date(`${d}-01T12:00:00`).toLocaleDateString('en-PH', { month: 'short' })}</small></div>`).join",
+          "lineNumber": 134
+        },
+        {
+          "caller": "trend",
+          "callee": "dates.map",
+          "lineNumber": 134
+        },
+        {
+          "caller": "trend",
+          "callee": "Math.round",
+          "lineNumber": 134
+        },
+        {
+          "caller": "trend",
+          "callee": "new Date(`${d}-01T12:00:00`).toLocaleDateString",
+          "lineNumber": 134
+        },
+        {
+          "caller": "trend",
+          "callee": "money",
+          "lineNumber": 134
+        },
+        {
+          "caller": "trend",
+          "callee": "money",
+          "lineNumber": 134
+        },
+        {
+          "caller": "trend",
+          "callee": "state.payments.filter(p => !p.voided).reduce",
+          "lineNumber": 134
+        },
+        {
+          "caller": "trend",
+          "callee": "state.payments.filter",
+          "lineNumber": 134
+        },
+        {
+          "caller": "dashboard",
+          "callee": "metrics",
+          "lineNumber": 137
+        },
+        {
+          "caller": "dashboard",
+          "callee": "state.students.filter",
+          "lineNumber": 138
+        },
+        {
+          "caller": "dashboard",
+          "callee": "state.invoices.filter(i => i.period === period && balance(state, i) > 0).sort",
+          "lineNumber": 139
+        },
+        {
+          "caller": "dashboard",
+          "callee": "state.invoices.filter",
+          "lineNumber": 139
+        },
+        {
+          "caller": "dashboard",
+          "callee": "balance",
+          "lineNumber": 139
+        },
+        {
+          "caller": "dashboard",
+          "callee": "a.due.localeCompare",
+          "lineNumber": 139
+        },
+        {
+          "caller": "dashboard",
+          "callee": "state.invoices.filter",
+          "lineNumber": 140
+        },
+        {
+          "caller": "dashboard",
+          "callee": "status",
+          "lineNumber": 140
+        },
+        {
+          "caller": "dashboard",
+          "callee": "state.invoices.filter",
+          "lineNumber": 141
+        },
+        {
+          "caller": "dashboard",
+          "callee": "status",
+          "lineNumber": 141
+        },
+        {
+          "caller": "dashboard",
+          "callee": "state.invoices.filter",
+          "lineNumber": 142
+        },
+        {
+          "caller": "dashboard",
+          "callee": "status",
+          "lineNumber": 142
+        },
+        {
+          "caller": "dashboard",
+          "callee": "heading",
+          "lineNumber": 143
+        },
+        {
+          "caller": "dashboard",
+          "callee": "button",
+          "lineNumber": 143
+        },
+        {
+          "caller": "dashboard",
+          "callee": "periodBar",
+          "lineNumber": 143
+        },
+        {
+          "caller": "dashboard",
+          "callee": "button",
+          "lineNumber": 144
+        },
+        {
+          "caller": "dashboard",
+          "callee": "kpi",
+          "lineNumber": 145
+        },
+        {
+          "caller": "dashboard",
+          "callee": "money",
+          "lineNumber": 145
+        },
+        {
+          "caller": "dashboard",
+          "callee": "kpi",
+          "lineNumber": 145
+        },
+        {
+          "caller": "dashboard",
+          "callee": "money",
+          "lineNumber": 145
+        },
+        {
+          "caller": "dashboard",
+          "callee": "money",
+          "lineNumber": 145
+        },
+        {
+          "caller": "dashboard",
+          "callee": "kpi",
+          "lineNumber": 145
+        },
+        {
+          "caller": "dashboard",
+          "callee": "money",
+          "lineNumber": 145
+        },
+        {
+          "caller": "dashboard",
+          "callee": "kpi",
+          "lineNumber": 145
+        },
+        {
+          "caller": "dashboard",
+          "callee": "trend",
+          "lineNumber": 146
+        },
+        {
+          "caller": "dashboard",
+          "callee": "monthLabel",
+          "lineNumber": 147
+        },
+        {
+          "caller": "dashboard",
+          "callee": "Math.round",
+          "lineNumber": 147
+        },
+        {
+          "caller": "dashboard",
+          "callee": "Math.round",
+          "lineNumber": 147
+        },
+        {
+          "caller": "dashboard",
+          "callee": "monthLabel",
+          "lineNumber": 148
+        },
+        {
+          "caller": "dashboard",
+          "callee": "pending.slice(0, 5).map(i => chargeRow(i, true)).join",
+          "lineNumber": 148
+        },
+        {
+          "caller": "dashboard",
+          "callee": "pending.slice(0, 5).map",
+          "lineNumber": 148
+        },
+        {
+          "caller": "dashboard",
+          "callee": "pending.slice",
+          "lineNumber": 148
+        },
+        {
+          "caller": "dashboard",
+          "callee": "chargeRow",
+          "lineNumber": 148
+        },
+        {
+          "caller": "dashboard",
+          "callee": "empty",
+          "lineNumber": 148
+        },
+        {
+          "caller": "dashboard",
+          "callee": "button",
+          "lineNumber": 148
+        },
+        {
+          "caller": "chargeRow",
+          "callee": "balance",
+          "lineNumber": 151
+        },
+        {
+          "caller": "chargeRow",
+          "callee": "studentCell",
+          "lineNumber": 152
+        },
+        {
+          "caller": "chargeRow",
+          "callee": "student",
+          "lineNumber": 152
+        },
+        {
+          "caller": "chargeRow",
+          "callee": "esc",
+          "lineNumber": 152
+        },
+        {
+          "caller": "chargeRow",
+          "callee": "money",
+          "lineNumber": 152
+        },
+        {
+          "caller": "chargeRow",
+          "callee": "money",
+          "lineNumber": 152
+        },
+        {
+          "caller": "chargeRow",
+          "callee": "paid",
+          "lineNumber": 152
+        },
+        {
+          "caller": "chargeRow",
+          "callee": "dateLabel",
+          "lineNumber": 152
+        },
+        {
+          "caller": "chargeRow",
+          "callee": "money",
+          "lineNumber": 152
+        },
+        {
+          "caller": "chargeRow",
+          "callee": "badge",
+          "lineNumber": 152
+        },
+        {
+          "caller": "chargeRow",
+          "callee": "status",
+          "lineNumber": 152
+        },
+        {
+          "caller": "chargeRow",
+          "callee": "button",
+          "lineNumber": 152
+        },
+        {
+          "caller": "chargeRow",
+          "callee": "button",
+          "lineNumber": 152
+        },
+        {
+          "caller": "chargeRow",
+          "callee": "button",
+          "lineNumber": 152
+        },
+        {
+          "caller": "chargesView",
+          "callee": "state.invoices.filter",
+          "lineNumber": 155
+        },
+        {
+          "caller": "chargesView",
+          "callee": "status",
+          "lineNumber": 155
+        },
+        {
+          "caller": "chargesView",
+          "callee": "`${student(i.studentId).name} ${student(i.studentId).school} ${student(i.studentId).route}`.toLowerCase().includes",
+          "lineNumber": 155
+        },
+        {
+          "caller": "chargesView",
+          "callee": "`${student(i.studentId).name} ${student(i.studentId).school} ${student(i.studentId).route}`.toLowerCase",
+          "lineNumber": 155
+        },
+        {
+          "caller": "chargesView",
+          "callee": "student",
+          "lineNumber": 155
+        },
+        {
+          "caller": "chargesView",
+          "callee": "student",
+          "lineNumber": 155
+        },
+        {
+          "caller": "chargesView",
+          "callee": "student",
+          "lineNumber": 155
+        },
+        {
+          "caller": "chargesView",
+          "callee": "query.toLowerCase",
+          "lineNumber": 155
+        },
+        {
+          "caller": "chargesView",
+          "callee": "list.sort",
+          "lineNumber": 156
+        },
+        {
+          "caller": "chargesView",
+          "callee": "student(a.studentId).name.localeCompare",
+          "lineNumber": 156
+        },
+        {
+          "caller": "chargesView",
+          "callee": "student",
+          "lineNumber": 156
+        },
+        {
+          "caller": "chargesView",
+          "callee": "student",
+          "lineNumber": 156
+        },
+        {
+          "caller": "chargesView",
+          "callee": "a.due.localeCompare",
+          "lineNumber": 156
+        },
+        {
+          "caller": "chargesView",
+          "callee": "paginate",
+          "lineNumber": 157
+        },
+        {
+          "caller": "chargesView",
+          "callee": "heading",
+          "lineNumber": 158
+        },
+        {
+          "caller": "chargesView",
+          "callee": "button",
+          "lineNumber": 158
+        },
+        {
+          "caller": "chargesView",
+          "callee": "periodBar",
+          "lineNumber": 158
+        },
+        {
+          "caller": "chargesView",
+          "callee": "monthLabel",
+          "lineNumber": 158
+        },
+        {
+          "caller": "chargesView",
+          "callee": "button",
+          "lineNumber": 158
+        },
+        {
+          "caller": "chargesView",
+          "callee": "searchBar",
+          "lineNumber": 158
+        },
+        {
+          "caller": "chargesView",
+          "callee": "rows.map(i => chargeRow(i)).join",
+          "lineNumber": 158
+        },
+        {
+          "caller": "chargesView",
+          "callee": "rows.map",
+          "lineNumber": 158
+        },
+        {
+          "caller": "chargesView",
+          "callee": "chargeRow",
+          "lineNumber": 158
+        },
+        {
+          "caller": "chargesView",
+          "callee": "empty",
+          "lineNumber": 158
+        },
+        {
+          "caller": "chargesView",
+          "callee": "state.invoices.some",
+          "lineNumber": 158
+        },
+        {
+          "caller": "chargesView",
+          "callee": "button",
+          "lineNumber": 158
+        },
+        {
+          "caller": "chargesView",
+          "callee": "pagination",
+          "lineNumber": 158
+        },
+        {
+          "caller": "studentsView",
+          "callee": "state.students.filter(s => (filter === 'All' || (filter === 'Archived' ? s.archived : !s.archived)) && `${s.name} ${s.school} ${s.route}`.toLowerCase().includes(query.toLowerCase())).sort",
+          "lineNumber": 161
+        },
+        {
+          "caller": "studentsView",
+          "callee": "state.students.filter",
+          "lineNumber": 161
+        },
+        {
+          "caller": "studentsView",
+          "callee": "`${s.name} ${s.school} ${s.route}`.toLowerCase().includes",
+          "lineNumber": 161
+        },
+        {
+          "caller": "studentsView",
+          "callee": "`${s.name} ${s.school} ${s.route}`.toLowerCase",
+          "lineNumber": 161
+        },
+        {
+          "caller": "studentsView",
+          "callee": "query.toLowerCase",
+          "lineNumber": 161
+        },
+        {
+          "caller": "studentsView",
+          "callee": "a.name.localeCompare",
+          "lineNumber": 161
+        },
+        {
+          "caller": "studentsView",
+          "callee": "paginate",
+          "lineNumber": 162
+        },
+        {
+          "caller": "studentsView",
+          "callee": "heading",
+          "lineNumber": 163
+        },
+        {
+          "caller": "studentsView",
+          "callee": "button",
+          "lineNumber": 163
+        },
+        {
+          "caller": "studentsView",
+          "callee": "state.students.filter",
+          "lineNumber": 163
+        },
+        {
+          "caller": "studentsView",
+          "callee": "searchBar",
+          "lineNumber": 163
+        },
+        {
+          "caller": "studentsView",
+          "callee": "rows.map(s => `<tr><td>${studentCell(s)}</td><td>${esc(s.route || 'Not set')}<span class=\"detail\">${esc(s.contact || 'No contact added')}</span></td><td class=\"amount\">${money(s.fee)}</td><td class=\"amount\">${money(state.invoices.filter(i => i.studentId === s.id).reduce((sum, i) => sum + balance(state, i), 0))}</td><td>${badge(s.archived ? 'Archived' : 'Active')}</td><td><div class=\"row-actions\">${button('Edit', 'student', s.id, 'small')}${button(s.archived ? 'Restore' : 'Archive', 'archive', s.id, 'small ghost')}</div></td></tr>`).join",
+          "lineNumber": 163
+        },
+        {
+          "caller": "studentsView",
+          "callee": "rows.map",
+          "lineNumber": 163
+        },
+        {
+          "caller": "studentsView",
+          "callee": "studentCell",
+          "lineNumber": 163
+        },
+        {
+          "caller": "studentsView",
+          "callee": "esc",
+          "lineNumber": 163
+        },
+        {
+          "caller": "studentsView",
+          "callee": "esc",
+          "lineNumber": 163
+        },
+        {
+          "caller": "studentsView",
+          "callee": "money",
+          "lineNumber": 163
+        },
+        {
+          "caller": "studentsView",
+          "callee": "money",
+          "lineNumber": 163
+        },
+        {
+          "caller": "studentsView",
+          "callee": "state.invoices.filter(i => i.studentId === s.id).reduce",
+          "lineNumber": 163
+        },
+        {
+          "caller": "studentsView",
+          "callee": "state.invoices.filter",
+          "lineNumber": 163
+        },
+        {
+          "caller": "studentsView",
+          "callee": "balance",
+          "lineNumber": 163
+        },
+        {
+          "caller": "studentsView",
+          "callee": "badge",
+          "lineNumber": 163
+        },
+        {
+          "caller": "studentsView",
+          "callee": "button",
+          "lineNumber": 163
+        },
+        {
+          "caller": "studentsView",
+          "callee": "button",
+          "lineNumber": 163
+        },
+        {
+          "caller": "studentsView",
+          "callee": "empty",
+          "lineNumber": 163
+        },
+        {
+          "caller": "studentsView",
+          "callee": "button",
+          "lineNumber": 163
+        },
+        {
+          "caller": "studentsView",
+          "callee": "pagination",
+          "lineNumber": 163
+        },
+        {
+          "caller": "paymentsView",
+          "callee": "state.payments.filter(p => {\r\n    const i = invoice(p.invoiceId);\r\n    return (filter === 'All' || (filter === 'Voided' ? p.voided : !p.voided)) && `${student(i.studentId).name} ${p.reference} ${i.period} ${p.date} ${p.method}`.toLowerCase().includes(query.toLowerCase());\r\n  }).sort",
+          "lineNumber": 166
+        },
+        {
+          "caller": "paymentsView",
+          "callee": "state.payments.filter",
+          "lineNumber": 166
+        },
+        {
+          "caller": "paymentsView",
+          "callee": "invoice",
+          "lineNumber": 167
+        },
+        {
+          "caller": "paymentsView",
+          "callee": "`${student(i.studentId).name} ${p.reference} ${i.period} ${p.date} ${p.method}`.toLowerCase().includes",
+          "lineNumber": 168
+        },
+        {
+          "caller": "paymentsView",
+          "callee": "`${student(i.studentId).name} ${p.reference} ${i.period} ${p.date} ${p.method}`.toLowerCase",
+          "lineNumber": 168
+        },
+        {
+          "caller": "paymentsView",
+          "callee": "student",
+          "lineNumber": 168
+        },
+        {
+          "caller": "paymentsView",
+          "callee": "query.toLowerCase",
+          "lineNumber": 168
+        },
+        {
+          "caller": "paymentsView",
+          "callee": "b.date.localeCompare",
+          "lineNumber": 169
+        },
+        {
+          "caller": "paymentsView",
+          "callee": "paginate",
+          "lineNumber": 170
+        },
+        {
+          "caller": "paymentsView",
+          "callee": "heading",
+          "lineNumber": 171
+        },
+        {
+          "caller": "paymentsView",
+          "callee": "button",
+          "lineNumber": 171
+        },
+        {
+          "caller": "paymentsView",
+          "callee": "button",
+          "lineNumber": 171
+        },
+        {
+          "caller": "paymentsView",
+          "callee": "searchBar",
+          "lineNumber": 171
+        },
+        {
+          "caller": "paymentsView",
+          "callee": "rows.map(p => { const i = invoice(p.invoiceId); return `<tr><td>${studentCell(student(i.studentId))}<span class=\"detail\">${monthLabel(i.period)}</span></td><td>${dateLabel(p.date)}</td><td class=\"amount\">${money(p.amount)}</td><td>${esc(p.method)}<span class=\"detail\">${esc(p.reference || 'No reference')}</span></td><td>${badge(p.voided ? 'Voided' : 'Paid')}${p.voided ? `<span class=\"detail\">${esc(p.voidReason)}</span>` : ''}</td><td><div class=\"row-actions\">${button('Receipt', 'receipt', p.id, 'small')}${!p.voided ? button('Void', 'void', p.id, 'small ghost') : ''}</div></td></tr>`; }).join",
+          "lineNumber": 171
+        },
+        {
+          "caller": "paymentsView",
+          "callee": "rows.map",
+          "lineNumber": 171
+        },
+        {
+          "caller": "paymentsView",
+          "callee": "invoice",
+          "lineNumber": 171
+        },
+        {
+          "caller": "paymentsView",
+          "callee": "studentCell",
+          "lineNumber": 171
+        },
+        {
+          "caller": "paymentsView",
+          "callee": "student",
+          "lineNumber": 171
+        },
+        {
+          "caller": "paymentsView",
+          "callee": "monthLabel",
+          "lineNumber": 171
+        },
+        {
+          "caller": "paymentsView",
+          "callee": "dateLabel",
+          "lineNumber": 171
+        },
+        {
+          "caller": "paymentsView",
+          "callee": "money",
+          "lineNumber": 171
+        },
+        {
+          "caller": "paymentsView",
+          "callee": "esc",
+          "lineNumber": 171
+        },
+        {
+          "caller": "paymentsView",
+          "callee": "esc",
+          "lineNumber": 171
+        },
+        {
+          "caller": "paymentsView",
+          "callee": "badge",
+          "lineNumber": 171
+        },
+        {
+          "caller": "paymentsView",
+          "callee": "esc",
+          "lineNumber": 171
+        },
+        {
+          "caller": "paymentsView",
+          "callee": "button",
+          "lineNumber": 171
+        },
+        {
+          "caller": "paymentsView",
+          "callee": "button",
+          "lineNumber": 171
+        },
+        {
+          "caller": "paymentsView",
+          "callee": "empty",
+          "lineNumber": 171
+        },
+        {
+          "caller": "paymentsView",
+          "callee": "button",
+          "lineNumber": 171
+        },
+        {
+          "caller": "paymentsView",
+          "callee": "pagination",
+          "lineNumber": 171
+        },
+        {
+          "caller": "backupView",
+          "callee": "heading",
+          "lineNumber": 174
+        },
+        {
+          "caller": "backupView",
+          "callee": "button",
+          "lineNumber": 174
+        },
+        {
+          "caller": "backupView",
+          "callee": "button",
+          "lineNumber": 174
+        },
+        {
+          "caller": "backupView",
+          "callee": "button",
+          "lineNumber": 174
+        },
+        {
+          "caller": "render",
+          "callee": "$",
+          "lineNumber": 178
+        },
+        {
+          "caller": "render",
+          "callee": "document.querySelectorAll('nav a').forEach",
+          "lineNumber": 179
+        },
+        {
+          "caller": "render",
+          "callee": "document.querySelectorAll",
+          "lineNumber": 179
+        },
+        {
+          "caller": "render",
+          "callee": "a.setAttribute",
+          "lineNumber": 179
+        },
+        {
+          "caller": "render",
+          "callee": "a.removeAttribute",
+          "lineNumber": 179
+        },
+        {
+          "caller": "render",
+          "callee": "authScreen",
+          "lineNumber": 180
+        },
+        {
+          "caller": "render",
+          "callee": "$",
+          "lineNumber": 181
+        },
+        {
+          "caller": "render",
+          "callee": "empty",
+          "lineNumber": 181
+        },
+        {
+          "caller": "render",
+          "callee": "button",
+          "lineNumber": 181
+        },
+        {
+          "caller": "render",
+          "callee": "$",
+          "lineNumber": 182
+        },
+        {
+          "caller": "render",
+          "callee": "({ dashboard, students: studentsView, charges: chargesView, payments: paymentsView, backup: backupView })[view]",
+          "lineNumber": 182
+        },
+        {
+          "caller": "render",
+          "callee": "document.querySelectorAll('[data-height]').forEach",
+          "lineNumber": 183
+        },
+        {
+          "caller": "render",
+          "callee": "document.querySelectorAll",
+          "lineNumber": 183
+        },
+        {
+          "caller": "render",
+          "callee": "document.querySelectorAll('[data-width]').forEach",
+          "lineNumber": 184
+        },
+        {
+          "caller": "render",
+          "callee": "document.querySelectorAll",
+          "lineNumber": 184
+        },
+        {
+          "caller": "navigate",
+          "callee": "location.hash.slice",
+          "lineNumber": 187
+        },
+        {
+          "caller": "navigate",
+          "callee": "Object.hasOwn",
+          "lineNumber": 188
+        },
+        {
+          "caller": "navigate",
+          "callee": "['students', 'payments'].includes",
+          "lineNumber": 189
+        },
+        {
+          "caller": "navigate",
+          "callee": "render",
+          "lineNumber": 190
+        },
+        {
+          "caller": "field",
+          "callee": "esc",
+          "lineNumber": 194
+        },
+        {
+          "caller": "modal",
+          "callee": "$",
+          "lineNumber": 198
+        },
+        {
+          "caller": "modal",
+          "callee": "$",
+          "lineNumber": 199
+        },
+        {
+          "caller": "modal",
+          "callee": "$",
+          "lineNumber": 200
+        },
+        {
+          "caller": "modal",
+          "callee": "el.showModal",
+          "lineNumber": 201
+        },
+        {
+          "caller": "modal",
+          "callee": "$",
+          "lineNumber": 202
+        },
+        {
+          "caller": "modal",
+          "callee": "event.preventDefault",
+          "lineNumber": 205
+        },
+        {
+          "caller": "modal",
+          "callee": "$",
+          "lineNumber": 206
+        },
+        {
+          "caller": "modal",
+          "callee": "entry.querySelectorAll('[aria-invalid]').forEach",
+          "lineNumber": 208
+        },
+        {
+          "caller": "modal",
+          "callee": "entry.querySelectorAll",
+          "lineNumber": 208
+        },
+        {
+          "caller": "modal",
+          "callee": "n.removeAttribute",
+          "lineNumber": 208
+        },
+        {
+          "caller": "modal",
+          "callee": "entry.querySelector",
+          "lineNumber": 209
+        },
+        {
+          "caller": "modal",
+          "callee": "entry.querySelectorAll('button').forEach",
+          "lineNumber": 210
+        },
+        {
+          "caller": "modal",
+          "callee": "entry.querySelectorAll",
+          "lineNumber": 210
+        },
+        {
+          "caller": "modal",
+          "callee": "submit.setAttribute",
+          "lineNumber": 211
+        },
+        {
+          "caller": "modal",
+          "callee": "entry.querySelectorAll",
+          "lineNumber": 213
+        },
+        {
+          "caller": "modal",
+          "callee": "input.value.trim",
+          "lineNumber": 215
+        },
+        {
+          "caller": "modal",
+          "callee": "validDate",
+          "lineNumber": 216
+        },
+        {
+          "caller": "modal",
+          "callee": "validDate",
+          "lineNumber": 217
+        },
+        {
+          "caller": "modal",
+          "callee": "input.setAttribute",
+          "lineNumber": 219
+        },
+        {
+          "caller": "modal",
+          "callee": "handler",
+          "lineNumber": 221
+        },
+        {
+          "caller": "modal",
+          "callee": "entry.querySelectorAll('button').forEach",
+          "lineNumber": 223
+        },
+        {
+          "caller": "modal",
+          "callee": "entry.querySelectorAll",
+          "lineNumber": 223
+        },
+        {
+          "caller": "modal",
+          "callee": "submit.removeAttribute",
+          "lineNumber": 223
+        },
+        {
+          "caller": "modal",
+          "callee": "(entry.querySelector('[aria-invalid=true]') || errorEl).focus",
+          "lineNumber": 223
+        },
+        {
+          "caller": "modal",
+          "callee": "entry.querySelector",
+          "lineNumber": 223
+        },
+        {
+          "caller": "close",
+          "callee": "$('#modal').close",
+          "lineNumber": 229
+        },
+        {
+          "caller": "close",
+          "callee": "$",
+          "lineNumber": 229
+        },
+        {
+          "caller": "close",
+          "callee": "$",
+          "lineNumber": 230
+        },
+        {
+          "caller": "close",
+          "callee": "opener.focus",
+          "lineNumber": 233
+        },
+        {
+          "caller": "close",
+          "callee": "$('#main').focus",
+          "lineNumber": 234
+        },
+        {
+          "caller": "close",
+          "callee": "$",
+          "lineNumber": 234
+        },
+        {
+          "caller": "dirty",
+          "callee": "$",
+          "lineNumber": 237
+        },
+        {
+          "caller": "dirty",
+          "callee": "JSON.stringify",
+          "lineNumber": 238
+        },
+        {
+          "caller": "dirty",
+          "callee": "JSON.stringify",
+          "lineNumber": 238
+        },
+        {
+          "caller": "requestClose",
+          "callee": "dirty",
+          "lineNumber": 242
+        },
+        {
+          "caller": "requestClose",
+          "callee": "close",
+          "lineNumber": 242
+        },
+        {
+          "caller": "requestClose",
+          "callee": "$",
+          "lineNumber": 243
+        },
+        {
+          "caller": "requestClose",
+          "callee": "$",
+          "lineNumber": 244
+        },
+        {
+          "caller": "requestClose",
+          "callee": "document.createElement",
+          "lineNumber": 245
+        },
+        {
+          "caller": "requestClose",
+          "callee": "button",
+          "lineNumber": 247
+        },
+        {
+          "caller": "requestClose",
+          "callee": "button",
+          "lineNumber": 247
+        },
+        {
+          "caller": "requestClose",
+          "callee": "original.prepend",
+          "lineNumber": 248
+        },
+        {
+          "caller": "requestClose",
+          "callee": "question.querySelector('button').focus",
+          "lineNumber": 249
+        },
+        {
+          "caller": "requestClose",
+          "callee": "question.querySelector",
+          "lineNumber": 249
+        },
+        {
+          "caller": "required",
+          "callee": "String(data.get(key) || '').trim",
+          "lineNumber": 255
+        },
+        {
+          "caller": "required",
+          "callee": "String",
+          "lineNumber": 255
+        },
+        {
+          "caller": "required",
+          "callee": "data.get",
+          "lineNumber": 255
+        },
+        {
+          "caller": "required",
+          "callee": "$",
+          "lineNumber": 257
+        },
+        {
+          "caller": "required",
+          "callee": "el?.setAttribute",
+          "lineNumber": 257
+        },
+        {
+          "caller": "amountValue",
+          "callee": "cents",
+          "lineNumber": 263
+        },
+        {
+          "caller": "amountValue",
+          "callee": "data.get",
+          "lineNumber": 263
+        },
+        {
+          "caller": "amountValue",
+          "callee": "$(`[name=\"${key}\"]`)?.setAttribute",
+          "lineNumber": 264
+        },
+        {
+          "caller": "amountValue",
+          "callee": "$",
+          "lineNumber": 264
+        },
+        {
+          "caller": "studentForm",
+          "callee": "student",
+          "lineNumber": 267
+        },
+        {
+          "caller": "studentForm",
+          "callee": "modal",
+          "lineNumber": 268
+        },
+        {
+          "caller": "studentForm",
+          "callee": "form",
+          "lineNumber": 268
+        },
+        {
+          "caller": "studentForm",
+          "callee": "field",
+          "lineNumber": 268
+        },
+        {
+          "caller": "studentForm",
+          "callee": "field",
+          "lineNumber": 268
+        },
+        {
+          "caller": "studentForm",
+          "callee": "field",
+          "lineNumber": 268
+        },
+        {
+          "caller": "studentForm",
+          "callee": "field",
+          "lineNumber": 268
+        },
+        {
+          "caller": "studentForm",
+          "callee": "field",
+          "lineNumber": 268
+        },
+        {
+          "caller": "studentForm",
+          "callee": "structuredClone",
+          "lineNumber": 269
+        },
+        {
+          "caller": "studentForm",
+          "callee": "uid",
+          "lineNumber": 270
+        },
+        {
+          "caller": "studentForm",
+          "callee": "required",
+          "lineNumber": 270
+        },
+        {
+          "caller": "studentForm",
+          "callee": "data.get('school').trim",
+          "lineNumber": 270
+        },
+        {
+          "caller": "studentForm",
+          "callee": "data.get",
+          "lineNumber": 270
+        },
+        {
+          "caller": "studentForm",
+          "callee": "data.get('route').trim",
+          "lineNumber": 270
+        },
+        {
+          "caller": "studentForm",
+          "callee": "data.get",
+          "lineNumber": 270
+        },
+        {
+          "caller": "studentForm",
+          "callee": "data.get('contact').trim",
+          "lineNumber": 270
+        },
+        {
+          "caller": "studentForm",
+          "callee": "data.get",
+          "lineNumber": 270
+        },
+        {
+          "caller": "studentForm",
+          "callee": "amountValue",
+          "lineNumber": 270
+        },
+        {
+          "caller": "studentForm",
+          "callee": "next.students.findIndex",
+          "lineNumber": 271
+        },
+        {
+          "caller": "studentForm",
+          "callee": "next.students.push",
+          "lineNumber": 272
+        },
+        {
+          "caller": "studentForm",
+          "callee": "commit",
+          "lineNumber": 273
+        },
+        {
+          "caller": "studentForm",
+          "callee": "close",
+          "lineNumber": 273
+        },
+        {
+          "caller": "studentForm",
+          "callee": "render",
+          "lineNumber": 273
+        },
+        {
+          "caller": "studentForm",
+          "callee": "notify",
+          "lineNumber": 273
+        },
+        {
+          "caller": "chargesForm",
+          "callee": "state.students.filter",
+          "lineNumber": 277
+        },
+        {
+          "caller": "chargesForm",
+          "callee": "modal",
+          "lineNumber": 278
+        },
+        {
+          "caller": "chargesForm",
+          "callee": "empty",
+          "lineNumber": 278
+        },
+        {
+          "caller": "chargesForm",
+          "callee": "button",
+          "lineNumber": 278
+        },
+        {
+          "caller": "chargesForm",
+          "callee": "modal",
+          "lineNumber": 279
+        },
+        {
+          "caller": "chargesForm",
+          "callee": "form",
+          "lineNumber": 279
+        },
+        {
+          "caller": "chargesForm",
+          "callee": "field",
+          "lineNumber": 279
+        },
+        {
+          "caller": "chargesForm",
+          "callee": "field",
+          "lineNumber": 279
+        },
+        {
+          "caller": "chargesForm",
+          "callee": "field",
+          "lineNumber": 279
+        },
+        {
+          "caller": "chargesForm",
+          "callee": "data.get",
+          "lineNumber": 280
+        },
+        {
+          "caller": "chargesForm",
+          "callee": "createCharges",
+          "lineNumber": 281
+        },
+        {
+          "caller": "chargesForm",
+          "callee": "data.get",
+          "lineNumber": 281
+        },
+        {
+          "caller": "chargesForm",
+          "callee": "data.get('note').trim",
+          "lineNumber": 281
+        },
+        {
+          "caller": "chargesForm",
+          "callee": "data.get",
+          "lineNumber": 281
+        },
+        {
+          "caller": "chargesForm",
+          "callee": "commit",
+          "lineNumber": 284
+        },
+        {
+          "caller": "chargesForm",
+          "callee": "close",
+          "lineNumber": 284
+        },
+        {
+          "caller": "chargesForm",
+          "callee": "render",
+          "lineNumber": 284
+        },
+        {
+          "caller": "chargesForm",
+          "callee": "notify",
+          "lineNumber": 284
+        },
+        {
+          "caller": "preview",
+          "callee": "$",
+          "lineNumber": 287
+        },
+        {
+          "caller": "preview",
+          "callee": "active.filter",
+          "lineNumber": 288
+        },
+        {
+          "caller": "preview",
+          "callee": "state.invoices.some",
+          "lineNumber": 288
+        },
+        {
+          "caller": "preview",
+          "callee": "$",
+          "lineNumber": 289
+        },
+        {
+          "caller": "preview",
+          "callee": "money",
+          "lineNumber": 289
+        },
+        {
+          "caller": "preview",
+          "callee": "students.reduce",
+          "lineNumber": 289
+        },
+        {
+          "caller": "chargesForm",
+          "callee": "$",
+          "lineNumber": 291
+        },
+        {
+          "caller": "chargesForm",
+          "callee": "preview",
+          "lineNumber": 291
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "state.invoices.filter(i => balance(state, i) > 0).sort",
+          "lineNumber": 294
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "state.invoices.filter",
+          "lineNumber": 294
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "balance",
+          "lineNumber": 294
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "a.due.localeCompare",
+          "lineNumber": 294
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "modal",
+          "lineNumber": 295
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "empty",
+          "lineNumber": 295
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "button",
+          "lineNumber": 295
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "open.find",
+          "lineNumber": 296
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "modal",
+          "lineNumber": 297
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "form",
+          "lineNumber": 297
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "open.map(i => `<option value=\"${esc(i.id)}\" ${i.id === selected.id ? 'selected' : ''}>${esc(student(i.studentId).name)} · ${monthLabel(i.period)} · ${money(balance(state, i))} due</option>`).join",
+          "lineNumber": 297
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "open.map",
+          "lineNumber": 297
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "esc",
+          "lineNumber": 297
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "esc",
+          "lineNumber": 297
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "student",
+          "lineNumber": 297
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "monthLabel",
+          "lineNumber": 297
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "money",
+          "lineNumber": 297
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "balance",
+          "lineNumber": 297
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "field",
+          "lineNumber": 297
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "balance",
+          "lineNumber": 297
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "field",
+          "lineNumber": 297
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "today",
+          "lineNumber": 297
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "today",
+          "lineNumber": 297
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "field",
+          "lineNumber": 297
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "addPayment",
+          "lineNumber": 298
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "uid",
+          "lineNumber": 298
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "data.get",
+          "lineNumber": 298
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "amountValue",
+          "lineNumber": 298
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "data.get",
+          "lineNumber": 298
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "data.get",
+          "lineNumber": 298
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "data.get('reference').trim",
+          "lineNumber": 298
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "data.get",
+          "lineNumber": 298
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "commit",
+          "lineNumber": 299
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "close",
+          "lineNumber": 299
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "render",
+          "lineNumber": 299
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "notify",
+          "lineNumber": 299
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "$",
+          "lineNumber": 301
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "$",
+          "lineNumber": 301
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "balance",
+          "lineNumber": 301
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "invoice",
+          "lineNumber": 301
+        },
+        {
+          "caller": "paymentForm",
+          "callee": "$",
+          "lineNumber": 301
+        },
+        {
+          "caller": "editCharge",
+          "callee": "invoice",
+          "lineNumber": 304
+        },
+        {
+          "caller": "editCharge",
+          "callee": "modal",
+          "lineNumber": 305
+        },
+        {
+          "caller": "editCharge",
+          "callee": "form",
+          "lineNumber": 305
+        },
+        {
+          "caller": "editCharge",
+          "callee": "field",
+          "lineNumber": 305
+        },
+        {
+          "caller": "editCharge",
+          "callee": "field",
+          "lineNumber": 305
+        },
+        {
+          "caller": "editCharge",
+          "callee": "field",
+          "lineNumber": 305
+        },
+        {
+          "caller": "editCharge",
+          "callee": "esc",
+          "lineNumber": 305
+        },
+        {
+          "caller": "editCharge",
+          "callee": "student",
+          "lineNumber": 305
+        },
+        {
+          "caller": "editCharge",
+          "callee": "monthLabel",
+          "lineNumber": 305
+        },
+        {
+          "caller": "editCharge",
+          "callee": "money",
+          "lineNumber": 305
+        },
+        {
+          "caller": "editCharge",
+          "callee": "paid",
+          "lineNumber": 305
+        },
+        {
+          "caller": "editCharge",
+          "callee": "amountValue",
+          "lineNumber": 306
+        },
+        {
+          "caller": "editCharge",
+          "callee": "paid",
+          "lineNumber": 307
+        },
+        {
+          "caller": "editCharge",
+          "callee": "validDate",
+          "lineNumber": 308
+        },
+        {
+          "caller": "editCharge",
+          "callee": "data.get",
+          "lineNumber": 308
+        },
+        {
+          "caller": "editCharge",
+          "callee": "structuredClone",
+          "lineNumber": 309
+        },
+        {
+          "caller": "editCharge",
+          "callee": "Object.assign",
+          "lineNumber": 310
+        },
+        {
+          "caller": "editCharge",
+          "callee": "next.invoices.find",
+          "lineNumber": 310
+        },
+        {
+          "caller": "editCharge",
+          "callee": "data.get",
+          "lineNumber": 310
+        },
+        {
+          "caller": "editCharge",
+          "callee": "data.get('note').trim",
+          "lineNumber": 310
+        },
+        {
+          "caller": "editCharge",
+          "callee": "data.get",
+          "lineNumber": 310
+        },
+        {
+          "caller": "editCharge",
+          "callee": "commit",
+          "lineNumber": 311
+        },
+        {
+          "caller": "editCharge",
+          "callee": "close",
+          "lineNumber": 311
+        },
+        {
+          "caller": "editCharge",
+          "callee": "render",
+          "lineNumber": 311
+        },
+        {
+          "caller": "editCharge",
+          "callee": "notify",
+          "lineNumber": 311
+        },
+        {
+          "caller": "archiveStudent",
+          "callee": "student",
+          "lineNumber": 315
+        },
+        {
+          "caller": "archiveStudent",
+          "callee": "modal",
+          "lineNumber": 317
+        },
+        {
+          "caller": "archiveStudent",
+          "callee": "form",
+          "lineNumber": 317
+        },
+        {
+          "caller": "archiveStudent",
+          "callee": "structuredClone",
+          "lineNumber": 318
+        },
+        {
+          "caller": "archiveStudent",
+          "callee": "next.students.find",
+          "lineNumber": 318
+        },
+        {
+          "caller": "archiveStudent",
+          "callee": "commit",
+          "lineNumber": 319
+        },
+        {
+          "caller": "archiveStudent",
+          "callee": "close",
+          "lineNumber": 319
+        },
+        {
+          "caller": "archiveStudent",
+          "callee": "render",
+          "lineNumber": 319
+        },
+        {
+          "caller": "archiveStudent",
+          "callee": "notify",
+          "lineNumber": 319
+        },
+        {
+          "caller": "archiveStudent",
+          "callee": "$('#entry-form button[type=button]').focus",
+          "lineNumber": 321
+        },
+        {
+          "caller": "archiveStudent",
+          "callee": "$",
+          "lineNumber": 321
+        },
+        {
+          "caller": "voidPayment",
+          "callee": "state.payments.find",
+          "lineNumber": 324
+        },
+        {
+          "caller": "voidPayment",
+          "callee": "modal",
+          "lineNumber": 325
+        },
+        {
+          "caller": "voidPayment",
+          "callee": "form",
+          "lineNumber": 325
+        },
+        {
+          "caller": "voidPayment",
+          "callee": "field",
+          "lineNumber": 325
+        },
+        {
+          "caller": "voidPayment",
+          "callee": "money",
+          "lineNumber": 325
+        },
+        {
+          "caller": "voidPayment",
+          "callee": "esc",
+          "lineNumber": 325
+        },
+        {
+          "caller": "voidPayment",
+          "callee": "student",
+          "lineNumber": 325
+        },
+        {
+          "caller": "voidPayment",
+          "callee": "invoice",
+          "lineNumber": 325
+        },
+        {
+          "caller": "voidPayment",
+          "callee": "required",
+          "lineNumber": 326
+        },
+        {
+          "caller": "voidPayment",
+          "callee": "structuredClone",
+          "lineNumber": 327
+        },
+        {
+          "caller": "voidPayment",
+          "callee": "Object.assign",
+          "lineNumber": 327
+        },
+        {
+          "caller": "voidPayment",
+          "callee": "next.payments.find",
+          "lineNumber": 327
+        },
+        {
+          "caller": "voidPayment",
+          "callee": "commit",
+          "lineNumber": 328
+        },
+        {
+          "caller": "voidPayment",
+          "callee": "close",
+          "lineNumber": 328
+        },
+        {
+          "caller": "voidPayment",
+          "callee": "render",
+          "lineNumber": 328
+        },
+        {
+          "caller": "voidPayment",
+          "callee": "notify",
+          "lineNumber": 328
+        },
+        {
+          "caller": "voidPayment",
+          "callee": "$",
+          "lineNumber": 330
+        },
+        {
+          "caller": "voidPayment",
+          "callee": "$('#entry-form button[type=button]').focus",
+          "lineNumber": 331
+        },
+        {
+          "caller": "voidPayment",
+          "callee": "$",
+          "lineNumber": 331
+        },
+        {
+          "caller": "receipt",
+          "callee": "state.payments.find",
+          "lineNumber": 334
+        },
+        {
+          "caller": "receipt",
+          "callee": "invoice",
+          "lineNumber": 334
+        },
+        {
+          "caller": "receipt",
+          "callee": "student",
+          "lineNumber": 334
+        },
+        {
+          "caller": "receipt",
+          "callee": "esc",
+          "lineNumber": 335
+        },
+        {
+          "caller": "receipt",
+          "callee": "badge",
+          "lineNumber": 335
+        },
+        {
+          "caller": "receipt",
+          "callee": "dateLabel",
+          "lineNumber": 335
+        },
+        {
+          "caller": "receipt",
+          "callee": "monthLabel",
+          "lineNumber": 335
+        },
+        {
+          "caller": "receipt",
+          "callee": "esc",
+          "lineNumber": 335
+        },
+        {
+          "caller": "receipt",
+          "callee": "esc",
+          "lineNumber": 335
+        },
+        {
+          "caller": "receipt",
+          "callee": "money",
+          "lineNumber": 335
+        },
+        {
+          "caller": "receipt",
+          "callee": "esc",
+          "lineNumber": 335
+        },
+        {
+          "caller": "receipt",
+          "callee": "esc",
+          "lineNumber": 335
+        },
+        {
+          "caller": "receipt",
+          "callee": "$",
+          "lineNumber": 336
+        },
+        {
+          "caller": "receipt",
+          "callee": "modal",
+          "lineNumber": 337
+        },
+        {
+          "caller": "receipt",
+          "callee": "button",
+          "lineNumber": 337
+        },
+        {
+          "caller": "download",
+          "callee": "URL.createObjectURL",
+          "lineNumber": 340
+        },
+        {
+          "caller": "download",
+          "callee": "document.createElement",
+          "lineNumber": 341
+        },
+        {
+          "caller": "download",
+          "callee": "a.click",
+          "lineNumber": 341
+        },
+        {
+          "caller": "download",
+          "callee": "setTimeout",
+          "lineNumber": 342
+        },
+        {
+          "caller": "download",
+          "callee": "URL.revokeObjectURL",
+          "lineNumber": 342
+        },
+        {
+          "caller": "exportCharges",
+          "callee": "state.invoices.filter(i => i.period === period).forEach",
+          "lineNumber": 346
+        },
+        {
+          "caller": "exportCharges",
+          "callee": "state.invoices.filter",
+          "lineNumber": 346
+        },
+        {
+          "caller": "exportCharges",
+          "callee": "student",
+          "lineNumber": 346
+        },
+        {
+          "caller": "exportCharges",
+          "callee": "rows.push",
+          "lineNumber": 346
+        },
+        {
+          "caller": "exportCharges",
+          "callee": "(i.amount / 100).toFixed",
+          "lineNumber": 346
+        },
+        {
+          "caller": "exportCharges",
+          "callee": "(paid(state, i.id) / 100).toFixed",
+          "lineNumber": 346
+        },
+        {
+          "caller": "exportCharges",
+          "callee": "paid",
+          "lineNumber": 346
+        },
+        {
+          "caller": "exportCharges",
+          "callee": "(balance(state, i) / 100).toFixed",
+          "lineNumber": 346
+        },
+        {
+          "caller": "exportCharges",
+          "callee": "balance",
+          "lineNumber": 346
+        },
+        {
+          "caller": "exportCharges",
+          "callee": "status",
+          "lineNumber": 346
+        },
+        {
+          "caller": "exportCharges",
+          "callee": "download",
+          "lineNumber": 347
+        },
+        {
+          "caller": "exportCharges",
+          "callee": "csv",
+          "lineNumber": 347
+        },
+        {
+          "caller": "exportCharges",
+          "callee": "notify",
+          "lineNumber": 347
+        },
+        {
+          "caller": "exportPayments",
+          "callee": "state.payments.forEach",
+          "lineNumber": 351
+        },
+        {
+          "caller": "exportPayments",
+          "callee": "invoice",
+          "lineNumber": 351
+        },
+        {
+          "caller": "exportPayments",
+          "callee": "rows.push",
+          "lineNumber": 351
+        },
+        {
+          "caller": "exportPayments",
+          "callee": "student",
+          "lineNumber": 351
+        },
+        {
+          "caller": "exportPayments",
+          "callee": "(p.amount / 100).toFixed",
+          "lineNumber": 351
+        },
+        {
+          "caller": "exportPayments",
+          "callee": "download",
+          "lineNumber": 352
+        },
+        {
+          "caller": "exportPayments",
+          "callee": "today",
+          "lineNumber": 352
+        },
+        {
+          "caller": "exportPayments",
+          "callee": "csv",
+          "lineNumber": 352
+        },
+        {
+          "caller": "exportPayments",
+          "callee": "notify",
+          "lineNumber": 352
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 52,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/cloud.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 33,
+      "nonEmptyLines": 33,
+      "classes": [
+        {
+          "name": "LedgerStore",
+          "startLine": 7,
+          "endLine": 33,
+          "methods": [
+            "constructor",
+            "load",
+            "save"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "supabase",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "LedgerStore",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "load",
+          "callee": "this.client.from('service_ledgers').select('revision,data,last_mutation').eq('owner_id', this.ownerId).maybeSingle",
+          "lineNumber": 10
+        },
+        {
+          "caller": "load",
+          "callee": "this.client.from('service_ledgers').select('revision,data,last_mutation').eq",
+          "lineNumber": 10
+        },
+        {
+          "caller": "load",
+          "callee": "this.client.from('service_ledgers').select",
+          "lineNumber": 10
+        },
+        {
+          "caller": "load",
+          "callee": "this.client.from",
+          "lineNumber": 10
+        },
+        {
+          "caller": "load",
+          "callee": "validateState",
+          "lineNumber": 12
+        },
+        {
+          "caller": "load",
+          "callee": "emptyState",
+          "lineNumber": 12
+        },
+        {
+          "caller": "save",
+          "callee": "structuredClone",
+          "lineNumber": 17
+        },
+        {
+          "caller": "save",
+          "callee": "validateState",
+          "lineNumber": 19
+        },
+        {
+          "caller": "save",
+          "callee": "crypto.randomUUID",
+          "lineNumber": 20
+        },
+        {
+          "caller": "save",
+          "callee": "this.client.from('service_ledgers').insert",
+          "lineNumber": 23
+        },
+        {
+          "caller": "save",
+          "callee": "this.client.from",
+          "lineNumber": 23
+        },
+        {
+          "caller": "save",
+          "callee": "this.client.from('service_ledgers').update(row).eq('owner_id', this.ownerId).eq",
+          "lineNumber": 24
+        },
+        {
+          "caller": "save",
+          "callee": "this.client.from('service_ledgers').update(row).eq",
+          "lineNumber": 24
+        },
+        {
+          "caller": "save",
+          "callee": "this.client.from('service_ledgers').update",
+          "lineNumber": 24
+        },
+        {
+          "caller": "save",
+          "callee": "this.client.from",
+          "lineNumber": 24
+        },
+        {
+          "caller": "save",
+          "callee": "request.select('revision,data,last_mutation').maybeSingle",
+          "lineNumber": 25
+        },
+        {
+          "caller": "save",
+          "callee": "request.select",
+          "lineNumber": 25
+        },
+        {
+          "caller": "save",
+          "callee": "validateState",
+          "lineNumber": 26
+        },
+        {
+          "caller": "save",
+          "callee": "this.client.from('service_ledgers').select('revision,data,last_mutation').eq('owner_id', this.ownerId).maybeSingle",
+          "lineNumber": 28
+        },
+        {
+          "caller": "save",
+          "callee": "this.client.from('service_ledgers').select('revision,data,last_mutation').eq",
+          "lineNumber": 28
+        },
+        {
+          "caller": "save",
+          "callee": "this.client.from('service_ledgers').select",
+          "lineNumber": 28
+        },
+        {
+          "caller": "save",
+          "callee": "this.client.from",
+          "lineNumber": 28
+        },
+        {
+          "caller": "save",
+          "callee": "validateState",
+          "lineNumber": 29
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/config.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 3,
+      "nonEmptyLines": 3,
+      "exports": [
+        {
+          "name": "SUPABASE_URL",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "SUPABASE_PUBLISHABLE_KEY",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

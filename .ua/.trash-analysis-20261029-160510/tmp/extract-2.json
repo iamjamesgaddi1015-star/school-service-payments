@@ -1,0 +1,829 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "filesUnreadable": [],
+  "analysisOutcomes": {
+    "structure": {
+      "succeeded": 3,
+      "failed": 0
+    },
+    "callGraph": {
+      "succeeded": 3,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "results": [
+    {
+      "path": "src/model.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 79,
+      "nonEmptyLines": 79,
+      "functions": [
+        {
+          "name": "emptyState",
+          "startLine": 2,
+          "endLine": 2,
+          "params": []
+        },
+        {
+          "name": "today",
+          "startLine": 3,
+          "endLine": 3,
+          "params": []
+        },
+        {
+          "name": "validDate",
+          "startLine": 4,
+          "endLine": 6,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "cents",
+          "startLine": 7,
+          "endLine": 13,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "money",
+          "startLine": 14,
+          "endLine": 14,
+          "params": []
+        },
+        {
+          "name": "paid",
+          "startLine": 15,
+          "endLine": 15,
+          "params": [
+            "state",
+            "invoiceId"
+          ]
+        },
+        {
+          "name": "balance",
+          "startLine": 16,
+          "endLine": 16,
+          "params": [
+            "state",
+            "invoice"
+          ]
+        },
+        {
+          "name": "status",
+          "startLine": 17,
+          "endLine": 22,
+          "params": [
+            "state",
+            "invoice"
+          ]
+        },
+        {
+          "name": "fail",
+          "startLine": 23,
+          "endLine": 23,
+          "params": []
+        },
+        {
+          "name": "text",
+          "startLine": 24,
+          "endLine": 24,
+          "params": [
+            "value",
+            "max"
+          ]
+        },
+        {
+          "name": "amount",
+          "startLine": 25,
+          "endLine": 25,
+          "params": []
+        },
+        {
+          "name": "validateState",
+          "startLine": 26,
+          "endLine": 49,
+          "params": [
+            "state"
+          ]
+        },
+        {
+          "name": "addPayment",
+          "startLine": 50,
+          "endLine": 58,
+          "params": [
+            "state",
+            "payment"
+          ]
+        },
+        {
+          "name": "createCharges",
+          "startLine": 59,
+          "endLine": 66,
+          "params": [
+            "state"
+          ]
+        },
+        {
+          "name": "metrics",
+          "startLine": 67,
+          "endLine": 72,
+          "params": [
+            "state",
+            "period"
+          ]
+        },
+        {
+          "name": "csv",
+          "startLine": 73,
+          "endLine": 79,
+          "params": [
+            "rows"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "VERSION",
+          "line": 1,
+          "isDefault": false
+        },
+        {
+          "name": "emptyState",
+          "line": 2,
+          "isDefault": false
+        },
+        {
+          "name": "today",
+          "line": 3,
+          "isDefault": false
+        },
+        {
+          "name": "validDate",
+          "line": 4,
+          "isDefault": false
+        },
+        {
+          "name": "cents",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "money",
+          "line": 14,
+          "isDefault": false
+        },
+        {
+          "name": "paid",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "balance",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "status",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "validateState",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "addPayment",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "createCharges",
+          "line": 59,
+          "isDefault": false
+        },
+        {
+          "name": "metrics",
+          "line": 67,
+          "isDefault": false
+        },
+        {
+          "name": "csv",
+          "line": 73,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "today",
+          "callee": "new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Manila', year: 'numeric', month: '2-digit', day: '2-digit' }).format",
+          "lineNumber": 3
+        },
+        {
+          "caller": "validDate",
+          "callee": "/^\\d{4}-\\d{2}-\\d{2}$/.test",
+          "lineNumber": 5
+        },
+        {
+          "caller": "validDate",
+          "callee": "Number",
+          "lineNumber": 5
+        },
+        {
+          "caller": "validDate",
+          "callee": "value.slice",
+          "lineNumber": 5
+        },
+        {
+          "caller": "validDate",
+          "callee": "Number",
+          "lineNumber": 5
+        },
+        {
+          "caller": "validDate",
+          "callee": "value.slice",
+          "lineNumber": 5
+        },
+        {
+          "caller": "validDate",
+          "callee": "Number.isNaN",
+          "lineNumber": 5
+        },
+        {
+          "caller": "validDate",
+          "callee": "Date.parse",
+          "lineNumber": 5
+        },
+        {
+          "caller": "validDate",
+          "callee": "new Date(`${value}T00:00:00Z`).toISOString().slice",
+          "lineNumber": 5
+        },
+        {
+          "caller": "validDate",
+          "callee": "new Date(`${value}T00:00:00Z`).toISOString",
+          "lineNumber": 5
+        },
+        {
+          "caller": "cents",
+          "callee": "String(value).trim",
+          "lineNumber": 8
+        },
+        {
+          "caller": "cents",
+          "callee": "String",
+          "lineNumber": 8
+        },
+        {
+          "caller": "cents",
+          "callee": "/^\\d+(\\.\\d{1,2})?$/.test",
+          "lineNumber": 9
+        },
+        {
+          "caller": "cents",
+          "callee": "Math.round",
+          "lineNumber": 10
+        },
+        {
+          "caller": "cents",
+          "callee": "Number",
+          "lineNumber": 10
+        },
+        {
+          "caller": "cents",
+          "callee": "Number.isSafeInteger",
+          "lineNumber": 11
+        },
+        {
+          "caller": "money",
+          "callee": "new Intl.NumberFormat('en-PH', { style: 'currency', currency: 'PHP' }).format",
+          "lineNumber": 14
+        },
+        {
+          "caller": "paid",
+          "callee": "state.payments.filter(p => p.invoiceId === invoiceId && !p.voided).reduce",
+          "lineNumber": 15
+        },
+        {
+          "caller": "paid",
+          "callee": "state.payments.filter",
+          "lineNumber": 15
+        },
+        {
+          "caller": "balance",
+          "callee": "paid",
+          "lineNumber": 16
+        },
+        {
+          "caller": "status",
+          "callee": "today",
+          "lineNumber": 17
+        },
+        {
+          "caller": "status",
+          "callee": "balance",
+          "lineNumber": 18
+        },
+        {
+          "caller": "status",
+          "callee": "paid",
+          "lineNumber": 21
+        },
+        {
+          "caller": "amount",
+          "callee": "Number.isSafeInteger",
+          "lineNumber": 25
+        },
+        {
+          "caller": "validateState",
+          "callee": "Number.isSafeInteger",
+          "lineNumber": 27
+        },
+        {
+          "caller": "validateState",
+          "callee": "['students', 'invoices', 'payments'].every",
+          "lineNumber": 27
+        },
+        {
+          "caller": "validateState",
+          "callee": "Array.isArray",
+          "lineNumber": 27
+        },
+        {
+          "caller": "validateState",
+          "callee": "fail",
+          "lineNumber": 27
+        },
+        {
+          "caller": "validateState",
+          "callee": "text",
+          "lineNumber": 30
+        },
+        {
+          "caller": "validateState",
+          "callee": "ids.has",
+          "lineNumber": 30
+        },
+        {
+          "caller": "validateState",
+          "callee": "fail",
+          "lineNumber": 30
+        },
+        {
+          "caller": "validateState",
+          "callee": "ids.add",
+          "lineNumber": 31
+        },
+        {
+          "caller": "validateState",
+          "callee": "state.students.map",
+          "lineNumber": 33
+        },
+        {
+          "caller": "validateState",
+          "callee": "text",
+          "lineNumber": 35
+        },
+        {
+          "caller": "validateState",
+          "callee": "s.name.trim",
+          "lineNumber": 35
+        },
+        {
+          "caller": "validateState",
+          "callee": "text",
+          "lineNumber": 35
+        },
+        {
+          "caller": "validateState",
+          "callee": "text",
+          "lineNumber": 35
+        },
+        {
+          "caller": "validateState",
+          "callee": "text",
+          "lineNumber": 35
+        },
+        {
+          "caller": "validateState",
+          "callee": "amount",
+          "lineNumber": 35
+        },
+        {
+          "caller": "validateState",
+          "callee": "fail",
+          "lineNumber": 35
+        },
+        {
+          "caller": "validateState",
+          "callee": "state.invoices.map",
+          "lineNumber": 37
+        },
+        {
+          "caller": "validateState",
+          "callee": "students.has",
+          "lineNumber": 41
+        },
+        {
+          "caller": "validateState",
+          "callee": "amount",
+          "lineNumber": 41
+        },
+        {
+          "caller": "validateState",
+          "callee": "validDate",
+          "lineNumber": 41
+        },
+        {
+          "caller": "validateState",
+          "callee": "/^\\d{4}-\\d{2}$/.test",
+          "lineNumber": 41
+        },
+        {
+          "caller": "validateState",
+          "callee": "validDate",
+          "lineNumber": 41
+        },
+        {
+          "caller": "validateState",
+          "callee": "text",
+          "lineNumber": 41
+        },
+        {
+          "caller": "validateState",
+          "callee": "periods.has",
+          "lineNumber": 41
+        },
+        {
+          "caller": "validateState",
+          "callee": "fail",
+          "lineNumber": 41
+        },
+        {
+          "caller": "validateState",
+          "callee": "periods.add",
+          "lineNumber": 42
+        },
+        {
+          "caller": "validateState",
+          "callee": "invoiceIds.has",
+          "lineNumber": 45
+        },
+        {
+          "caller": "validateState",
+          "callee": "amount",
+          "lineNumber": 45
+        },
+        {
+          "caller": "validateState",
+          "callee": "validDate",
+          "lineNumber": 45
+        },
+        {
+          "caller": "validateState",
+          "callee": "['Cash', 'GCash', 'Bank transfer', 'Other'].includes",
+          "lineNumber": 45
+        },
+        {
+          "caller": "validateState",
+          "callee": "text",
+          "lineNumber": 45
+        },
+        {
+          "caller": "validateState",
+          "callee": "text",
+          "lineNumber": 45
+        },
+        {
+          "caller": "validateState",
+          "callee": "p.voidReason.trim",
+          "lineNumber": 45
+        },
+        {
+          "caller": "validateState",
+          "callee": "fail",
+          "lineNumber": 45
+        },
+        {
+          "caller": "validateState",
+          "callee": "paid",
+          "lineNumber": 47
+        },
+        {
+          "caller": "validateState",
+          "callee": "fail",
+          "lineNumber": 47
+        },
+        {
+          "caller": "addPayment",
+          "callee": "today",
+          "lineNumber": 50
+        },
+        {
+          "caller": "addPayment",
+          "callee": "state.invoices.find",
+          "lineNumber": 51
+        },
+        {
+          "caller": "addPayment",
+          "callee": "fail",
+          "lineNumber": 52
+        },
+        {
+          "caller": "addPayment",
+          "callee": "validDate",
+          "lineNumber": 53
+        },
+        {
+          "caller": "addPayment",
+          "callee": "fail",
+          "lineNumber": 53
+        },
+        {
+          "caller": "addPayment",
+          "callee": "amount",
+          "lineNumber": 54
+        },
+        {
+          "caller": "addPayment",
+          "callee": "balance",
+          "lineNumber": 54
+        },
+        {
+          "caller": "addPayment",
+          "callee": "fail",
+          "lineNumber": 54
+        },
+        {
+          "caller": "addPayment",
+          "callee": "structuredClone",
+          "lineNumber": 55
+        },
+        {
+          "caller": "addPayment",
+          "callee": "next.payments.push",
+          "lineNumber": 56
+        },
+        {
+          "caller": "addPayment",
+          "callee": "validateState",
+          "lineNumber": 57
+        },
+        {
+          "caller": "createCharges",
+          "callee": "validDate",
+          "lineNumber": 60
+        },
+        {
+          "caller": "createCharges",
+          "callee": "validDate",
+          "lineNumber": 60
+        },
+        {
+          "caller": "createCharges",
+          "callee": "fail",
+          "lineNumber": 60
+        },
+        {
+          "caller": "createCharges",
+          "callee": "structuredClone",
+          "lineNumber": 61
+        },
+        {
+          "caller": "createCharges",
+          "callee": "next.students.filter",
+          "lineNumber": 62
+        },
+        {
+          "caller": "createCharges",
+          "callee": "next.invoices.some",
+          "lineNumber": 63
+        },
+        {
+          "caller": "createCharges",
+          "callee": "next.invoices.push",
+          "lineNumber": 63
+        },
+        {
+          "caller": "createCharges",
+          "callee": "id",
+          "lineNumber": 63
+        },
+        {
+          "caller": "createCharges",
+          "callee": "validateState",
+          "lineNumber": 65
+        },
+        {
+          "caller": "metrics",
+          "callee": "state.invoices.filter",
+          "lineNumber": 68
+        },
+        {
+          "caller": "metrics",
+          "callee": "invoices.reduce",
+          "lineNumber": 69
+        },
+        {
+          "caller": "metrics",
+          "callee": "invoices.reduce",
+          "lineNumber": 70
+        },
+        {
+          "caller": "metrics",
+          "callee": "paid",
+          "lineNumber": 70
+        },
+        {
+          "caller": "metrics",
+          "callee": "invoices.filter",
+          "lineNumber": 71
+        },
+        {
+          "caller": "metrics",
+          "callee": "balance",
+          "lineNumber": 71
+        },
+        {
+          "caller": "metrics",
+          "callee": "invoices.filter(i => status(state, i) === 'Overdue').reduce",
+          "lineNumber": 71
+        },
+        {
+          "caller": "metrics",
+          "callee": "invoices.filter",
+          "lineNumber": 71
+        },
+        {
+          "caller": "metrics",
+          "callee": "status",
+          "lineNumber": 71
+        },
+        {
+          "caller": "metrics",
+          "callee": "balance",
+          "lineNumber": 71
+        },
+        {
+          "caller": "csv",
+          "callee": "rows.map(row => row.map(cell => {\r\n    let value = String(cell ?? '');\r\n    if (/^[\\s]*[=+\\-@\\t\\r]/.test(value)) value = `'${value}`;\r\n    return `\"${value.replaceAll('\"', '\"\"')}\"`;\r\n  }).join(',')).join",
+          "lineNumber": 74
+        },
+        {
+          "caller": "csv",
+          "callee": "rows.map",
+          "lineNumber": 74
+        },
+        {
+          "caller": "csv",
+          "callee": "row.map(cell => {\r\n    let value = String(cell ?? '');\r\n    if (/^[\\s]*[=+\\-@\\t\\r]/.test(value)) value = `'${value}`;\r\n    return `\"${value.replaceAll('\"', '\"\"')}\"`;\r\n  }).join",
+          "lineNumber": 74
+        },
+        {
+          "caller": "csv",
+          "callee": "row.map",
+          "lineNumber": 74
+        },
+        {
+          "caller": "csv",
+          "callee": "String",
+          "lineNumber": 75
+        },
+        {
+          "caller": "csv",
+          "callee": "/^[\\s]*[=+\\-@\\t\\r]/.test",
+          "lineNumber": 76
+        },
+        {
+          "caller": "csv",
+          "callee": "value.replaceAll",
+          "lineNumber": 77
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 14,
+        "functionCount": 16,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/cloud.test.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 55,
+      "nonEmptyLines": 55,
+      "functions": [
+        {
+          "name": "client",
+          "startLine": 5,
+          "endLine": 9,
+          "params": [
+            "responses"
+          ]
+        },
+        {
+          "name": "row",
+          "startLine": 10,
+          "endLine": 10,
+          "params": [
+            "revision"
+          ]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "select",
+          "callee": "calls.push",
+          "lineNumber": 7
+        },
+        {
+          "caller": "eq",
+          "callee": "calls.push",
+          "lineNumber": 7
+        },
+        {
+          "caller": "insert",
+          "callee": "calls.push",
+          "lineNumber": 7
+        },
+        {
+          "caller": "update",
+          "callee": "calls.push",
+          "lineNumber": 7
+        },
+        {
+          "caller": "maybeSingle",
+          "callee": "responses.shift",
+          "lineNumber": 7
+        },
+        {
+          "caller": "from",
+          "callee": "calls.push",
+          "lineNumber": 8
+        },
+        {
+          "caller": "row",
+          "callee": "emptyState",
+          "lineNumber": 10
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "tests/model.test.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 77,
+      "nonEmptyLines": 77,
+      "functions": [
+        {
+          "name": "fixture",
+          "startLine": 4,
+          "endLine": 9,
+          "params": []
+        },
+        {
+          "name": "payment",
+          "startLine": 10,
+          "endLine": 10,
+          "params": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "fixture",
+          "callee": "emptyState",
+          "lineNumber": 5
+        },
+        {
+          "caller": "fixture",
+          "callee": "s.students.push",
+          "lineNumber": 6
+        },
+        {
+          "caller": "fixture",
+          "callee": "createCharges",
+          "lineNumber": 8
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 0
+      }
+    }
+  ]
+}

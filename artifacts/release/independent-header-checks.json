@@ -1,0 +1,114 @@
+{
+  "checkedAt": "2026-10-29T15:19:27.443Z",
+  "passed": true,
+  "candidateDigest": "97cfa95aff87f1212d8b99557c0d97cd884b1bef4cf428c50899327285a73ad1",
+  "source": "SecurityHeaders public scanner raw response-header tables",
+  "results": [
+    {
+      "pathname": "/",
+      "target": "https://school-service-payments.vercel.app/",
+      "reportUrl": "https://securityheaders.com/?q=https%3A%2F%2Fschool-service-payments.vercel.app%2F&followRedirects=on&hide=on",
+      "reportFile": "artifacts/release/independent-headers.html",
+      "reportTime": "29 Oct 2026 15:15:48 UTC",
+      "reportSha256": "9d10a8456c8aa7d322d00c834b2d344496943911ae5257d1f1997ad6ea3c31a0",
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "no-referrer",
+        "X-Frame-Options": "DENY",
+        "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src https://jjpaxysocfvumjvbbrlb.supabase.co; img-src 'self' data:; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+        "Cache-Control": "no-store"
+      }
+    },
+    {
+      "pathname": "/src/app.js",
+      "target": "https://school-service-payments.vercel.app/src/app.js",
+      "reportUrl": "https://securityheaders.com/?q=https%3A%2F%2Fschool-service-payments.vercel.app%2Fsrc%2Fapp.js&followRedirects=on&hide=on",
+      "reportFile": "artifacts/release/independent-headers-1.html",
+      "reportTime": "29 Oct 2026 15:17:40 UTC",
+      "reportSha256": "7965df7f12c885893fe86e2bf2846bb59222666445caaa634884334c543cac52",
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "no-referrer",
+        "X-Frame-Options": "DENY",
+        "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src https://jjpaxysocfvumjvbbrlb.supabase.co; img-src 'self' data:; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+        "Cache-Control": "no-store"
+      }
+    },
+    {
+      "pathname": "/src/styles.css",
+      "target": "https://school-service-payments.vercel.app/src/styles.css",
+      "reportUrl": "https://securityheaders.com/?q=https%3A%2F%2Fschool-service-payments.vercel.app%2Fsrc%2Fstyles.css&followRedirects=on&hide=on",
+      "reportFile": "artifacts/release/independent-headers-2.html",
+      "reportTime": "29 Oct 2026 15:17:41 UTC",
+      "reportSha256": "cbe877cbfd58e1423a36053ff99a41f5127ae71cc43f881a759ac8c8fbb08927",
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "no-referrer",
+        "X-Frame-Options": "DENY",
+        "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src https://jjpaxysocfvumjvbbrlb.supabase.co; img-src 'self' data:; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+        "Cache-Control": "no-store"
+      }
+    },
+    {
+      "pathname": "/assets/school-route.png",
+      "target": "https://school-service-payments.vercel.app/assets/school-route.png",
+      "reportUrl": "https://securityheaders.com/?q=https%3A%2F%2Fschool-service-payments.vercel.app%2Fassets%2Fschool-route.png&followRedirects=on&hide=on",
+      "reportFile": "artifacts/release/independent-headers-3.html",
+      "reportTime": "29 Oct 2026 15:17:42 UTC",
+      "reportSha256": "576078fe2a2a13fe7ea1500bac9122ed0cb77bc94d394e2ba6efc8e452b5c9cc",
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "no-referrer",
+        "X-Frame-Options": "DENY",
+        "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src https://jjpaxysocfvumjvbbrlb.supabase.co; img-src 'self' data:; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+        "Cache-Control": "no-store"
+      }
+    },
+    {
+      "pathname": "/assets/instrument-sans-latin-400-normal.woff2",
+      "target": "https://school-service-payments.vercel.app/assets/instrument-sans-latin-400-normal.woff2",
+      "reportUrl": "https://securityheaders.com/?q=https%3A%2F%2Fschool-service-payments.vercel.app%2Fassets%2Finstrument-sans-latin-400-normal.woff2&followRedirects=on&hide=on",
+      "reportFile": "artifacts/release/independent-headers-4.html",
+      "reportTime": "29 Oct 2026 15:17:43 UTC",
+      "reportSha256": "920b92d7ab8f0110298dece59ed37d1f36eae213ce6cecb53b2d15120de02de9",
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "no-referrer",
+        "X-Frame-Options": "DENY",
+        "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src https://jjpaxysocfvumjvbbrlb.supabase.co; img-src 'self' data:; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+        "Cache-Control": "no-store"
+      }
+    },
+    {
+      "pathname": "/assets/instrument-sans-latin-600-normal.woff2",
+      "target": "https://school-service-payments.vercel.app/assets/instrument-sans-latin-600-normal.woff2",
+      "reportUrl": "https://securityheaders.com/?q=https%3A%2F%2Fschool-service-payments.vercel.app%2Fassets%2Finstrument-sans-latin-600-normal.woff2&followRedirects=on&hide=on",
+      "reportFile": "artifacts/release/independent-headers-5.html",
+      "reportTime": "29 Oct 2026 15:17:43 UTC",
+      "reportSha256": "67c30fbfa69f7769698da33b0c5457133b41fc3f6e59c9ed0d0b25ea2a054951",
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "no-referrer",
+        "X-Frame-Options": "DENY",
+        "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src https://jjpaxysocfvumjvbbrlb.supabase.co; img-src 'self' data:; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+        "Cache-Control": "no-store"
+      }
+    },
+    {
+      "pathname": "/assets/FONT-LICENSE.txt",
+      "target": "https://school-service-payments.vercel.app/assets/FONT-LICENSE.txt",
+      "reportUrl": "https://securityheaders.com/?q=https%3A%2F%2Fschool-service-payments.vercel.app%2Fassets%2FFONT-LICENSE.txt&followRedirects=on&hide=on",
+      "reportFile": "artifacts/release/independent-headers-6.html",
+      "reportTime": "29 Oct 2026 15:17:44 UTC",
+      "reportSha256": "ddde190e5ec6f9135c70f478ffe02a51e057474e4b050f1e219c134ca2773c81",
+      "headers": {
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "no-referrer",
+        "X-Frame-Options": "DENY",
+        "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; connect-src https://jjpaxysocfvumjvbbrlb.supabase.co; img-src 'self' data:; frame-ancestors 'none'; base-uri 'none'; form-action 'none'",
+        "Cache-Control": "no-store"
+      }
+    }
+  ],
+  "limits": "External-vantage evidence only, no authenticated app journey or TLS-intermediary ownership attribution. Original local strict-header failure remains retained separately."
+}
