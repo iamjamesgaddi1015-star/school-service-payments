@@ -77,8 +77,8 @@ Snapshot: 2026-10-29T08:03:17.235Z; source Git baseline: `58edcbf1f68433b51d5a8e
 - Executed: bundled scan, import resolution, batch computation, structural extraction, batch merge, topology analysis, graph schema/reference/file/symbol/range checks, and fingerprint baseline generation before metadata finalization.
 - This session did not run application test suites, launch the real app, inspect excluded runtime stores, contact providers/Supabase, or perform cloud/production changes. Existing verification documents are historical evidence only.
 - Machine artifacts: [knowledge graph](.ua/knowledge-graph.json), [coverage report](.ua/coverage-report.json), [symbol inventory](.ua/symbol-inventory.json), [topology](.ua/topology.json), [exclusions](.ua/.understandignore), and [fingerprints](.ua/fingerprints.json).
-- To view interactively, ask Codex: `$understand-dashboard C:/Users/222170/Documents/James-Workspace/04-Personal-Projects/school-service-payments`. This uses the installed local dashboard; no application provider connection is needed.
-- To refresh after source changes, ask Codex: `$understand C:/Users/222170/Documents/James-Workspace/04-Personal-Projects/school-service-payments`. Use `--full` to rebuild. Automatic commit hooks are disabled.
+- To view interactively, ask Codex: `$understand-dashboard C:/Users/222170/Documents/James-Workspace/04-Personal-Projects/Projects/school-service-payments`. This uses the installed local dashboard; no application provider connection is needed.
+- To refresh after source changes, ask Codex: `$understand C:/Users/222170/Documents/James-Workspace/04-Personal-Projects/Projects/school-service-payments`. Use `--full` to rebuild. Automatic commit hooks are disabled.
 - Rollback: remove only newly generated `UNDERSTAND.md` and this project's new analysis artifacts after reviewing their paths. Leave source, cloud records, original documents and private runtime stores untouched. No application code was modified.
 
 ### Explicit limitations

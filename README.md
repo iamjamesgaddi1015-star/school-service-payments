@@ -46,7 +46,7 @@ Requires Node.js 22+:
 
 ```powershell
 git pull
-cd 04-Personal-Projects\school-service-payments
+cd 04-Personal-Projects\Projects\school-service-payments
 npm ci
 npm start
 ```
@@ -65,7 +65,7 @@ Pinned dependencies and lockfile are committed. Node tests cover ledger arithmet
 
 ## Vercel deployment
 
-Project `school-service-payments`, id `prj_KtMN7EL6MWSDgv7d10PtdEpgwuJK`. Source is deployed directly because Vercel currently cannot access the private GitHub repository. For Git integration, grant Vercel access to `iamjamesgaddi1015-star/James-Workspace` and set Root Directory to `04-Personal-Projects/school-service-payments`, build command `npm run build`, output `dist`. The direct-source deployment has the app folder as its root. Only built frontend files are published.
+Project `school-service-payments`, id `prj_KtMN7EL6MWSDgv7d10PtdEpgwuJK`. Source is deployed directly because Vercel currently cannot access the private GitHub repository. For Git integration, grant Vercel access to `iamjamesgaddi1015-star/James-Workspace` and set Root Directory to `04-Personal-Projects/Projects/school-service-payments`, build command `npm run build`, output `dist`. The direct-source deployment has the app folder as its root. Only built frontend files are published.
 
 ## Database migration
 
